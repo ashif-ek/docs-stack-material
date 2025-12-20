@@ -39,7 +39,6 @@ nav:
   - Projects:
       - Portfolio: projects/portfolio.md
       - Open Source:
-          - Docs Stack Material: projects/github_repos/docs-stack-material.md
           - Todo Redux Advanced: projects/github_repos/todo-redux-adv.md
           - Fullstack Blog JWT: projects/github_repos/fullstack-blog-jwt-docker.md
           - Student Management: projects/github_repos/student-management-django-task.md
