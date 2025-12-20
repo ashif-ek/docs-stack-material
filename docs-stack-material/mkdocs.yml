@@ -1,0 +1,41 @@
+site_name: Docs Stack – Material
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Installation: installation.md
+  - Configuration: configuration.md
+  - Architecture: architecture.md
+  - Guides:
+      - Local Development: guides/local-development.md
+      - Deployment: guides/deployment.md
+      - Customization: guides/customization.md
+  - API:
+      - Overview: api/overview.md
+      - Authentication: api/authentication.md
+      - Database: api/database.md
+      - Error Handling: api/error-handling.md
+  - Reference:
+      - CLI: reference/cli.md
+      - Configuration Options: reference/configuration-options.md
+      - Glossary: reference/glossary.md
