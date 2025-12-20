@@ -36,7 +36,20 @@ nav:
       - Authentication: api/authentication.md
       - Database: api/database.md
       - Error Handling: api/error-handling.md
+  - Projects:
+      - Portfolio: projects/portfolio.md
+      - Open Source:
+          - Docs Stack Material: projects/github_repos/docs-stack-material.md
+          - Todo Redux Advanced: projects/github_repos/todo-redux-adv.md
+          - Fullstack Blog JWT: projects/github_repos/fullstack-blog-jwt-docker.md
+          - Student Management: projects/github_repos/student-management-django-task.md
+          - Portfolio React: projects/github_repos/portfolio-react.md
+          - Salary Checker: projects/github_repos/salary-checker.md
+          - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
+          - Time Lens: projects/github_repos/time-lens-python.md
   - Reference:
       - CLI: reference/cli.md
       - Configuration Options: reference/configuration-options.md
       - Glossary: reference/glossary.md
+
+site_url: https://ashif-ek.github.io/docs-stack-material/

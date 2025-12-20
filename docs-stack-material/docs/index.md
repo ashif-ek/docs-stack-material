@@ -1,5 +1,15 @@
-# Welcome to Docs Stack Material
+# Docs Stack – Material
 
-**Status: Live (Version 1.0)**
+Status: **Live (v1.0)**
 
-Professional documentation system.
+A professional documentation system built with MkDocs and Material for MkDocs.
+
+## What this project provides
+- Production-grade documentation structure
+- Clean navigation and search
+- Version-controlled content
+
+## Who should use this
+- Backend developers
+- API engineers
+- Open-source contributors
