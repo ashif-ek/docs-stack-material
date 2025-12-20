@@ -26,6 +26,7 @@ nav:
   - Installation: installation.md
   - Configuration: configuration.md
   - Architecture: architecture.md
+  - Conventions: conventions.md
   - Guides:
       - Local Development: guides/local-development.md
       - Deployment: guides/deployment.md

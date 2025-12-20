@@ -7,7 +7,7 @@ Professional documentation system built with **MkDocs** and **Material for MkDoc
 1.  **Activate the environment** (if not already active):
     ```powershell
     # From the project root (d:\ashif-dev)
-    .\.venv\Scripts\Activate.ps1
+    .\env\Scripts\Activate.ps1
     ```
 2.  **Navigate to the docs folder**:
     ```powershell
