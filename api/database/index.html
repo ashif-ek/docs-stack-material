@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#database-schema-api" class="md-skip">
+        <a href="#data-modeling-persistence" class="md-skip">
           Skip to content
         </a>
       
@@ -919,22 +919,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#core-domain-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Models
+        🗃️ Core Domain Models
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Models">
+    <nav class="md-nav" aria-label="🗃️ Core Domain Models">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#user-model-common" class="md-nav__link">
+  <a href="#the-universal-user-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Model (Common)
+        The Universal User Model
       
     </span>
   </a>
@@ -942,10 +942,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#domain-specific" class="md-nav__link">
+  <a href="#domain-specific-architectures" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Domain Specific
+        Domain-Specific Architectures
       
     </span>
   </a>
@@ -958,10 +958,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#orm-interaction" class="md-nav__link">
+  <a href="#orm-integration-paradigms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ORM Interaction
+        🔌 ORM Integration Paradigms
       
     </span>
   </a>
@@ -1525,22 +1525,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#core-domain-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Models
+        🗃️ Core Domain Models
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Models">
+    <nav class="md-nav" aria-label="🗃️ Core Domain Models">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#user-model-common" class="md-nav__link">
+  <a href="#the-universal-user-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        User Model (Common)
+        The Universal User Model
       
     </span>
   </a>
@@ -1548,10 +1548,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#domain-specific" class="md-nav__link">
+  <a href="#domain-specific-architectures" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Domain Specific
+        Domain-Specific Architectures
       
     </span>
   </a>
@@ -1564,10 +1564,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#orm-interaction" class="md-nav__link">
+  <a href="#orm-integration-paradigms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ORM Interaction
+        🔌 ORM Integration Paradigms
       
     </span>
   </a>
@@ -1591,27 +1591,36 @@
 
 
 
-<h1 id="database-schema-api">Database Schema &amp; API</h1>
-<p>How data is structured and accessed.</p>
-<h2 id="models">Models</h2>
-<h3 id="user-model-common">User Model (Common)</h3>
+<h1 id="data-modeling-persistence">Data Modeling &amp; Persistence</h1>
+<p>This section outlines the architectural approach to data structure, storage mechanisms, and Object-Relational Mapping (ORM) interaction paradigms utilized across the backend systems within this portfolio.</p>
+<hr />
+<h2 id="core-domain-models">🗃️ Core Domain Models</h2>
+<p>While schemas vary drastically depending on business requirements, we adhere to strict normalization standards and utilize universally identifiable base models across all RDBMS applications.</p>
+<h3 id="the-universal-user-model">The Universal User Model</h3>
+<p>Almost all applications extend a foundational <code>User</code> abstraction incorporating stringent validation:
+*   <code>id</code>: Primary Key (Universally Unique Identifier - UUIDv4 strongly preferred over standard Auto-Incrementing Integers for security).
+*   <code>username</code>: Indexed String, enforces global uniqueness.
+*   <code>email</code>: Indexed String, enforces global uniqueness with regex validation.
+*   <code>is_active</code> / <code>is_staff</code>: Boolean flags dictating system access levels.</p>
+<h3 id="domain-specific-architectures">Domain-Specific Architectures</h3>
 <ul>
-<li><code>id</code>: UUID or Integer.</li>
-<li><code>username</code>: String, unique.</li>
-<li><code>email</code>: String, unique.</li>
-<li><code>is_active</code>: Boolean.</li>
+<li><strong>E-Commerce Systems</strong>: Architected around relational stability. Core entities include <code>Product</code> (catalog item), <code>Order</code> (transaction record), <code>CartItem</code> (ephemeral session relation), and <code>PaymentTransaction</code>.</li>
+<li><strong>Educational Platforms</strong>: Designed for complex matrix relationships. Entities include <code>Student</code> (User subset), <code>Course</code> (curriculum data), and <code>Enrollment</code> (Many-to-Many resolution table).</li>
+<li><strong>Analytics Engines (Salary)</strong>: Optimized for rapid querying and aggregation. Features isolated tables like <code>SalaryData</code> mapping <code>job_role</code>, <code>experience_years</code>, <code>city</code>, and <code>compensation_amount</code>.</li>
 </ul>
-<h3 id="domain-specific">Domain Specific</h3>
+<hr />
+<h2 id="orm-integration-paradigms">🔌 ORM Integration Paradigms</h2>
+<p>Direct SQL string manipulation is strictly forbidden to prevent SQL Injection vulnerabilities. We interact with the persistence layer exclusively through robust Object-Relational Mappers (ORMs).</p>
 <ul>
-<li><strong>Ecommerce</strong>: <code>Product</code>, <code>Order</code>, <code>CartItem</code>.</li>
-<li><strong>Education</strong>: <code>Student</code>, <code>Course</code>, <code>Enrollment</code>.</li>
-<li><strong>Salary</strong>: <code>SalaryData</code> (role, experience, city, amount).</li>
+<li><strong>Django ORM Engine</strong>: Utilized for Python monoliths. Heavily leverages QuerySets for lazy-loading and optimized SQL translation.<ul>
+<li><em>Syntax Pattern</em>: <code>TargetModel.objects.filter(is_active=True).select_related('profile')</code></li>
 </ul>
-<h2 id="orm-interaction">ORM Interaction</h2>
-<ul>
-<li><strong>Django ORM</strong>: <code>Model.objects.filter(...)</code></li>
-<li><strong>SQLAlchemy</strong>: <code>session.query(Model).filter(...)</code></li>
-<li><strong>Mongoose/JSON</strong>: Direct object manipulation.</li>
+</li>
+<li><strong>SQLAlchemy Engine</strong>: Utilized for FastAPI microservices. Provides a powerful, session-based declarative mapping paradigm.<ul>
+<li><em>Syntax Pattern</em>: <code>session.query(TargetModel).filter(TargetModel.is_active == True).all()</code></li>
+</ul>
+</li>
+<li><strong>Mongoose (NoSQL)</strong>: Utilized when interacting with MongoDB, allowing for schema validation at the application layer before pushing direct BSON object manipulations to the database.</li>
 </ul>
 
 

@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#architecture" class="md-skip">
+        <a href="#system-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -609,10 +609,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#frontend" class="md-nav__link">
+  <a href="#frontend-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Frontend
+        🖥️ Frontend Architecture
       
     </span>
   </a>
@@ -620,10 +620,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend" class="md-nav__link">
+  <a href="#backend-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend
+        ⚙️ Backend Architecture
       
     </span>
   </a>
@@ -631,10 +631,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
+  <a href="#database-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Database
+        🗄️ Database Strategy
       
     </span>
   </a>
@@ -642,10 +642,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
+  <a href="#deployment-infrastructure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deployment
+        🚀 Deployment &amp; Infrastructure
       
     </span>
   </a>
@@ -1514,10 +1514,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#frontend" class="md-nav__link">
+  <a href="#frontend-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Frontend
+        🖥️ Frontend Architecture
       
     </span>
   </a>
@@ -1525,10 +1525,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend" class="md-nav__link">
+  <a href="#backend-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend
+        ⚙️ Backend Architecture
       
     </span>
   </a>
@@ -1536,10 +1536,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#database" class="md-nav__link">
+  <a href="#database-strategy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Database
+        🗄️ Database Strategy
       
     </span>
   </a>
@@ -1547,10 +1547,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
+  <a href="#deployment-infrastructure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deployment
+        🚀 Deployment &amp; Infrastructure
       
     </span>
   </a>
@@ -1574,30 +1574,46 @@
 
 
 
-<h1 id="architecture">Architecture</h1>
-<p>The projects in this portfolio primarily adhere to modern web development architectures, ensuring scalability, maintainability, and performance.</p>
-<h2 id="frontend">Frontend</h2>
+<h1 id="system-architecture">System Architecture</h1>
+<p>The applications within this suite are engineered to adhere strictly to modern, scalable web development architectures. The overarching design philosophy prioritizes modularity, robust data flow, and long-term maintainability across distributed systems.</p>
+<hr />
+<h2 id="frontend-architecture">🖥️ Frontend Architecture</h2>
+<p>The user interface layer is designed for maximum reusability and optimal rendering performance.</p>
 <ul>
-<li><strong>Component-Based</strong>: Built mainly with React.js, emphasizing reusable UI components.</li>
-<li><strong>State Management</strong>: Utilizing Context API, Redux Toolkit, or Zustand depending on complexity.</li>
-<li><strong>Styling</strong>: Tailwind CSS is the standard for responsive and utility-first styling.</li>
+<li><strong>Component-Driven Design</strong>: The majority of interfaces are built utilizing <strong>React.js</strong>. UI elements are atomized into independent, reusable components to ensure a DRY (Don't Repeat Yourself) codebase and consistent user experience.</li>
+<li><strong>Advanced State Management</strong>: <ul>
+<li><strong>Redux Toolkit</strong>: Employed for complex, globally shared state (e.g., in the Advanced Todo App) requiring middleware like async thunks for API coordination.</li>
+<li><strong>Zustand / Context API</strong>: Utilized for lighter, localized state management where the overhead of Redux is unnecessary.</li>
 </ul>
-<h2 id="backend">Backend</h2>
-<ul>
-<li><strong>REST API</strong>: Most backends (Django, FastAPI, Node.js) expose RESTful endpoints.</li>
-<li><strong>MVC / MVT</strong>: Django projects follow the Model-View-Template pattern (similar to MVC).</li>
-<li><strong>Microservices vs Monolith</strong>: Smaller tools (Time Lens) are microservices/functions, while larger platforms (Student Management, Noirel) are modular monoliths.</li>
+</li>
+<li><strong>Styling Strategy</strong>: <strong>Tailwind CSS</strong> serves as the foundational styling framework, providing a strict utility-first approach that guarantees zero dead CSS, rapid iterations, and built-in design system constraints.</li>
 </ul>
-<h2 id="database">Database</h2>
+<hr />
+<h2 id="backend-architecture">⚙️ Backend Architecture</h2>
+<p>Backend services are constructed to handle high concurrency, ensure secure data access, and provide stable APIs for client consumption.</p>
 <ul>
-<li><strong>Relational</strong>: PostgreSQL is the preferred choice for complex data relations (Salary Checker, Student Management).</li>
-<li><strong>NoSQL</strong>: MongoDB or JSON Server is used for lighter or rapid-prototyping projects (Portfolio).</li>
+<li><strong>RESTful APIs</strong>: The primary method of communication between clients and servers. Backends built with <strong>Node.js/Express</strong>, <strong>Django</strong>, and <strong>FastAPI</strong> universally expose predictable, stateless REST interfaces.</li>
+<li><strong>Design Patterns</strong>:<ul>
+<li><strong>MVT (Model-View-Template)</strong>: Python/Django applications (like the Student Management System) strictly implement this pattern to decouple the database schema (Model), the business logic (View), and the presentation layer (Template).</li>
+<li><strong>Modular Monoliths</strong>: Larger enterprise-style applications are structured as modular monoliths, keeping deployment simple while maintaining logical boundaries between domains (e.g., grouping Authentication, Products, and Orders into distinct modules).</li>
+<li><strong>Microservices</strong>: Specialized, compute-heavy tools (like the Time Lens AI functionality) are isolated as microservices to allow independent scaling and distinct technology stacks (e.g., optimized Python/FastAPI instances).</li>
 </ul>
-<h2 id="deployment">Deployment</h2>
+</li>
+</ul>
+<hr />
+<h2 id="database-strategy">🗄️ Database Strategy</h2>
+<p>Data persistence is tailored to the specific relational and structural requirements of each application.</p>
 <ul>
-<li><strong>Frontend</strong>: Vercel / Netlify.</li>
-<li><strong>Backend</strong>: Render / Railway / Heroku.</li>
-<li><strong>Containerization</strong>: Docker is used to standardize runtime environments.</li>
+<li><strong>Relational Database Management Systems (RDBMS)</strong>: <strong>PostgreSQL</strong> is the standard for applications requiring complex queries, strict ACID compliance, and intricate relationships (e.g., Salary Analytics, E-Commerce platforms).</li>
+<li><strong>NoSQL Solutions</strong>: <strong>MongoDB</strong> is utilized for applications demanding flexible schemas, rapid prototyping iterations, or massive horizontal scalability without the constraints of rigid relational tables.</li>
+</ul>
+<hr />
+<h2 id="deployment-infrastructure">🚀 Deployment &amp; Infrastructure</h2>
+<p>The CI/CD pipeline and infrastructure are designed for reliability and zero-downtime deployments.</p>
+<ul>
+<li><strong>Frontend Hosting</strong>: Leverages Edge computing networks like <strong>Vercel</strong> and <strong>Netlify</strong> for global CDN distribution, automatic SSL, and atomic deployments.</li>
+<li><strong>Backend Hosting</strong>: API servers and background workers are deployed on resilient PaaS providers such as <strong>Render</strong> or <strong>Railway</strong>.</li>
+<li><strong>Containerization</strong>: <strong>Docker</strong> is aggressively utilized across the stack to package applications and their dependencies into standardized, isolated environments. This ensures absolute parity between local development (<code>docker-compose</code>) and production deployments, eliminating "it works on my machine" issues.</li>
 </ul>
 
 

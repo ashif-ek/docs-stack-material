@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-options" class="md-skip">
+        <a href="#configuration-environment-variables" class="md-skip">
           Skip to content
         </a>
       
@@ -1354,6 +1354,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration Options
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1370,6 +1388,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-system-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔐 Core System Variables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗄️ Database &amp; Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 Network &amp; Access Control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔒 Security Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1431,6 +1512,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-system-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔐 Core System Variables
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗄️ Database &amp; Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-access-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌐 Network &amp; Access Control
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔒 Security Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1446,57 +1579,113 @@
 
 
 
-<h1 id="configuration-options">Configuration Options</h1>
-<p>Detailed reference for environment variables.</p>
+<h1 id="configuration-environment-variables">Configuration &amp; Environment Variables</h1>
+<p>Proper configuration management is critical for operational security and application behavior across different environments (Development, Staging, Production). This document outlines the core environment variables utilized across the overarching tech stack.</p>
+<hr />
+<h2 id="core-system-variables">🔐 Core System Variables</h2>
+<p>These variables dictate fundamental application behaviors and security postures.</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Variable</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Required</th>
-<th style="text-align: left;">Default</th>
+<th style="text-align: left;">Requirement Level</th>
+<th style="text-align: left;">Default Value</th>
+<th style="text-align: left;">Security Note</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><code>DEBUG</code></td>
-<td style="text-align: left;">Enable debug mode</td>
-<td style="text-align: left;">No</td>
+<td style="text-align: left;">Toggles detailed error tracebacks and development-specific behaviors.</td>
+<td style="text-align: left;"><strong>Optional</strong></td>
 <td style="text-align: left;"><code>False</code></td>
+<td style="text-align: left;"><strong>CRITICAL:</strong> <em>Must</em> explicitly be set to <code>False</code> in production to prevent source code leaks.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>SECRET_KEY</code></td>
-<td style="text-align: left;">App secret for signing</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>DATABASE_URL</code></td>
-<td style="text-align: left;">DB Connection string</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">-</td>
+<td style="text-align: left;">Cryptographic key utilized for signing session cookies, JWTs, and password hashing salts.</td>
+<td style="text-align: left;"><strong>Mandatory</strong></td>
+<td style="text-align: left;"><em>None</em></td>
+<td style="text-align: left;">Must be a long, cryptographically secure random string. Never commit to version control.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ALLOWED_HOSTS</code></td>
-<td style="text-align: left;">Comma-separated domains</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;"><code>*</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>CORS_ORIGIN</code></td>
-<td style="text-align: left;">Frontend URL for CORS</td>
-<td style="text-align: left;">Yes</td>
-<td style="text-align: left;">-</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>PORT</code></td>
-<td style="text-align: left;">Server port</td>
-<td style="text-align: left;">No</td>
-<td style="text-align: left;"><code>8000</code></td>
+<td style="text-align: left;">Comma-separated list of host/domain names the application is permitted to serve securely.</td>
+<td style="text-align: left;"><strong>Mandatory</strong></td>
+<td style="text-align: left;"><code>*</code> (Dev only)</td>
+<td style="text-align: left;">Required in production to mitigate HTTP Host header attacks.</td>
 </tr>
 </tbody>
 </table>
-<p>See <a href="../../configuration/">Configuration</a> for setup instructions.</p>
+<hr />
+<h2 id="database-infrastructure">🗄️ Database &amp; Infrastructure</h2>
+<p>Determines how the application connects to stateful persistence layers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Requirement Level</th>
+<th style="text-align: left;">Typical Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>DATABASE_URL</code></td>
+<td style="text-align: left;">The fully qualified connection string detailing the RDBMS dialect, credentials, host, and database name.</td>
+<td style="text-align: left;"><strong>Mandatory</strong></td>
+<td style="text-align: left;"><code>postgres://user:pass@host:5432/dbname</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>REDIS_URL</code></td>
+<td style="text-align: left;">Connection string for the Redis instance used for caching or Celery task brokering.</td>
+<td style="text-align: left;"><strong>Optional</strong></td>
+<td style="text-align: left;"><code>redis://localhost:6379/1</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PORT</code></td>
+<td style="text-align: left;">The port on which the web server process should bind and listen.</td>
+<td style="text-align: left;"><strong>Optional</strong></td>
+<td style="text-align: left;"><code>8000</code> (Python), <code>3000</code>/<code>5173</code> (Node)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="network-access-control">🌐 Network &amp; Access Control</h2>
+<p>These variables govern cross-origin resource sharing and external service communication.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Requirement Level</th>
+<th style="text-align: left;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>CORS_ORIGIN</code></td>
+<td style="text-align: left;">Defines the specific frontend origins allowed to send requests to the backend API.</td>
+<td style="text-align: left;"><strong>Mandatory</strong></td>
+<td style="text-align: left;">e.g., <code>https://my-frontend-app.com</code>. Used to prevent unauthorized cross-origin data reads.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>API_BASE_URL</code></td>
+<td style="text-align: left;">The root URL utilized by frontend clients to communicate with the backend.</td>
+<td style="text-align: left;"><strong>Optional</strong></td>
+<td style="text-align: left;">Set in frontend <code>.env</code> to easily switch between local backend and production endpoints.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="security-best-practices">🔒 Security Best Practices</h2>
+<ol>
+<li><strong>Environment Separation</strong>: Always maintain strictly segregated <code>.env</code> files for distinct environments (<code>.env.development</code>, <code>.env.production</code>).</li>
+<li><strong>Never Commit Secrets</strong>: Ensure <code>.env</code> is comprehensively included in your global <code>.gitignore</code>. Use <code>.env.example</code> to document required variables safely via template.</li>
+<li><strong>Secret Rotation</strong>: Regularly rotate high-value secrets like <code>SECRET_KEY</code> or third-party API keys, especially after a personnel change or suspected breach.</li>
+</ol>
+<p>For practical application guidelines within specific frameworks, refer to the <a href="../../configuration/">General Configuration Guide</a>.</p>
 
 
 

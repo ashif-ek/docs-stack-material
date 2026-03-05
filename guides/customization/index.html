@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customization" class="md-skip">
+        <a href="#extension-customization-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -776,10 +776,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tailwind-css-theme" class="md-nav__link">
+  <a href="#global-ui-theming-tailwind-css" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tailwind CSS Theme
+        🎨 Global UI Theming (Tailwind CSS)
       
     </span>
   </a>
@@ -787,10 +787,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#react-components" class="md-nav__link">
+  <a href="#modifying-react-components" class="md-nav__link">
     <span class="md-ellipsis">
       
-        React Components
+        🧩 Modifying React Components
       
     </span>
   </a>
@@ -798,13 +798,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend-logic" class="md-nav__link">
+  <a href="#backend-logic-extension" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend Logic
+        ⚙️ Backend Logic Extension
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Backend Logic Extension">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expanding-django-monoliths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expanding Django Monoliths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expanding-fastapi-microservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expanding FastAPI Microservices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1508,10 +1536,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tailwind-css-theme" class="md-nav__link">
+  <a href="#global-ui-theming-tailwind-css" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tailwind CSS Theme
+        🎨 Global UI Theming (Tailwind CSS)
       
     </span>
   </a>
@@ -1519,10 +1547,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#react-components" class="md-nav__link">
+  <a href="#modifying-react-components" class="md-nav__link">
     <span class="md-ellipsis">
       
-        React Components
+        🧩 Modifying React Components
       
     </span>
   </a>
@@ -1530,13 +1558,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#backend-logic" class="md-nav__link">
+  <a href="#backend-logic-extension" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend Logic
+        ⚙️ Backend Logic Extension
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Backend Logic Extension">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expanding-django-monoliths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expanding Django Monoliths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expanding-fastapi-microservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expanding FastAPI Microservices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1557,21 +1613,36 @@
 
 
 
-<h1 id="customization">Customization</h1>
-<p>How to modify and extend the projects.</p>
-<h2 id="tailwind-css-theme">Tailwind CSS Theme</h2>
-<p>Most styled projects use <code>tailwind.config.js</code>. You can customize:
-*   <strong>Colors</strong>: Modify <code>theme.extend.colors</code> to change the palette.
-*   <strong>Fonts</strong>: Update <code>fontFamily</code> settings.</p>
-<h2 id="react-components">React Components</h2>
-<p>UI components are typically found in <code>src/components</code>.
-*   <strong>Reusability</strong>: Components are built to be generic.
-*   <strong>Props</strong>: Check the interface definitions (TypeScript) or PropTypes (JS) to understand available options.</p>
-<h2 id="backend-logic">Backend Logic</h2>
+<h1 id="extension-customization-architecture">Extension &amp; Customization Architecture</h1>
+<p>All projects within this repository network are architected with modularity and extensibility as primary directives. This guide outlines how to safely modify global themes, implement bespoke UI components, and attach new domain logic to backend services.</p>
+<hr />
+<h2 id="global-ui-theming-tailwind-css">🎨 Global UI Theming (Tailwind CSS)</h2>
+<p>The visual identity of frontend applications is strictly governed by Tailwind CSS configuration files, ensuring a centralized, easily mutable design system.</p>
+<p>To enact sweeping visual changes across an entire application:
+1. Locate the <code>tailwind.config.js</code> (or <code>tailwind.config.ts</code>) file situated in the project's root directory.
+2. Extend the base theme rather than overwriting it, preserving utility classes.
+    *   <strong>Color Palettes</strong>: Modify <code>theme.extend.colors</code> to inject new primary/secondary brand colors (e.g., swapping a generic blue for a curated hex brand token).
+    *   <strong>Typography</strong>: Update the <code>fontFamily</code> mapping to implement new web-safe or Google Fonts universally.</p>
+<hr />
+<h2 id="modifying-react-components">🧩 Modifying React Components</h2>
+<p>Component architecture is strictly isolated within the <code>src/components/</code> directory (or specific domain folders for feature-sliced designs).</p>
 <ul>
-<li><strong>Django</strong>: Apps are modular. To add specific business logic, create a new app: <code>python manage.py startapp &lt;name&gt;</code>.</li>
-<li><strong>FastAPI</strong>: Add new routers in the <code>api/</code> directory and include them in <code>main.py</code>.</li>
+<li><strong>Atomic Design Constraints</strong>: When modifying a low-level component (e.g., a <code>Button</code>), bear in mind that it will propagate throughout the application. Ensure backward compatibility with existing properties.</li>
+<li><strong>Type Safety</strong>: If the project employs TypeScript, rigidly adhere to updating the <code>interface</code> or <code>type</code> definitions attached to your component props prior to modifying internal logic. If using plain JavaScript, update the <code>PropTypes</code> validations to catch runtime integration errors.</li>
 </ul>
+<hr />
+<h2 id="backend-logic-extension">⚙️ Backend Logic Extension</h2>
+<p>Backend scalability relies entirely on respecting the inherent framework architectures.</p>
+<h3 id="expanding-django-monoliths">Expanding Django Monoliths</h3>
+<p>Django specifically isolates domains into "Apps". Do not convolute existing applications with disjointed logic.
+*   If establishing a new domain (e.g., adding a "Reviews" system to an E-commerce platform), isolate the data models and views.
+    <code>bash
+    python manage.py startapp reviews</code>
+*   Ensure the new app is registered within the <code>INSTALLED_APPS</code> matrix in <code>settings.py</code>.</p>
+<h3 id="expanding-fastapi-microservices">Expanding FastAPI Microservices</h3>
+<p>FastAPI utilizes decoupled routing mechanics to maintain logical separation.
+*   Construct a new routing module inside the <code>api/</code> or <code>routers/</code> directory (e.g., <code>api/analytics.py</code>).
+*   Instantiate an <code>APIRouter</code> and explicitly mount it onto the core application instantiated in <code>main.py</code> utilizing <code>app.include_router()</code>.</p>
 
 
 

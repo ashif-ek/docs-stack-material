@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#error-handling" class="md-skip">
+        <a href="#standardized-error-handling" class="md-skip">
           Skip to content
         </a>
       
@@ -947,10 +947,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#http-status-codes" class="md-nav__link">
+  <a href="#http-status-code-semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HTTP Status Codes
+        🚦 HTTP Status Code Semantics
       
     </span>
   </a>
@@ -958,13 +958,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#error-response-format" class="md-nav__link">
+  <a href="#unified-error-response-payload" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error Response Format
+        📦 Unified Error Response Payload
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="📦 Unified Error Response Payload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standardized-format-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standardized Format Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1497,10 +1525,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#http-status-codes" class="md-nav__link">
+  <a href="#http-status-code-semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HTTP Status Codes
+        🚦 HTTP Status Code Semantics
       
     </span>
   </a>
@@ -1508,13 +1536,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#error-response-format" class="md-nav__link">
+  <a href="#unified-error-response-payload" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error Response Format
+        📦 Unified Error Response Payload
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="📦 Unified Error Response Payload">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standardized-format-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standardized Format Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1535,29 +1591,42 @@
 
 
 
-<h1 id="error-handling">Error Handling</h1>
-<p>Standardized error responses.</p>
-<h2 id="http-status-codes">HTTP Status Codes</h2>
+<h1 id="standardized-error-handling">Standardized Error Handling</h1>
+<p>To guarantee a predictable developer experience for frontend clients and seamless integration for third-party consumers, every API within this ecosystem strictly adheres to standardized HTTP semantics and a unified JSON error response architecture.</p>
+<hr />
+<h2 id="http-status-code-semantics">🚦 HTTP Status Code Semantics</h2>
+<p>The APIs exclusively utilize standard HTTP status codes to instantly communicate the overarching result of a client request.</p>
 <ul>
-<li><code>200 OK</code>: Success.</li>
-<li><code>201 Created</code>: Resource successfully created.</li>
-<li><code>400 Bad Request</code>: Validation error.</li>
-<li><code>401 Unauthorized</code>: Missing or invalid token.</li>
-<li><code>403 Forbidden</code>: Insufficient permissions.</li>
-<li><code>404 Not Found</code>: Resource does not exist.</li>
-<li><code>500 Server Error</code>: Internal application failure.</li>
+<li><code>200 OK</code>: The request was successfully fulfilled.</li>
+<li><code>201 Created</code>: The request was successful, resulting in the creation of a new persistent resource.</li>
+<li><code>400 Bad Request</code>: The server cannot process the request due to a client error (e.g., malformed syntax, failing payload validation).</li>
+<li><code>401 Unauthorized</code>: Authentication is missing, completely invalid, or the JWT session has expired.</li>
+<li><code>403 Forbidden</code>: The client's identity is known, but they lack the required permissions (RBAC) to execute the action.</li>
+<li><code>404 Not Found</code>: The requested resource or URL path does not exist.</li>
+<li><code>500 Internal Server Error</code>: An unexpected application failure occurred. <em>Note: Stack traces are never exposed to the client in production.</em></li>
 </ul>
-<h2 id="error-response-format">Error Response Format</h2>
+<hr />
+<h2 id="unified-error-response-payload">📦 Unified Error Response Payload</h2>
+<p>When an API encounters any error (Status <code>4xx</code> or <code>5xx</code>), it abandons standard payload delivery and instead returns a strictly typed JSON error construct. This guarantees the frontend can programmatically parse and display the exact failure reason without guessing.</p>
+<h3 id="standardized-format-structure">Standardized Format Structure</h3>
 <pre><code class="language-json">{
   &quot;status&quot;: &quot;error&quot;,
   &quot;code&quot;: 400,
-  &quot;message&quot;: &quot;Invalid password format&quot;,
+  &quot;message&quot;: &quot;The provided data failed payload validation criteria.&quot;,
   &quot;details&quot;: {
     &quot;field&quot;: &quot;password&quot;,
-    &quot;issue&quot;: &quot;Must contain at least one number&quot;
-  }
+    &quot;issue&quot;: &quot;Password string must contain at least one numeric character and one special symbol.&quot;
+  },
+  &quot;timestamp&quot;: &quot;2026-03-05T12:00:00Z&quot;
 }
 </code></pre>
+<h3 id="key-attributes">Key Attributes</h3>
+<ul>
+<li><strong><code>status</code></strong>: Always hardcoded to <code>"error"</code> enabling quick conditional checks on the frontend.</li>
+<li><strong><code>code</code></strong>: Mirrors the HTTP status code for redundant verification.</li>
+<li><strong><code>message</code></strong>: A human-readable summary of the failure suitable for generic UI alerts.</li>
+<li><strong><code>details</code></strong>: (Optional) A highly specific key-value mapping detailing exact field-level validation errors, perfect for attaching inline error states to specific form inputs.</li>
+</ul>
 
 
 
