@@ -1,77 +1,334 @@
-# NOIRÉL | Premium E-Commerce Experience
+# NOIREL — Full-Stack Luxury E-Commerce Platform
 
-NOIRÉL is a modern, high-performance e-commerce application built to deliver a seamless and premium shopping experience. It features a responsive design, optimistic UI updates for instant feedback, and a robust state management system.
+## 1. Project Overview
 
-## 🚀 Key Features
+Noirel is a production-grade, headless e-commerce platform engineered to deliver a high-performance luxury shopping experience. The system separates frontend and backend concerns using a modern React-based client and a secure Django REST API backend.
 
-*   **Premium UI/UX**: Minimalist, high-end aesthetic with smooth transitions and responsive layouts.
-*   **Optimized Performance**:
-    *   **Lazy Loading**: Route-based code splitting for fast initial load times.
-    *   **Optimistic UI**: Instant updates for Cart and Wishlist actions with automatic background synchronization.
-*   **Robust State Management**: Scalable Context API implementation using useReducer for predictable state transitions.
-*   **Secure Authentication**: User registration and login with persistent sessions.
-*   **Reliability**: Global Error Boundaries to gracefully handle runtime crashes.
-*   **Checkout & Payment**: Integrated Razorpay payment gateway with dual-currency support (USD/INR).
+The architecture emphasizes:
 
-## 🛠️ Technology Stack
+*   **Scalability**
+*   **Performance optimization**
+*   **Secure authentication**
+*   **Cloud-native deployment**
+*   **Clean system design**
+*   **Real-world payment processing**
 
-*   **Frontend**: React 19, Vite, TailwindCSS
-*   **State Management**: React Context API + useReducer
-*   **Routing**: React Router DOM v7
-*   **Icons & Components**: Lucide React, React Icons
-*   **Payment**: Razorpay
-*   **Quality**: ESLint, Prettier
+It replicates modern commerce infrastructure used in industry-level platforms.
 
-## 📦 Installation & Setup
+## 2. Core Architecture
 
-Clone the repository:
+### Architectural Pattern
 
-```bash
-git clone https://github.com/ashif-ek/noirel-ecommerce.git
-cd noirel
+**Headless Architecture (Decoupled Client–Server)**
+
+Frontend and backend communicate strictly via REST APIs.
+
+`Client (React) → Nginx → Gunicorn → Django → PostgreSQL`
+                               `↓`
+                              `AWS S3`
+
+### Why Headless?
+
+*   Independent scaling of frontend and backend
+*   Deployment flexibility
+*   Clean API contract
+*   Frontend portability (future mobile app possible)
+
+## 3. Technology Stack
+
+### Frontend
+
+*   **Framework**: React 19
+*   **Build Tool**: Vite 6
+*   **Styling**: Tailwind CSS 4
+*   **Routing**: React Router 7
+*   **State Management**: Context API (Auth, Cart, Wishlist, Search)
+*   **HTTP Client**: Axios (JWT interceptors)
+*   **Animation**: Framer Motion
+*   **Charts**: Recharts
+*   **Icons**: Lucide React
+*   **PWA Support**: vite-plugin-pwa
+
+**Key Frontend Design Decisions:**
+
+*   Component isolation to reduce unnecessary re-renders
+*   Route-based lazy loading
+*   Memoized context values
+*   Chunk splitting for caching efficiency
+*   WebP image optimization
+*   Mobile-first responsive design
+
+### Backend
+
+*   **Framework**: Django 5
+*   **API**: Django REST Framework
+*   **Authentication**: Simple JWT
+*   **Database**: PostgreSQL
+*   **Image Processing**: Pillow
+*   **Payment Gateway**: Razorpay
+*   **API Docs**: drf-spectacular
+*   **Server**: Gunicorn
+
+### Infrastructure
+
+*   **Frontend Hosting**: Vercel (Global CDN)
+*   **Backend Hosting**: AWS EC2 (Ubuntu)
+*   **Reverse Proxy**: Nginx
+*   **Media Storage**: AWS S3
+*   **Database Hosting**: AWS RDS PostgreSQL
+*   **CI/CD**: GitHub Actions
+
+## 4. System Modules
+
+### 4.1 Authentication Module
+
+*   JWT-based authentication
+*   Access + refresh token flow
+*   Axios interceptor for auto token injection
+*   Protected routes in frontend
+*   Role-based access (Admin / User)
+
+**Security Features:**
+
+*   Strict CORS
+*   Throttling on sensitive endpoints
+*   Hashed passwords
+*   Token validation middleware
+
+### 4.2 Product Module
+
+**Features:**
+
+*   Product CRUD (Admin)
+*   Category-based filtering
+*   Search functionality
+*   Best Sellers / New Arrivals logic
+*   Stock tracking
+*   Image upload to S3
+
+**Database Optimization:**
+
+*   Indexed fields (`is_active`, `created_at`)
+*   Foreign key indexing
+*   Efficient query selection
+
+### 4.3 Cart System
+
+Server-side persistent cart.
+
+**Flow:**
+
+1.  User adds item
+2.  API validates stock
+3.  Item stored in cart table
+4.  Response updates UI
+
+**Features:**
+
+*   Quantity updates
+*   Real-time sync
+*   Prevent overstock ordering
+
+### 4.4 Order & Checkout Module
+
+**Multi-step Checkout:**
+
+*   Address selection
+*   Order summary
+*   Payment initiation
+
+**Order Creation:**
+
+*   Atomic transaction
+*   Stock validation
+*   Total calculation
+*   Payment signature verification
+
+```python
+with transaction.atomic():
+    validate_stock()
+    create_order()
+    reduce_inventory()
 ```
 
-Install Dependencies:
+Prevents race conditions and inconsistent state.
 
-```bash
-npm install
-```
+### 4.5 Payment Integration
 
-Environment Configuration: Create a `.env` file in the root directory (optional but recommended for API keys):
+*   **Gateway**: Razorpay
 
-```env
-VITE_API_URL=https://noirel-server.onrender.com
-```
+**Flow:**
 
-Run Development Server:
+1.  Order created server-side
+2.  Payment order generated
+3.  Client completes payment
+4.  Signature verified server-side
+5.  Order marked as paid
 
-```bash
-npm run dev
-```
+**Security:**
 
-Build for Production:
+*   Server-side signature validation
+*   Payment amount verification
 
-```bash
-npm run build
-```
+### 4.6 Admin Dashboard
 
-## 🏗️ Architecture Highlights
+*   Revenue analytics (Recharts)
+*   Order status distribution
+*   Product management
+*   Stock management
+*   User control (block/unblock)
 
-### State Management
-We use a centralized Context architecture optimized for performance:
-*   **CartContext**: Handles add/remove/update operations with optimistic updates and automatic rollback on error.
-*   **OrderContext**: Manages checkout flows, exchange rate caching, and payment processing.
+Optimized for operational control.
 
-### Error Handling
-*   **Global Error Boundary**: Catches unhandled exceptions in the component tree to prevent white-screen crashes.
-*   **Graceful Fallbacks**: UI components handle loading and error states locally.
+## 5. Performance Engineering
 
-## 🤝 Contributing
+### Frontend Optimizations
 
-1.  Fork the repository.
-2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
+1.  **Image Optimization**
+    *   Converted assets to WebP
+    *   Reduced payload size significantly
+2.  **Code Splitting**
+    *   Vite manual chunk configuration: `vendor`, `ui`, `charts`
+    *   Improves caching and load performance.
+3.  **Memoization Strategy**
+    *   `useMemo` for context value
+    *   Isolated modal component
+    *   Avoided grid-wide re-renders
+    *   Memoized sorting in OrderHistory
+4.  **Lazy Loading**
+    ```javascript
+    const ProductPage = React.lazy(() => import('./ProductPage'));
+    ```
+    Improves initial load performance.
 
-[View on GitHub](https://github.com/ashif-ek/noirel-ecommerce)
+### Backend Optimizations
+
+1.  **Database Indexing**
+    *   Indexed: Foreign keys, `created_at`, `is_active`
+    *   Reduces query scan time.
+2.  **Atomic Transactions**
+    *   Ensures: No partial order creation, No inconsistent stock updates
+3.  **Rate Limiting**
+    *   Applied throttling for: Auth endpoints, Sensitive actions
+
+## 6. Database Design Overview
+
+*   **Users**
+    *   Custom user model
+    *   Email as unique identifier
+    *   Role flag
+*   **Products**
+    *   Name, Description, Price, Stock, Category, Image, `is_active`
+*   **Cart**
+    *   User, Product, Quantity
+*   **Orders**
+    *   User, Total, Status, Payment ID, Shipping info
+*   **OrderItems**
+    *   Order, Product, Quantity, Price snapshot
+
+## 7. DevOps & Deployment
+
+### Backend Deployment Flow
+
+1.  Push to GitHub
+2.  GitHub Actions triggered
+3.  SSH into EC2
+4.  Pull latest code
+5.  Install dependencies
+6.  Apply migrations
+7.  Restart Gunicorn
+
+### Nginx Responsibilities
+
+*   Reverse proxy
+*   HTTPS termination
+*   Static file handling
+
+### Why Gunicorn?
+
+*   WSGI server optimized for production
+*   Handles concurrency efficiently
+
+## 8. Security Implementation
+
+*   JWT authentication
+*   Server-side payment verification
+*   Rate limiting
+*   Strict CORS
+*   Environment-based secrets
+*   Secure S3 storage
+*   Database not exposed publicly
+*   Nginx HTTPS configuration
+
+## 9. Scalability Considerations
+
+**Current scaling strategy:**
+
+*   Decoupled frontend/backend
+*   S3 media offloading
+*   Indexed queries
+*   Stateless JWT auth
+
+**Future scaling options:**
+
+*   Redis caching layer
+*   Celery background workers
+*   Horizontal EC2 scaling
+*   Load balancer
+*   CDN caching rules
+*   Containerization with Docker
+
+## 10. CI/CD Pipeline
+
+**Automated:**
+
+*   Code pull
+*   Dependency install
+*   Database migration
+*   Gunicorn restart
+
+Ensures zero manual deployment errors.
+
+## 11. Lighthouse & UX Improvements
+
+*   Near-perfect Lighthouse score
+*   Accessible design
+*   Responsive layout
+*   Minimal layout shifts
+*   Smooth animations
+*   PWA installable capability
+
+## 12. Future Roadmap
+
+*   Email notifications (SendGrid / SES)
+*   OAuth (Google login)
+*   Recommendation engine
+*   Advanced analytics dashboard
+*   Redis integration
+*   Celery task queue
+*   Observability (logging + monitoring)
+
+## 13. Engineering Principles Applied
+
+*   Separation of concerns
+*   API-first design
+*   Atomicity
+*   Query optimization
+*   Component isolation
+*   Clean UI state architecture
+*   Cloud-native deployment
+
+## 14. Summary
+
+Noirel is not a simple CRUD application.
+
+It demonstrates:
+
+*   Full lifecycle engineering
+*   Cloud deployment experience
+*   Payment integration
+*   Performance tuning
+*   Security awareness
+*   Real-world system architecture
+
+It reflects practical understanding of modern full-stack development at production level.

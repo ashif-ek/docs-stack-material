@@ -1,91 +1,83 @@
 # Salary Reality Checker – AI-Powered Salary Insights
 
-A **FAANG-style salary analytics platform** that calculates market percentiles, predicts salaries using machine learning, and auto-corrects user input using fuzzy matching.
+> **An enterprise-grade, FAANG-style salary analytics platform offering automated market percentiles, predictive machine learning, and intelligent fuzzy matching for imperfect data.**
 
-Built with:
-*   FastAPI
-*   PostgreSQL
-*   SQLAlchemy
-*   scikit-learn ML
-*   React + Vite + TailwindCSS
-*   Recharts + Framer Motion
+Built with state-of-the-art technologies including **FastAPI**, **PostgreSQL**, **scikit-learn**, and a dynamic **React** interface, this platform delivers precise, data-driven compensation intelligence.
 
-## 🚀 Features
+[View Repository on GitHub](https://github.com/ashif-ek/salary-checker){ .md-button .md-button--primary }
 
-### 🔹 Smart Percentile Engine
-Calculates:
-*   P10
-*   P25
-*   P50 (Median)
-*   P75
-*   P90
+---
 
-### 🔹 Fuzzy Matching (AI Auto-Correction)
-Even if user types: `py devloper`, `sofware eng`, `hyd`, `blr` → **App finds the closest valid match.**
+## 🚀 Outstanding Features
 
-### 🔹 ML Salary Prediction
-If database has no entry:
-*   Trains a Linear Regression model.
-*   Predicts salary based on experience trends.
+### 🔹 Intelligent Percentile Engine
+Dynamically calculates real-time market percentiles to provide a clear distribution overview:
+- **P10 & P25**: Lower-bound market rates.
+- **P50 (Median)**: Standard baseline compensation.
+- **P75 & P90**: Top-tier and elite market ranges.
 
-### 🔹 Admin Tools
-*   Upload CSV dataset.
-*   Bulk insert into PostgreSQL.
+### 🔹 AI-Driven Fuzzy Matching
+Implements advanced string-matching heuristics to auto-correct imperfect user input.
+- Example: Transforms `py devloper` or `sofware eng` into perfectly matched professional titles, ensuring database integrity and accurate querying.
 
-### 🔹 Modern UI (React)
-*   Annual / Monthly toggle.
-*   Animated charts.
-*   Shimmer loading state.
-*   Auto-suggest dropdown.
-*   Dark & Light mode.
+### 🔹 Machine Learning Salary Prediction
+Utilizes robust ML models when exact database entries are absent.
+- Automatically trains **Linear Regression models** on the fly.
+- Forecasts salaries based on multi-variable experience trends.
 
-## 🏗️ Tech Stack
+### 🔹 Comprehensive Admin Tools
+Enables seamless dataset operations:
+- Direct CSV upload capabilities for thousands of records.
+- Optimized bulk insertion routines straight into the PostgreSQL data warehouse.
 
-### Backend
-*   FastAPI
-*   SQLAlchemy
-*   PostgreSQL
-*   scikit-learn
-*   RapidFuzz
+### 🔹 Premium Modern UI
+A responsive, high-performance interface built with React:
+- **Interactive Visualizations**: Powered by Recharts for animated, dynamic data sets.
+- **Polished Experience**: Features shimmer loading states, auto-suggest dropdowns, Framer Motion transitions, and native Dark/Light mode support.
 
-### Frontend
-*   React (Vite)
-*   TailwindCSS
-*   Recharts
-*   Framer Motion
+---
 
-## 📡 API Endpoints
+## 🏗️ Technical Architecture
 
-*   **Add Salary**
-    `POST /salary/add`
-*   **Bulk Upload Dataset**
-    `POST /salary/bulk`
-*   **Get Salary Insights (Percentiles + ML)**
-    `GET /salary/insights?job_role=&city=&experience=`
-*   **Predict Salary**
-    `GET /salary/predict?job_role=&city=&experience=`
+### Backend Infrastructure
+- **FastAPI**: Blazing-fast routing and API endpoints.
+- **SQLAlchemy & PostgreSQL**: Scalable ORM and robust relational database management.
+- **scikit-learn & RapidFuzz**: Powering the core ML analytics and string-matching logic.
 
-## 🔧 Setup Instructions
+### Frontend Application
+- **React (Vite)**: Optimized build and rapid Hot Module Replacement (HMR).
+- **TailwindCSS**: Utility-first, consistently designed UI components.
+- **Recharts & Framer Motion**: Declarative charts and fluid animations.
 
-### Backend
+---
+
+## 📡 Core API Integration
+
+Exposes comprehensive RESTful endpoints for seamless integration:
+
+- **Record Management:**
+  - `POST /salary/add` - Append individual compensation data.
+  - `POST /salary/bulk` - Execute high-speed bulk CSV ingestions.
+- **Analytics & Predictions:**
+  - `GET /salary/insights?job_role=&city=&experience=` - Retrieve percentile distributions.
+  - `GET /salary/predict?job_role=&city=&experience=` - Fetch ML-driven predictions for custom queries.
+
+---
+
+## 🔧 Getting Started
+
+### 1. Backend Setup
 ```bash
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-### Frontend
+### 2. Frontend Setup
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-## 📊 Demo Preview
-*   Percentile charts
-*   Salary comparison
-*   Fuzzy auto-correct input fields
-*   ML-powered predictions
-*   Elegant FAANG-grade UI
-
-[View on GitHub](https://github.com/ashif-ek/salary-checker)
+Navigate to `http://localhost:5173` to experience the FAANG-grade UI and underlying analytics engine.

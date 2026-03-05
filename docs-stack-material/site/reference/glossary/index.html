@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#glossary" class="md-skip">
+        <a href="#technical-glossary" class="md-skip">
           Skip to content
         </a>
       
@@ -1380,6 +1380,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1396,6 +1414,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1429,6 +1532,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#j" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        J
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        M
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        S
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1444,15 +1621,46 @@
 
 
 
-<h1 id="glossary">Glossary</h1>
-<p>Terms used across the project documentation.</p>
-<ul>
-<li><strong>JWT (JSON Web Token)</strong>: Compact URL-safe means of representing claims to be transferred between two parties.</li>
-<li><strong>MVT (Model-View-Template)</strong>: Architectural pattern used by Django.</li>
-<li><strong>SPA (Single Page Application)</strong>: Web app that interacts with the web browser by dynamically rewriting the current web page with new data from the web server.</li>
-<li><strong>ORM (Object-Relational Mapping)</strong>: Technique for converting data between incompatible type systems using object-oriented programming languages.</li>
-<li><strong>Hook</strong>: Special function in React that lets you “hook into” React features.</li>
-</ul>
+<h1 id="technical-glossary">Technical Glossary</h1>
+<p>This glossary aims to clarify the specialized technical terminology, acronyms, and architectural concepts utilized throughout the documentation and overarching project repositories. </p>
+<hr />
+<h2 id="a">A</h2>
+<p><strong>API (Application Programming Interface)</strong>
+A set of defined rules and protocols that allow different software applications to communicate with each other. In modern web development, this typically refers to a RESTful or GraphQL web API over HTTP.</p>
+<p><strong>ASGI (Asynchronous Server Gateway Interface)</strong>
+A spiritual successor to WSGI, designed to provide a standard interface between async-capable Python web servers, frameworks (like FastAPI), and applications.</p>
+<hr />
+<h2 id="c">C</h2>
+<p><strong>CRUD (Create, Read, Update, Delete)</strong>
+The four basic operations of persistent storage. It represents the foundational interactions any standard database-driven application requires.</p>
+<p><strong>CSRF (Cross-Site Request Forgery)</strong>
+A type of malicious exploit whereby unauthorized commands are transmitted from a user that the web application trusts. Modern frameworks (like Django) mitigate this via synchronized token patterns.</p>
+<hr />
+<h2 id="h">H</h2>
+<p><strong>Hook (React)</strong>
+Specialized JavaScript functions introduced in React 16.8 that allow functional components to "hook into" React state and lifecycle features (e.g., <code>useState</code>, <code>useEffect</code>) without writing a Class component.</p>
+<p><strong>HMR (Hot Module Replacement)</strong>
+A critical developer experience (DX) feature in tools like Vite and Webpack that updates modules in the browser dynamically at runtime without necessitating a full page refresh.</p>
+<hr />
+<h2 id="j">J</h2>
+<p><strong>JWT (JSON Web Token)</strong>
+An open, industry-standard (RFC 7519) method for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. Heavily utilized for stateless API authentication.</p>
+<hr />
+<h2 id="m">M</h2>
+<p><strong>MVT (Model-View-Template)</strong>
+The specific software design pattern implemented natively by the Django framework.
+- <strong>Model</strong>: Manages data logic and database schema mappings.
+- <strong>View</strong>: Contains the business logic, processing requests and formulating responses.
+- <strong>Template</strong>: The presentation layer responsible for dynamically generating HTML outputs.</p>
+<hr />
+<p><strong>ORM (Object-Relational Mapping)</strong>
+A programming technique that maps application objects to relational database tables. This abstraction allows developers to query and manipulate data using an object-oriented paradigm (e.g., Python/Django ORM, SQLAlchemy) rather than writing raw SQL statements.</p>
+<hr />
+<h2 id="s">S</h2>
+<p><strong>SPA (Single Page Application)</strong>
+A web application or website that interacts with the browser by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. React is commonly used to build SPAs.</p>
+<p><strong>SSR (Server-Side Rendering)</strong>
+The capability of an application to generate the HTML for a webpage on the server rather than in the browser. It is incredibly beneficial for Search Engine Optimization (SEO) and initial page load performance metrics.</p>
 
 
 

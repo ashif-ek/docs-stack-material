@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cli-commands" class="md-skip">
+        <a href="#command-line-interface-cli-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -1377,10 +1377,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#javascript-node" class="md-nav__link">
+  <a href="#nodejs-npm-ecosystem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        JavaScript / Node
+        🟢 Node.js &amp; npm Ecosystem
       
     </span>
   </a>
@@ -1388,10 +1388,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-django" class="md-nav__link">
+  <a href="#python-django-environment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python / Django
+        🐍 Python &amp; Django Environment
       
     </span>
   </a>
@@ -1399,10 +1399,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-fastapi" class="md-nav__link">
+  <a href="#python-fastapi-ecosystem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python / FastAPI
+        ⚡ Python &amp; FastAPI Ecosystem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-operations-containerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐳 Docker Operations (Containerization)
       
     </span>
   </a>
@@ -1508,10 +1519,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#javascript-node" class="md-nav__link">
+  <a href="#nodejs-npm-ecosystem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        JavaScript / Node
+        🟢 Node.js &amp; npm Ecosystem
       
     </span>
   </a>
@@ -1519,10 +1530,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-django" class="md-nav__link">
+  <a href="#python-django-environment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python / Django
+        🐍 Python &amp; Django Environment
       
     </span>
   </a>
@@ -1530,10 +1541,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-fastapi" class="md-nav__link">
+  <a href="#python-fastapi-ecosystem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Python / FastAPI
+        ⚡ Python &amp; FastAPI Ecosystem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-operations-containerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🐳 Docker Operations (Containerization)
       
     </span>
   </a>
@@ -1557,26 +1579,137 @@
 
 
 
-<h1 id="cli-commands">CLI Commands</h1>
-<p>Reference for command-line tools used in this stack.</p>
-<h2 id="javascript-node">JavaScript / Node</h2>
-<ul>
-<li><code>npm install</code>: Install dependencies.</li>
-<li><code>npm run dev</code>: Start dev server.</li>
-<li><code>npm run build</code>: Build for production.</li>
-<li><code>npm run lint</code>: Check code quality.</li>
-</ul>
-<h2 id="python-django">Python / Django</h2>
-<ul>
-<li><code>python manage.py runserver</code>: Start dev server.</li>
-<li><code>python manage.py makemigrations</code>: Create DB migrations.</li>
-<li><code>python manage.py migrate</code>: Apply DB migrations.</li>
-<li><code>python manage.py createsuperuser</code>: Create admin account.</li>
-</ul>
-<h2 id="python-fastapi">Python / FastAPI</h2>
-<ul>
-<li><code>uvicorn main:app --reload</code>: Start server with hot reload.</li>
-</ul>
+<h1 id="command-line-interface-cli-reference">Command Line Interface (CLI) Reference</h1>
+<p>This document serves as a comprehensive reference for the essential command-line operations utilized across the various stacks within this project ecosystem. Mastery of these commands is crucial for efficient development, testing, and deployment workflows.</p>
+<hr />
+<h2 id="nodejs-npm-ecosystem">🟢 Node.js &amp; npm Ecosystem</h2>
+<p>These commands are foundational for frontend projects utilizing React, Vite, and related Javascript tooling.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>npm install</code></td>
+<td style="text-align: left;">Resolves and installs all dependencies listed in <code>package.json</code>.</td>
+<td style="text-align: left;">Run immediately after cloning a repository or pulling new dependency updates.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>npm run dev</code></td>
+<td style="text-align: left;">Initializes the local development server with Hot Module Replacement (HMR) enabled.</td>
+<td style="text-align: left;">Use during active UI development for instant feedback.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>npm run build</code></td>
+<td style="text-align: left;">Compiles the application into highly optimized, static assets ready for deployment.</td>
+<td style="text-align: left;">Execute prior to deploying to a production environment (e.g., Vercel, Netlify).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>npm run lint</code></td>
+<td style="text-align: left;">Triggers static code analysis via ESLint to ensure code quality and style consistency.</td>
+<td style="text-align: left;">Run before committing changes to adhere to project standards.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>npm test</code></td>
+<td style="text-align: left;">Executes the test suite (if configured, e.g., via Vitest or Jest) to validate application logic.</td>
+<td style="text-align: left;">Run continuously during development to prevent regressions.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="python-django-environment">🐍 Python &amp; Django Environment</h2>
+<p>The following commands are specific to the Django framework, managing everything from the local server to database schema migrations.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>python manage.py runserver</code></td>
+<td style="text-align: left;">Starts the lightweight Django development server.</td>
+<td style="text-align: left;">Use for local backend API development and testing.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>python manage.py makemigrations</code></td>
+<td style="text-align: left;">Scans models for changes and generates new migration scripts.</td>
+<td style="text-align: left;">Run whenever you alter <code>models.py</code> definitions.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>python manage.py migrate</code></td>
+<td style="text-align: left;">Applies pending migration scripts to synchronize the database schema.</td>
+<td style="text-align: left;">Run after <code>makemigrations</code> or when pulling changes that include new migrations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>python manage.py createsuperuser</code></td>
+<td style="text-align: left;">Prompts for credentials to create a new administrative user.</td>
+<td style="text-align: left;">Use when initializing a fresh database to access the <code>/admin/</code> dashboard.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>python manage.py test</code></td>
+<td style="text-align: left;">Discovers and executes all registered unit and integration tests.</td>
+<td style="text-align: left;">Essential for continuous integration and maintaining backend stability.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="python-fastapi-ecosystem">⚡ Python &amp; FastAPI Ecosystem</h2>
+<p>For high-performance API development leveraging FastAPI and Uvicorn.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>uvicorn main:app --reload</code></td>
+<td style="text-align: left;">Launches the ASGI server utilizing the <code>main.py</code> entry point (<code>app</code> instance) with auto-reloading enabled.</td>
+<td style="text-align: left;">The primary command for active local development.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>pip install -r requirements.txt</code></td>
+<td style="text-align: left;">Installs Python packages specified in the requirements file.</td>
+<td style="text-align: left;">Run when setting up the environment or when dependencies are updated.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="docker-operations-containerization">🐳 Docker Operations (Containerization)</h2>
+<p>For projects leveraging Docker for isolated development and deployment phases.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>docker-compose up --build</code></td>
+<td style="text-align: left;">Builds container images and starts the entire multi-container application.</td>
+<td style="text-align: left;">Use to spin up complex environments (e.g., App + DB + Redis) simultaneously.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>docker-compose down</code></td>
+<td style="text-align: left;">Stops and safely removes containers, networks, and optionally volumes.</td>
+<td style="text-align: left;">Run to cleanly shut down the local containerized environment.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Pro Tip:</strong> Always utilize a virtual environment (<code>venv</code> or <code>conda</code>) when working with Python projects, and ensure you run <code>npm install</code> before attempting to start any JavaScript development server.</p>
+</blockquote>
 
 
 

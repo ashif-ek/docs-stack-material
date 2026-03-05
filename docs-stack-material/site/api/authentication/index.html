@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authentication-api" class="md-skip">
+        <a href="#authentication-authorization" class="md-skip">
           Skip to content
         </a>
       
@@ -891,22 +891,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jwt-implementation" class="md-nav__link">
+  <a href="#json-web-token-jwt-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        JWT Implementation
+        🔑 JSON Web Token (JWT) Implementation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="JWT Implementation">
+    <nav class="md-nav" aria-label="🔑 JSON Web Token (JWT) Implementation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flow" class="md-nav__link">
+  <a href="#the-token-lifecycle-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Flow
+        The Token Lifecycle Flow
       
     </span>
   </a>
@@ -919,10 +919,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-access" class="md-nav__link">
+  <a href="#administrative-access-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Admin Access
+        🛡️ Administrative Access Management
       
     </span>
   </a>
@@ -1514,22 +1514,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jwt-implementation" class="md-nav__link">
+  <a href="#json-web-token-jwt-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        JWT Implementation
+        🔑 JSON Web Token (JWT) Implementation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="JWT Implementation">
+    <nav class="md-nav" aria-label="🔑 JSON Web Token (JWT) Implementation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flow" class="md-nav__link">
+  <a href="#the-token-lifecycle-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Flow
+        The Token Lifecycle Flow
       
     </span>
   </a>
@@ -1542,10 +1542,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#admin-access" class="md-nav__link">
+  <a href="#administrative-access-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Admin Access
+        🛡️ Administrative Access Management
       
     </span>
   </a>
@@ -1569,30 +1569,38 @@
 
 
 
-<h1 id="authentication-api">Authentication API</h1>
-<p>Secure access handling across applications.</p>
-<h2 id="jwt-implementation">JWT Implementation</h2>
-<p>Projects like <strong>Fullstack Blog</strong> and <strong>Student Management</strong> use JSON Web Tokens (JWT).</p>
-<h3 id="flow">Flow</h3>
+<h1 id="authentication-authorization">Authentication &amp; Authorization</h1>
+<p>Securing endpoints and managing identity is paramount. Across this portfolio, authentication mechanisms are explicitly chosen based on the architectural needs of the specific project, ranging from stateless token-based authentication for decoupled SPAs to secure session-handlers for monolithic admin panels.</p>
+<hr />
+<h2 id="json-web-token-jwt-implementation">🔑 JSON Web Token (JWT) Implementation</h2>
+<p>For heavily decoupled applications like the <strong>Fullstack Blog</strong> and the <strong>Student Management System</strong>, we uniformly implement the <strong>JWT (JSON Web Token)</strong> standard. This ensures scalable, stateless authentication across diverse frontends.</p>
+<h3 id="the-token-lifecycle-flow">The Token Lifecycle Flow</h3>
 <ol>
-<li><strong>Login</strong>: <code>POST /api/token/</code><ul>
-<li>Payload: <code>{username, password}</code></li>
-<li>Response: <code>{access, refresh}</code></li>
+<li><strong>Credential Verification (Login)</strong><ul>
+<li><strong>Endpoint</strong>: <code>POST /api/token/</code></li>
+<li><strong>Payload Requirement</strong>: <code>{ "username": "...", "password": "..." }</code></li>
+<li><strong>Successful Response</strong>: The API responds with two cryptographically signed tokens: <code>{ "access": "&lt;short-lived-token&gt;", "refresh": "&lt;long-lived-token&gt;" }</code>.</li>
 </ul>
 </li>
-<li><strong>Access Protected Routes</strong>:<ul>
-<li>Header: <code>Authorization: Bearer &lt;access_token&gt;</code></li>
+<li><strong>Accessing Protected Resources</strong><ul>
+<li>To access any protected endpoint, the client must inject the <code>access</code> token into the request payload's Authorization header.</li>
+<li><strong>Header Format</strong>: <code>Authorization: Bearer &lt;access_token&gt;</code></li>
 </ul>
 </li>
-<li><strong>Refresh Token</strong>: <code>POST /api/token/refresh/</code><ul>
-<li>Payload: <code>{refresh}</code></li>
+<li><strong>Session Continuation (Token Refresh)</strong><ul>
+<li><strong>Endpoint</strong>: <code>POST /api/token/refresh/</code></li>
+<li><strong>Payload Requirement</strong>: <code>{ "refresh": "&lt;refresh_token&gt;" }</code></li>
+<li>Once the <code>access</code> token expires naturally, the client silently utilizes the <code>refresh</code> token to acquire a fresh <code>access</code> token without requiring the user to re-authenticate manually.</li>
 </ul>
 </li>
 </ol>
-<h2 id="admin-access">Admin Access</h2>
-<p>Admin panels are protected via session auth or specific internal roles.
-*   <strong>Django Admin</strong>: <code>/admin/</code> (Standard Django auth).
-*   <strong>Portfolio Admin</strong>: Custom implementation.</p>
+<hr />
+<h2 id="administrative-access-management">🛡️ Administrative Access Management</h2>
+<p>Administrative dashboards and high-privilege operations require rigorous, often stateful, security paradigms.</p>
+<ul>
+<li><strong>Django Admin Workspaces</strong>: Applications leveraging Django (e.g., Student Management) utilize its battle-tested, built-in session authentication mechanism globally restricted to the <code>/admin/</code> routes. This is strictly guarded by CSRF tokens and internal permission classes.</li>
+<li><strong>Custom Portfolio Dashboards</strong>: Projects with bespoke admin interfaces utilize customized Role-Based Access Control (RBAC) layers baked directly into the JWT payload or verified via specialized middleware prior to route execution.</li>
+</ul>
 
 
 

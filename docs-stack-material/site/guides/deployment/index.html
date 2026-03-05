@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deployment-strategies" class="md-skip">
+        <a href="#deployment-release-strategies" class="md-skip">
           Skip to content
         </a>
       
@@ -748,35 +748,86 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#frontend-deployment-vercel" class="md-nav__link">
+  <a href="#global-edge-deployment-frontend" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Frontend Deployment (Vercel)
+        ⚡ Global Edge Deployment (Frontend)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Global Edge Deployment (Frontend)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vercel-deployment-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vercel Deployment Protocol
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#backend-deployment-render" class="md-nav__link">
+  <a href="#platform-as-a-service-backend" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend Deployment (Render)
+        ☁️ Platform-as-a-Service (Backend)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☁️ Platform-as-a-Service (Backend)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-web-service-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Web Service Protocol
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#docker-deployment" class="md-nav__link">
+  <a href="#docker-orchestration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Docker Deployment
+        🐳 Docker Orchestration
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🐳 Docker Orchestration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-container-build-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard Container Build Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1508,35 +1559,86 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#frontend-deployment-vercel" class="md-nav__link">
+  <a href="#global-edge-deployment-frontend" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Frontend Deployment (Vercel)
+        ⚡ Global Edge Deployment (Frontend)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Global Edge Deployment (Frontend)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vercel-deployment-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vercel Deployment Protocol
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#backend-deployment-render" class="md-nav__link">
+  <a href="#platform-as-a-service-backend" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Backend Deployment (Render)
+        ☁️ Platform-as-a-Service (Backend)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☁️ Platform-as-a-Service (Backend)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-web-service-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Web Service Protocol
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#docker-deployment" class="md-nav__link">
+  <a href="#docker-orchestration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Docker Deployment
+        🐳 Docker Orchestration
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🐳 Docker Orchestration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-container-build-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standard Container Build Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1557,43 +1659,53 @@
 
 
 
-<h1 id="deployment-strategies">Deployment Strategies</h1>
-<p>This guide outlines how to deploy the various applications in this portfolio.</p>
-<h2 id="frontend-deployment-vercel">Frontend Deployment (Vercel)</h2>
-<p>Most React/Next.js frontends are optimized for <a href="https://vercel.com">Vercel</a>.</p>
+<h1 id="deployment-release-strategies">Deployment &amp; Release Strategies</h1>
+<p>This technical guide defines the deployment architecture and continuous delivery pipelines utilized to transition the portfolio's applications from local development into highly available production environments.</p>
+<hr />
+<h2 id="global-edge-deployment-frontend">⚡ Global Edge Deployment (Frontend)</h2>
+<p>For JavaScript-heavy architectures, specifically Single Page Applications (SPAs) built with React and Vite, Edge deployment networks like <strong>Vercel</strong> or <strong>Netlify</strong> are strictly utilized.</p>
+<h3 id="vercel-deployment-protocol">Vercel Deployment Protocol</h3>
 <ol>
-<li><strong>Connect GitHub</strong>: detailed instructions...</li>
-<li><strong>Import Project</strong>: Select the repository.</li>
-<li><strong>Build Settings</strong>:<ul>
-<li>Framework Preset: <code>Vite</code> or <code>Next.js</code></li>
-<li>Build Command: <code>npm run build</code></li>
-<li>Output Directory: <code>dist</code> or <code>.next</code></li>
+<li><strong>VCS Integration</strong>: Authenticate and bind your Vercel account directly to the target GitHub repository.</li>
+<li><strong>Continuous Deployment Configuration</strong>:<ul>
+<li><strong>Framework Preset</strong>: Select <code>Vite</code> or <code>Next.js</code> (Vercel typically auto-detects this based on <code>package.json</code>).</li>
+<li><strong>Build Command</strong>: <code>npm run build</code></li>
+<li><strong>Output Directory</strong>: Ensure this maps to <code>dist</code> (Vite) or <code>.next</code> (Next.js).</li>
 </ul>
 </li>
-<li><strong>Environment Variables</strong>: copy from your local <code>.env</code>.</li>
+<li><strong>Secret Management</strong>: Inject all necessary variables from your local <code>.env.production</code> directly into the Vercel Environment Variables dashboard prior to initiating the primary build.</li>
 </ol>
-<h2 id="backend-deployment-render">Backend Deployment (Render)</h2>
-<p><a href="https://render.com">Render</a> is the preferred choice for Python and Node.js backends.</p>
+<hr />
+<h2 id="platform-as-a-service-backend">☁️ Platform-as-a-Service (Backend)</h2>
+<p>For stateful API servers constructed in Python (Django, FastAPI) or Node.js, managed container environments like <strong>Render</strong> or <strong>Railway</strong> ensure high uptime without the operational overhead of managing bare-metal servers.</p>
+<h3 id="render-web-service-protocol">Render Web Service Protocol</h3>
 <ol>
-<li><strong>Create Web Service</strong>.</li>
-<li><strong>Connect Repo</strong>.</li>
-<li><strong>Runtime</strong>: <code>Python 3</code> or <code>Node</code>.</li>
-<li><strong>Build Command</strong>:<ul>
-<li>Python: <code>pip install -r requirements.txt</code></li>
-<li>Node: <code>npm install</code></li>
+<li><strong>Service Instantiation</strong>: Create a new "Web Service" tied to the backend repository branch (e.g., <code>main</code>).</li>
+<li><strong>Runtime Specifications</strong>: Define the native environment (e.g., <code>Python 3</code> or <code>Node</code>).</li>
+<li><strong>Build Phase Definition</strong>:<ul>
+<li><em>Python</em>: <code>pip install -r requirements.txt &amp;&amp; python manage.py migrate</code></li>
+<li><em>Node</em>: <code>npm install</code></li>
 </ul>
 </li>
-<li><strong>Start Command</strong>:<ul>
-<li>FastAPI: <code>uvicorn main:app --host 0.0.0.0 --port $PORT</code></li>
-<li>Django: <code>gunicorn core.wsgi:application</code></li>
+<li><strong>Execution Commands (Start)</strong>:<ul>
+<li><em>FastAPI (Production ASGI)</em>: <code>uvicorn main:app --host 0.0.0.0 --port $PORT</code></li>
+<li><em>Django (Production WSGI)</em>: <code>gunicorn core.wsgi:application</code></li>
 </ul>
 </li>
 </ol>
-<h2 id="docker-deployment">Docker Deployment</h2>
-<p>For containerized apps (like <code>fullstack-blog-jwt-docker</code>), use the <code>Dockerfile</code>:</p>
-<pre><code class="language-bash">docker build -t my-app .
-docker run -p 8000:8000 my-app
+<hr />
+<h2 id="docker-orchestration">🐳 Docker Orchestration</h2>
+<p>For environments demanding absolute parity, or applications involving complex microservice interactions (e.g., the <code>fullstack-blog-jwt-docker</code>), we deploy using Docker Native tooling.</p>
+<h3 id="standard-container-build-pipeline">Standard Container Build Pipeline</h3>
+<pre><code class="language-bash"># Compile the immutable Docker image, tagging it appropriately
+docker build -t ashif-ek/my-app:latest .
+
+# Instantiate the container, mapping the internal application port to the host
+docker run -d -p 8000:8000 --name my-app-instance ashif-ek/my-app:latest
 </code></pre>
+<blockquote>
+<p><strong>Note on Container Registries</strong>: In a full CI/CD pipeline, these images are typically pushed to Docker Hub or AWS ECR before being pulled down to the production host.</p>
+</blockquote>
 
 
 
