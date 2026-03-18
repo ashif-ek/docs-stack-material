@@ -26,3 +26,6 @@ Explore the exhaustive technical documentation for each ecosystem project via th
 ### Data Science & Psychological Utilities
 *   **[Salary Reality Engine](github_repos/salary-checker.md)**: An AI-infused analytics dashboard running dynamic machine learning inferences against compensation data arrays.
 *   **[Time Lens Configuration](github_repos/time-lens-python.md)**: An algorithm-driven API service designed to recalculate real-time durations into high-impact psychological life-metrics.
+
+### Applied Cryptography & Privacy
+*   **[Cipher Analytics (CKKS)](github_repos/cipher-analytics.md)**: A production-ready demonstration of Homomorphic Encryption, enabling secure computation on encrypted numeric streams without local decryption.

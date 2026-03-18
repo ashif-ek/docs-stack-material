@@ -46,6 +46,7 @@ nav:
           - Salary Checker: projects/github_repos/salary-checker.md
           - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
           - Time Lens: projects/github_repos/time-lens-python.md
+          - Cipher Analytics: projects/github_repos/cipher-analytics.md
   - Reference:
       - CLI: reference/cli.md
       - Configuration Options: reference/configuration-options.md
