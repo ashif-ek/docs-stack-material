@@ -33,3 +33,4 @@ Dive into the comprehensive technical specifications for the flagship projects h
 - **[Advanced Todo (Redux Workflow)](projects/github_repos/todo-redux-adv.md)**: A masterclass in complex frontend state management leveraging Redux Toolkit, async thunks, and performance optimizations.
 - **[Containerized Blog (JWT Auth)](projects/github_repos/fullstack-blog-jwt-docker.md)**: A highly secure, globally scalable full-stack blogging platform packaged entirely within Docker.
 - **[Django Student Information System](projects/github_repos/student-management-django-task.md)**: A comprehensive, architecturally sound MVT (Model-View-Template) data management system for educational institutions.
+- **[Cipher Analytics (Applied HE)](projects/github_repos/cipher-analytics.md)**: A privacy-preserving computation platform utilizing Homomorphic Encryption (CKKS) to perform secure analytics on encrypted numeric datasets.
