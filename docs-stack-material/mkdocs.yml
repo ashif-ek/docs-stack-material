@@ -53,3 +53,14 @@ nav:
       - Glossary: reference/glossary.md
 
 site_url: https://ashif-ek.github.io/docs-stack-material/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
