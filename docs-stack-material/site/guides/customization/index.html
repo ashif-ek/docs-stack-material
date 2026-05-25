@@ -1362,6 +1362,8 @@
         
   
   
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H9.2c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C9.2 8.1 10.6 7 12 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3"/></svg>
+  
   <span class="md-ellipsis">
     
   
@@ -1664,8 +1666,8 @@
 <h3 id="expanding-django-monoliths">Expanding Django Monoliths</h3>
 <p>Django specifically isolates domains into "Apps". Do not convolute existing applications with disjointed logic.
 *   If establishing a new domain (e.g., adding a "Reviews" system to an E-commerce platform), isolate the data models and views.
-    <code>bash
-    python manage.py startapp reviews</code>
+    <div class="highlight"><pre><span></span><code>python<span class="w"> </span>manage.py<span class="w"> </span>startapp<span class="w"> </span>reviews
+</code></pre></div>
 *   Ensure the new app is registered within the <code>INSTALLED_APPS</code> matrix in <code>settings.py</code>.</p>
 <h3 id="expanding-fastapi-microservices">Expanding FastAPI Microservices</h3>
 <p>FastAPI utilizes decoupled routing mechanics to maintain logical separation.
