@@ -34,4 +34,4 @@ Dive into the comprehensive technical specifications for the flagship projects h
 - **[Containerized Blog (JWT Auth)](projects/github_repos/fullstack-blog-jwt-docker.md)**: A highly secure, globally scalable full-stack blogging platform packaged entirely within Docker.
 - **[Django Student Information System](projects/github_repos/student-management-django-task.md)**: A comprehensive, architecturally sound MVT (Model-View-Template) data management system for educational institutions.
 - **[Cipher Analytics (Applied HE)](projects/github_repos/cipher-analytics.md)**: A privacy-preserving computation platform utilizing Homomorphic Encryption (CKKS) to perform secure analytics on encrypted numeric datasets.
-- **[WorkPilot SaaS (Next.js/FastAPI)](projects/github_repos/workpilot/index.md)**: A modern, multi-tenant SaaS application offering isolated workspaces with a unified codebase, built with Next.js, FastAPI, and PostgreSQL.
+- **[WorkPilot SaaS (Next.js/FastAPI)](projects/github_repos/workpilot.md)**: A modern, multi-tenant SaaS application offering isolated workspaces with a unified codebase, built with Next.js, FastAPI, and PostgreSQL.

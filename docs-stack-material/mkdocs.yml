@@ -48,14 +48,7 @@ nav:
           - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
           - Time Lens: projects/github_repos/time-lens-python.md
           - Cipher Analytics: projects/github_repos/cipher-analytics.md
-          - WorkPilot:
-              - Executive Overview: projects/github_repos/workpilot/index.md
-              - Architecture Decisions (ADR): projects/github_repos/workpilot/adr.md
-              - Multi-Tenancy & Database: projects/github_repos/workpilot/multi-tenant.md
-              - Authentication & Security: projects/github_repos/workpilot/authentication.md
-              - Backend Architecture: projects/github_repos/workpilot/backend.md
-              - Frontend Architecture: projects/github_repos/workpilot/frontend.md
-              - Developer Workflow: projects/github_repos/workpilot/workflow.md
+          - WorkPilot: projects/github_repos/workpilot.md
   - Reference:
       - CLI: reference/cli.md
       - Configuration Options: reference/configuration-options.md
