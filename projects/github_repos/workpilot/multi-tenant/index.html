@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://ashif-ek.github.io/docs-stack-material/">
+        <link rel="canonical" href="https://ashif-ek.github.io/docs-stack-material/projects/github_repos/workpilot/multi-tenant/">
       
       
+        <link rel="prev" href="../adr/">
       
-        <link rel="next" href="getting-started/">
+      
+        <link rel="next" href="../authentication/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Docs Stack – Material</title>
+        <title>Multi-Tenancy & Database - Docs Stack – Material</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#technical-documentation-portal-material" class="md-skip">
+        <a href="#multi-tenant-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Docs Stack – Material" class="md-header__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
+    <a href="../../../.." title="Docs Stack – Material" class="md-header__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Multi-Tenancy & Database
             
           </span>
         </div>
@@ -207,11 +209,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -230,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="getting-started/" class="md-tabs__link">
+      <a href="../../../../getting-started/" class="md-tabs__link">
         
   
   
@@ -249,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="installation/" class="md-tabs__link">
+      <a href="../../../../installation/" class="md-tabs__link">
         
   
   
@@ -268,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="configuration/" class="md-tabs__link">
+      <a href="../../../../configuration/" class="md-tabs__link">
         
   
   
@@ -287,7 +287,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="architecture/" class="md-tabs__link">
+      <a href="../../../../architecture/" class="md-tabs__link">
         
   
   
@@ -306,7 +306,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="conventions/" class="md-tabs__link">
+      <a href="../../../../conventions/" class="md-tabs__link">
         
   
   
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="guides/local-development/" class="md-tabs__link">
+        <a href="../../../../guides/local-development/" class="md-tabs__link">
           
   
   
@@ -347,7 +347,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="api/overview/" class="md-tabs__link">
+        <a href="../../../../api/overview/" class="md-tabs__link">
           
   
   
@@ -363,11 +363,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="projects/portfolio/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../portfolio/" class="md-tabs__link">
           
   
   
@@ -387,7 +389,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="reference/cli/" class="md-tabs__link">
+        <a href="../../../../reference/cli/" class="md-tabs__link">
           
   
   
@@ -421,7 +423,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Docs Stack – Material" class="md-nav__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
+    <a href="../../../.." title="Docs Stack – Material" class="md-nav__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -436,37 +438,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -482,59 +457,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#architectural-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Architectural Purpose
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#target-audience" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        👥 Target Audience
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-core-application-suite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 The Core Application Suite
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -546,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
+      <a href="../../../../getting-started/" class="md-nav__link">
         
   
   
@@ -573,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="../../../../installation/" class="md-nav__link">
         
   
   
@@ -600,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="configuration/" class="md-nav__link">
+      <a href="../../../../configuration/" class="md-nav__link">
         
   
   
@@ -627,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../../../../architecture/" class="md-nav__link">
         
   
   
@@ -654,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="conventions/" class="md-nav__link">
+      <a href="../../../../conventions/" class="md-nav__link">
         
   
   
@@ -733,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/local-development/" class="md-nav__link">
+      <a href="../../../../guides/local-development/" class="md-nav__link">
         
   
   
@@ -761,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/deployment/" class="md-nav__link">
+      <a href="../../../../guides/deployment/" class="md-nav__link">
         
   
   
@@ -789,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/customization/" class="md-nav__link">
+      <a href="../../../../guides/customization/" class="md-nav__link">
         
   
   
@@ -876,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/overview/" class="md-nav__link">
+      <a href="../../../../api/overview/" class="md-nav__link">
         
   
   
@@ -904,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/authentication/" class="md-nav__link">
+      <a href="../../../../api/authentication/" class="md-nav__link">
         
   
   
@@ -932,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/database/" class="md-nav__link">
+      <a href="../../../../api/database/" class="md-nav__link">
         
   
   
@@ -960,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/error-handling/" class="md-nav__link">
+      <a href="../../../../api/error-handling/" class="md-nav__link">
         
   
   
@@ -992,26 +914,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -1029,7 +956,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1047,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/portfolio/" class="md-nav__link">
+      <a href="../../../portfolio/" class="md-nav__link">
         
   
   
@@ -1072,26 +999,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
         
           
-          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
             
   
   
@@ -1109,7 +1041,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1127,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/task-management-client/" class="md-nav__link">
+      <a href="../../task-management-client/" class="md-nav__link">
         
   
   
@@ -1155,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/content-publishing-engine/" class="md-nav__link">
+      <a href="../../content-publishing-engine/" class="md-nav__link">
         
   
   
@@ -1183,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/edu-management-system/" class="md-nav__link">
+      <a href="../../edu-management-system/" class="md-nav__link">
         
   
   
@@ -1211,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/portfolio-ui/" class="md-nav__link">
+      <a href="../../portfolio-ui/" class="md-nav__link">
         
   
   
@@ -1239,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/salary-analytics-engine/" class="md-nav__link">
+      <a href="../../salary-analytics-engine/" class="md-nav__link">
         
   
   
@@ -1267,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/noirel-ecommerce/" class="md-nav__link">
+      <a href="../../noirel-ecommerce/" class="md-nav__link">
         
   
   
@@ -1295,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/time-lens-python/" class="md-nav__link">
+      <a href="../../time-lens-python/" class="md-nav__link">
         
   
   
@@ -1323,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/cipher-analytics/" class="md-nav__link">
+      <a href="../../cipher-analytics/" class="md-nav__link">
         
   
   
@@ -1350,8 +1282,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1362,11 +1296,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9_2_9" id="__nav_9_2_9_label" tabindex="0">
@@ -1387,7 +1321,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_2_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1405,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1433,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/adr/" class="md-nav__link">
+      <a href="../adr/" class="md-nav__link">
         
   
   
@@ -1458,10 +1392,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/multi-tenant/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Tenancy & Database
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1477,6 +1438,93 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-schema-per-tenant-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The Schema-per-Tenant Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. The Schema-per-Tenant Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advantages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-request-lifecycle-tenant-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Request Lifecycle &amp; Tenant Resolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Request Lifecycle &amp; Tenant Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-dive-tenantmiddleware-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Dive: TenantMiddleware Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-database-migrations-alembic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Database Migrations (Alembic)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1489,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/authentication/" class="md-nav__link">
+      <a href="../authentication/" class="md-nav__link">
         
   
   
@@ -1517,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/backend/" class="md-nav__link">
+      <a href="../backend/" class="md-nav__link">
         
   
   
@@ -1545,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/frontend/" class="md-nav__link">
+      <a href="../frontend/" class="md-nav__link">
         
   
   
@@ -1573,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/workflow/" class="md-nav__link">
+      <a href="../workflow/" class="md-nav__link">
         
   
   
@@ -1676,7 +1724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/cli/" class="md-nav__link">
+      <a href="../../../../reference/cli/" class="md-nav__link">
         
   
   
@@ -1704,7 +1752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/configuration-options/" class="md-nav__link">
+      <a href="../../../../reference/configuration-options/" class="md-nav__link">
         
   
   
@@ -1732,7 +1780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/glossary/" class="md-nav__link">
+      <a href="../../../../reference/glossary/" class="md-nav__link">
         
   
   
@@ -1787,32 +1835,66 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#architectural-purpose" class="md-nav__link">
+  <a href="#1-the-schema-per-tenant-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ Architectural Purpose
+        1. The Schema-per-Tenant Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. The Schema-per-Tenant Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advantages
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#target-audience" class="md-nav__link">
+  <a href="#2-request-lifecycle-tenant-resolution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👥 Target Audience
+        2. Request Lifecycle &amp; Tenant Resolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Request Lifecycle &amp; Tenant Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-dive-tenantmiddleware-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Dive: TenantMiddleware Implementation
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#the-core-application-suite" class="md-nav__link">
+  <a href="#3-database-migrations-alembic" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 The Core Application Suite
+        3. Database Migrations (Alembic)
       
     </span>
   </a>
@@ -1836,36 +1918,75 @@
 
 
 
-<h1 id="technical-documentation-portal-material">Technical Documentation Portal – Material</h1>
-<blockquote>
-<p><strong>Live Status: Production (v1.0)</strong></p>
-</blockquote>
-<p>Welcome to the centralized engineering knowledge base. This professional documentation system is engineered utilizing <strong>MkDocs</strong> and the highly acclaimed <strong>Material for MkDocs</strong> theme, providing an optimal reading experience, powerful search capabilities, and rigorous structural organization.</p>
+<h1 id="multi-tenant-architecture">Multi-Tenant Architecture</h1>
+<p>Multi-tenancy is the architectural core of WorkPilot. To guarantee data privacy, WorkPilot uses a <strong>Schema-per-Tenant</strong> approach in PostgreSQL.</p>
 <hr />
-<h2 id="architectural-purpose">🏗️ Architectural Purpose</h2>
-<p>This documentation portal is not merely a collection of README files; it is a structured technical resource designed to:
-- Establish a <strong>production-grade documentation hierarchy</strong> that scales seamlessly with expanding codebases.
-- Deliver <strong>instant, accurate information retrieval</strong> via clean, intuitive navigation trees and an advanced client-side search engine.
-- Maintain <strong>version-controlled knowledge repositories</strong>, ensuring that technical documentation evolves perfectly in sync with the underlying source code.</p>
-<h2 id="target-audience">👥 Target Audience</h2>
-<p>This portal is meticulously crafted to serve:
-- <strong>Backend Developers &amp; DevOps Engineers</strong>: Investigating deployment configurations, API definitions, and database schemas.
-- <strong>Frontend &amp; UI Engineers</strong>: Referencing component libraries, styling systems, and React state architectures.
-- <strong>Open-Source Contributors</strong>: Seeking clear contribution guidelines, coding conventions, and architectural context before submitting pull requests.</p>
-<hr />
-<h2 id="the-core-application-suite">🚀 The Core Application Suite</h2>
-<p>Dive into the comprehensive technical specifications for the flagship projects housed within this portfolio:</p>
+<h2 id="1-the-schema-per-tenant-model">1. The Schema-per-Tenant Model</h2>
+<p>Instead of relying on a fragile <code>tenant_id</code> column in every table, WorkPilot creates a distinct PostgreSQL schema for every registered organization.</p>
+<pre class="mermaid"><code>erDiagram
+    PUBLIC_SCHEMA ||--o{ TENANT_SCHEMA : "creates"
+
+    PUBLIC_SCHEMA {
+        int id
+        string domain "e.g., apple.localhost"
+        string tenant_id "e.g., tenant_apple"
+        string schema_name "e.g., tenant_schema_apple"
+    }
+
+    TENANT_SCHEMA {
+        uuid id
+        string email
+        string hashed_password
+        string role
+    }</code></pre>
+<h3 id="advantages">Advantages</h3>
 <ul>
-<li><strong><a href="projects/github_repos/portfolio-react/">Portfolio Architecture (React)</a></strong>: A meticulously optimized, modern developer portfolio featuring an integrated CMS dashboard.</li>
-<li><strong><a href="projects/github_repos/noirel-ecommerce/">Noirel E-commerce Engine</a></strong>: A robust, full-stack framework delivering a premium online retail experience, complete with secure transactions.</li>
-<li><strong><a href="projects/github_repos/time-lens-python/">Time Lens (Python/FastAPI)</a></strong>: A high-performance psychological utility designed to algorithmically reframe and visualize time perception.</li>
-<li><strong><a href="projects/github_repos/salary-checker/">Salary Intelligence Platform</a></strong>: An enterprise-grade AI analytics suite providing market percentiles and machine learning-driven compensation forecasts.</li>
-<li><strong><a href="projects/github_repos/todo-redux-adv/">Advanced Todo (Redux Workflow)</a></strong>: A masterclass in complex frontend state management leveraging Redux Toolkit, async thunks, and performance optimizations.</li>
-<li><strong><a href="projects/github_repos/fullstack-blog-jwt-docker/">Containerized Blog (JWT Auth)</a></strong>: A highly secure, globally scalable full-stack blogging platform packaged entirely within Docker.</li>
-<li><strong><a href="projects/github_repos/student-management-django-task/">Django Student Information System</a></strong>: A comprehensive, architecturally sound MVT (Model-View-Template) data management system for educational institutions.</li>
-<li><strong><a href="projects/github_repos/cipher-analytics/">Cipher Analytics (Applied HE)</a></strong>: A privacy-preserving computation platform utilizing Homomorphic Encryption (CKKS) to perform secure analytics on encrypted numeric datasets.</li>
-<li><strong><a href="projects/github_repos/workpilot/">WorkPilot SaaS (Next.js/FastAPI)</a></strong>: A modern, multi-tenant SaaS application offering isolated workspaces with a unified codebase, built with Next.js, FastAPI, and PostgreSQL.</li>
+<li><strong>Cryptographic-level Isolation:</strong> A query executed in <code>tenant_schema_apple</code> physically cannot read data from <code>tenant_schema_google</code>.</li>
+<li><strong>Backup &amp; Restore:</strong> We can easily backup or wipe a single tenant's data without affecting the rest of the database.</li>
+<li><strong>Scalability:</strong> It strikes the perfect balance between the high cost of database-per-tenant and the high risk of shared-table models.</li>
 </ul>
+<hr />
+<h2 id="2-request-lifecycle-tenant-resolution">2. Request Lifecycle &amp; Tenant Resolution</h2>
+<p>How does the backend know which database schema to query? This is handled dynamically via <code>TenantMiddleware</code>.</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client
+    participant TenantMiddleware
+    participant DB(Public Schema)
+    participant Endpoint
+    participant DB(Tenant Schema)
+
+    Client-&gt;&gt;TenantMiddleware: GET /api/users (Host: apple.localhost:3000)
+    TenantMiddleware-&gt;&gt;DB(Public Schema): Lookup Domain "apple"
+    DB(Public Schema)--&gt;&gt;TenantMiddleware: Returns "tenant_schema_apple"
+
+    TenantMiddleware-&gt;&gt;DB(Tenant Schema): SET search_path TO "tenant_schema_apple"
+    TenantMiddleware-&gt;&gt;Endpoint: Pass request &amp; DB session to Router
+
+    Endpoint-&gt;&gt;DB(Tenant Schema): SELECT * FROM users (Queries Apple's isolated table)
+    DB(Tenant Schema)--&gt;&gt;Endpoint: Returns Data
+
+    Endpoint--&gt;&gt;TenantMiddleware: Returns Response
+    TenantMiddleware-&gt;&gt;DB(Public Schema): SET search_path TO "public" (CRITICAL RESET)
+    TenantMiddleware--&gt;&gt;Client: Returns 200 OK</code></pre>
+<h3 id="deep-dive-tenantmiddleware-implementation">Deep Dive: <code>TenantMiddleware</code> Implementation</h3>
+<p>The <code>TenantMiddleware</code> intercepts every request and performs the following:</p>
+<ol>
+<li><strong>Session Creation:</strong> Creates a single SQLAlchemy <code>SessionLocal</code> for the lifetime of the request.</li>
+<li><strong>Resolution:</strong> Extracts the subdomain from the <code>Host</code> header (e.g., <code>apple</code>).</li>
+<li><strong>Lookup:</strong> Queries the <code>public</code> schema's <code>Tenant</code> repository to find the associated <code>schema_name</code>.</li>
+<li><strong>Schema Switch:</strong> Executes <code>set_tenant_schema(db, schema_name)</code> which runs the PostgreSQL command: <code>SET search_path TO {schema_name}</code>.</li>
+<li><strong>Execution:</strong> Yields control to the FastAPI router.</li>
+<li><strong>Cleanup:</strong> In the <code>finally</code> block, it <strong>MUST</strong> reset the schema back to <code>public</code> before returning the connection to the SQLAlchemy connection pool.</li>
+</ol>
+<blockquote>
+<p>[!CAUTION]
+<strong>Connection Pool Contamination</strong>
+If the <code>TenantMiddleware</code> fails to reset the <code>search_path</code> back to <code>public</code> before the connection is returned to the pool, the next request that borrows that connection might accidentally query the wrong tenant's data. This is why the <code>finally</code> block in <code>tenant_middleware.py</code> containing <code>set_public_schema(db)</code> is absolutely critical.</p>
+</blockquote>
+<hr />
+<h2 id="3-database-migrations-alembic">3. Database Migrations (Alembic)</h2>
+<p>Because there are multiple schemas, running migrations is not a simple <code>alembic upgrade head</code>.</p>
+<p><em>(Future Design / Implementation Note)</em>: The Alembic migration scripts must be designed to loop over all tenant schemas dynamically. When a new migration is generated, it applies to the <code>public</code> schema first, and then iterates through every tenant schema executing the DDL commands.</p>
 
 
 
@@ -1921,10 +2042,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
