@@ -40,16 +40,16 @@ WorkPilot engineers follow a standardized lifecycle from ticket creation to depl
 
 ```mermaid
 graph TD
-    A[Product Manager creates Linear Ticket] --> B[Engineer picks up ticket]
-    B --> C[Create Branch: feat/WP-123-add-billing]
-    C --> D[Develop Locally via Docker]
-    D --> E[Commit changes & Push]
-    E --> F[Open Pull Request]
-    F --> G[CI/CD Runs (Linting, Tests)]
-    G --> H[CodeRabbit AI Initial Review]
-    H --> I[Peer Review by Senior Engineer]
-    I --> J[Merge to Main]
-    J --> K[Automatic Deployment to Staging]
+    A["Product Manager creates Linear Ticket"] --> B["Engineer picks up ticket"]
+    B --> C["Create Branch: feat/WP-123-add-billing"]
+    C --> D["Develop Locally via Docker"]
+    D --> E["Commit changes & Push"]
+    E --> F["Open Pull Request"]
+    F --> G["CI/CD Runs (Linting, Tests)"]
+    G --> H["CodeRabbit AI Initial Review"]
+    H --> I["Peer Review by Senior Engineer"]
+    I --> J["Merge to Main"]
+    J --> K["Automatic Deployment to Staging"]
 ```
 
 ---

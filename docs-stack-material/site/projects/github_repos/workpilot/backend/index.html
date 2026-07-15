@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://ashif-ek.github.io/docs-stack-material/">
+        <link rel="canonical" href="https://ashif-ek.github.io/docs-stack-material/projects/github_repos/workpilot/backend/">
       
       
+        <link rel="prev" href="../authentication/">
       
-        <link rel="next" href="getting-started/">
+      
+        <link rel="next" href="../frontend/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Docs Stack – Material</title>
+        <title>Backend Architecture - Docs Stack – Material</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#technical-documentation-portal-material" class="md-skip">
+        <a href="#backend-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Docs Stack – Material" class="md-header__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
+    <a href="../../../.." title="Docs Stack – Material" class="md-header__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Backend Architecture
             
           </span>
         </div>
@@ -207,11 +209,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -230,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="getting-started/" class="md-tabs__link">
+      <a href="../../../../getting-started/" class="md-tabs__link">
         
   
   
@@ -249,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="installation/" class="md-tabs__link">
+      <a href="../../../../installation/" class="md-tabs__link">
         
   
   
@@ -268,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="configuration/" class="md-tabs__link">
+      <a href="../../../../configuration/" class="md-tabs__link">
         
   
   
@@ -287,7 +287,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="architecture/" class="md-tabs__link">
+      <a href="../../../../architecture/" class="md-tabs__link">
         
   
   
@@ -306,7 +306,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="conventions/" class="md-tabs__link">
+      <a href="../../../../conventions/" class="md-tabs__link">
         
   
   
@@ -327,7 +327,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="guides/local-development/" class="md-tabs__link">
+        <a href="../../../../guides/local-development/" class="md-tabs__link">
           
   
   
@@ -347,7 +347,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="api/overview/" class="md-tabs__link">
+        <a href="../../../../api/overview/" class="md-tabs__link">
           
   
   
@@ -363,11 +363,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="projects/portfolio/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../portfolio/" class="md-tabs__link">
           
   
   
@@ -387,7 +389,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="reference/cli/" class="md-tabs__link">
+        <a href="../../../../reference/cli/" class="md-tabs__link">
           
   
   
@@ -421,7 +423,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Docs Stack – Material" class="md-nav__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
+    <a href="../../../.." title="Docs Stack – Material" class="md-nav__button md-logo" aria-label="Docs Stack – Material" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -436,37 +438,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -482,59 +457,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#architectural-purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Architectural Purpose
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#target-audience" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        👥 Target Audience
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-core-application-suite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 The Core Application Suite
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -546,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
+      <a href="../../../../getting-started/" class="md-nav__link">
         
   
   
@@ -573,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="../../../../installation/" class="md-nav__link">
         
   
   
@@ -600,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="configuration/" class="md-nav__link">
+      <a href="../../../../configuration/" class="md-nav__link">
         
   
   
@@ -627,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="architecture/" class="md-nav__link">
+      <a href="../../../../architecture/" class="md-nav__link">
         
   
   
@@ -654,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="conventions/" class="md-nav__link">
+      <a href="../../../../conventions/" class="md-nav__link">
         
   
   
@@ -733,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/local-development/" class="md-nav__link">
+      <a href="../../../../guides/local-development/" class="md-nav__link">
         
   
   
@@ -761,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/deployment/" class="md-nav__link">
+      <a href="../../../../guides/deployment/" class="md-nav__link">
         
   
   
@@ -789,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/customization/" class="md-nav__link">
+      <a href="../../../../guides/customization/" class="md-nav__link">
         
   
   
@@ -876,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/overview/" class="md-nav__link">
+      <a href="../../../../api/overview/" class="md-nav__link">
         
   
   
@@ -904,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/authentication/" class="md-nav__link">
+      <a href="../../../../api/authentication/" class="md-nav__link">
         
   
   
@@ -932,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/database/" class="md-nav__link">
+      <a href="../../../../api/database/" class="md-nav__link">
         
   
   
@@ -960,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/error-handling/" class="md-nav__link">
+      <a href="../../../../api/error-handling/" class="md-nav__link">
         
   
   
@@ -992,26 +914,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -1029,7 +956,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1047,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/portfolio/" class="md-nav__link">
+      <a href="../../../portfolio/" class="md-nav__link">
         
   
   
@@ -1072,26 +999,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
         
           
-          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
             
   
   
@@ -1109,7 +1041,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1127,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/task-management-client/" class="md-nav__link">
+      <a href="../../task-management-client/" class="md-nav__link">
         
   
   
@@ -1155,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/content-publishing-engine/" class="md-nav__link">
+      <a href="../../content-publishing-engine/" class="md-nav__link">
         
   
   
@@ -1183,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/edu-management-system/" class="md-nav__link">
+      <a href="../../edu-management-system/" class="md-nav__link">
         
   
   
@@ -1211,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/portfolio-ui/" class="md-nav__link">
+      <a href="../../portfolio-ui/" class="md-nav__link">
         
   
   
@@ -1239,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/salary-analytics-engine/" class="md-nav__link">
+      <a href="../../salary-analytics-engine/" class="md-nav__link">
         
   
   
@@ -1267,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/noirel-ecommerce/" class="md-nav__link">
+      <a href="../../noirel-ecommerce/" class="md-nav__link">
         
   
   
@@ -1295,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/time-lens-python/" class="md-nav__link">
+      <a href="../../time-lens-python/" class="md-nav__link">
         
   
   
@@ -1323,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/cipher-analytics/" class="md-nav__link">
+      <a href="../../cipher-analytics/" class="md-nav__link">
         
   
   
@@ -1350,8 +1282,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1362,11 +1296,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9_2_9" id="__nav_9_2_9_label" tabindex="0">
@@ -1387,7 +1321,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_2_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1405,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1433,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/adr/" class="md-nav__link">
+      <a href="../adr/" class="md-nav__link">
         
   
   
@@ -1461,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/multi-tenant/" class="md-nav__link">
+      <a href="../multi-tenant/" class="md-nav__link">
         
   
   
@@ -1489,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/authentication/" class="md-nav__link">
+      <a href="../authentication/" class="md-nav__link">
         
   
   
@@ -1514,10 +1448,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/backend/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backend Architecture
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1533,6 +1494,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this structure?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-dependency-injection-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The Dependency Injection Graph
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-microservices-domain-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Microservices &amp; Domain Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-performance-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Performance &amp; Caching
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1545,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/frontend/" class="md-nav__link">
+      <a href="../frontend/" class="md-nav__link">
         
   
   
@@ -1573,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="projects/github_repos/workpilot/workflow/" class="md-nav__link">
+      <a href="../workflow/" class="md-nav__link">
         
   
   
@@ -1676,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/cli/" class="md-nav__link">
+      <a href="../../../../reference/cli/" class="md-nav__link">
         
   
   
@@ -1704,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/configuration-options/" class="md-nav__link">
+      <a href="../../../../reference/configuration-options/" class="md-nav__link">
         
   
   
@@ -1732,7 +1774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/glossary/" class="md-nav__link">
+      <a href="../../../../reference/glossary/" class="md-nav__link">
         
   
   
@@ -1787,10 +1829,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#architectural-purpose" class="md-nav__link">
+  <a href="#1-directory-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ Architectural Purpose
+        1. Directory Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this structure?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-dependency-injection-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The Dependency Injection Graph
       
     </span>
   </a>
@@ -1798,10 +1868,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#target-audience" class="md-nav__link">
+  <a href="#3-microservices-domain-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👥 Target Audience
+        3. Microservices &amp; Domain Boundaries
       
     </span>
   </a>
@@ -1809,10 +1879,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-core-application-suite" class="md-nav__link">
+  <a href="#4-performance-caching" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 The Core Application Suite
+        4. Performance &amp; Caching
       
     </span>
   </a>
@@ -1836,35 +1906,48 @@
 
 
 
-<h1 id="technical-documentation-portal-material">Technical Documentation Portal – Material</h1>
-<blockquote>
-<p><strong>Live Status: Production (v1.0)</strong></p>
-</blockquote>
-<p>Welcome to the centralized engineering knowledge base. This professional documentation system is engineered utilizing <strong>MkDocs</strong> and the highly acclaimed <strong>Material for MkDocs</strong> theme, providing an optimal reading experience, powerful search capabilities, and rigorous structural organization.</p>
+<h1 id="backend-architecture">Backend Architecture</h1>
+<p>The backend of WorkPilot is engineered using <strong>FastAPI</strong> (Python). It is structured using a Domain-Driven Design (DDD) approach, ensuring business logic is decoupled from HTTP transport layers.</p>
 <hr />
-<h2 id="architectural-purpose">🏗️ Architectural Purpose</h2>
-<p>This documentation portal is not merely a collection of README files; it is a structured technical resource designed to:
-- Establish a <strong>production-grade documentation hierarchy</strong> that scales seamlessly with expanding codebases.
-- Deliver <strong>instant, accurate information retrieval</strong> via clean, intuitive navigation trees and an advanced client-side search engine.
-- Maintain <strong>version-controlled knowledge repositories</strong>, ensuring that technical documentation evolves perfectly in sync with the underlying source code.</p>
-<h2 id="target-audience">👥 Target Audience</h2>
-<p>This portal is meticulously crafted to serve:
-- <strong>Backend Developers &amp; DevOps Engineers</strong>: Investigating deployment configurations, API definitions, and database schemas.
-- <strong>Frontend &amp; UI Engineers</strong>: Referencing component libraries, styling systems, and React state architectures.
-- <strong>Open-Source Contributors</strong>: Seeking clear contribution guidelines, coding conventions, and architectural context before submitting pull requests.</p>
+<h2 id="1-directory-structure">1. Directory Structure</h2>
+<p>The <code>auth-service</code> (the core backend service) is organized as follows:</p>
+<div class="highlight"><pre><span></span><code>auth-service/
+├── src/
+│   ├── core/              # Global configurations, environment variables, base exceptions
+│   ├── infrastructure/    # DB connection pools, Middlewares (Tenant, RateLimit)
+│   ├── modules/           # Domain logic (Auth, Users, Tenant, Employee)
+│   │   ├── auth/
+│   │   │   ├── router.py  # HTTP Endpoints (FastAPI)
+│   │   │   ├── service.py # Business Logic
+│   │   │   ├── schemas.py # Pydantic Validation Models
+│   │   │   └── repository.py # Database Operations (SQLAlchemy)
+│   └── main.py            # FastAPI Application Entrypoint
+</code></pre></div>
+<h3 id="why-this-structure">Why this structure?</h3>
+<p>By separating <code>router.py</code> (Transport) from <code>service.py</code> (Business Logic) and <code>repository.py</code> (Data Access), the application becomes highly testable. You can unit test the <code>AuthService</code> without needing to spin up a FastAPI test client or an actual HTTP server.</p>
 <hr />
-<h2 id="the-core-application-suite">🚀 The Core Application Suite</h2>
-<p>Dive into the comprehensive technical specifications for the flagship projects housed within this portfolio:</p>
+<h2 id="2-the-dependency-injection-graph">2. The Dependency Injection Graph</h2>
+<p>FastAPI relies heavily on Dependency Injection (<code>Depends()</code>). This is used extensively to manage database sessions and authenticate users.</p>
+<div class="highlight"><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/me&quot;</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_current_user_info</span><span class="p">(</span>
+    <span class="n">current_user</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_current_user_and_set_schema</span><span class="p">),</span>
+    <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
+<span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">current_user</span><span class="p">}</span>
+</code></pre></div>
+<p><strong><code>get_db</code></strong>: Yields a database session from the <code>request.state.db</code> (created by the <code>TenantMiddleware</code>), ensuring the endpoint uses the exact same transaction context.
+<strong><code>get_current_user_and_set_schema</code></strong>: Extracts the Bearer token, validates the JWT signature, checks expiration, and returns the user payload.</p>
+<hr />
+<h2 id="3-microservices-domain-boundaries">3. Microservices &amp; Domain Boundaries</h2>
+<p>Currently, WorkPilot operates as a "Modular Monolith". All domains (Auth, Users, Tenants) live within the <code>auth-service</code> codebase, but are strictly separated by folder (<code>src/modules/*</code>).</p>
+<p><em>(Future Design)</em>
+As the engineering team grows, the codebase is designed so that <code>src/modules/billing</code> could be easily extracted into a completely separate <code>billing-service</code> running in a different Docker container, communicating via gRPC or message queues (RabbitMQ/Kafka).</p>
+<hr />
+<h2 id="4-performance-caching">4. Performance &amp; Caching</h2>
 <ul>
-<li><strong><a href="projects/github_repos/portfolio-react/">Portfolio Architecture (React)</a></strong>: A meticulously optimized, modern developer portfolio featuring an integrated CMS dashboard.</li>
-<li><strong><a href="projects/github_repos/noirel-ecommerce/">Noirel E-commerce Engine</a></strong>: A robust, full-stack framework delivering a premium online retail experience, complete with secure transactions.</li>
-<li><strong><a href="projects/github_repos/time-lens-python/">Time Lens (Python/FastAPI)</a></strong>: A high-performance psychological utility designed to algorithmically reframe and visualize time perception.</li>
-<li><strong><a href="projects/github_repos/salary-checker/">Salary Intelligence Platform</a></strong>: An enterprise-grade AI analytics suite providing market percentiles and machine learning-driven compensation forecasts.</li>
-<li><strong><a href="projects/github_repos/todo-redux-adv/">Advanced Todo (Redux Workflow)</a></strong>: A masterclass in complex frontend state management leveraging Redux Toolkit, async thunks, and performance optimizations.</li>
-<li><strong><a href="projects/github_repos/fullstack-blog-jwt-docker/">Containerized Blog (JWT Auth)</a></strong>: A highly secure, globally scalable full-stack blogging platform packaged entirely within Docker.</li>
-<li><strong><a href="projects/github_repos/student-management-django-task/">Django Student Information System</a></strong>: A comprehensive, architecturally sound MVT (Model-View-Template) data management system for educational institutions.</li>
-<li><strong><a href="projects/github_repos/cipher-analytics/">Cipher Analytics (Applied HE)</a></strong>: A privacy-preserving computation platform utilizing Homomorphic Encryption (CKKS) to perform secure analytics on encrypted numeric datasets.</li>
-<li><strong><a href="projects/github_repos/workpilot/">WorkPilot SaaS (Next.js/FastAPI)</a></strong>: A modern, multi-tenant SaaS application offering isolated workspaces with a unified codebase, built with Next.js, FastAPI, and PostgreSQL.</li>
+<li><strong>Database Connection Pooling:</strong> SQLAlchemy's <code>QueuePool</code> is used to manage connections efficiently across the uvicorn workers.</li>
+<li><strong>Async Processing:</strong> While SQLAlchemy 2.0 supports async, the core logic currently utilizes thread-pools for blocking operations, handled seamlessly by FastAPI's <code>def</code> vs <code>async def</code> routing.</li>
+<li><strong>Future Caching:</strong> Redis is planned for caching frequent read-heavy operations, such as Tenant resolution in the middleware.</li>
 </ul>
 
 
@@ -1921,10 +2004,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
