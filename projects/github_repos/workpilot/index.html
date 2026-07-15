@@ -14,7 +14,7 @@
         <link rel="prev" href="../cipher-analytics/">
       
       
-        <link rel="next" href="adr/">
+        <link rel="next" href="../../../reference/cli/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Executive Overview - Docs Stack – Material</title>
+        <title>WorkPilot - Docs Stack – Material</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Executive Overview
+              WorkPilot
             
           </span>
         </div>
@@ -1286,60 +1286,6 @@
   
   
   
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_9" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_9_2_9" id="__nav_9_2_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    WorkPilot
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_9_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_9_2_9">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    WorkPilot
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -1355,7 +1301,7 @@
   <span class="md-ellipsis">
     
   
-    Executive Overview
+    WorkPilot
   
 
     
@@ -1373,7 +1319,7 @@
   <span class="md-ellipsis">
     
   
-    Executive Overview
+    WorkPilot
   
 
     
@@ -1397,6 +1343,17 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Important Links
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#1-executive-overview" class="md-nav__link">
@@ -1487,185 +1444,447 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#why-microservices-or-service-oriented-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Microservices (or Service-Oriented Architecture)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why FastAPI?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-nextjs-app-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Next.js (App Router)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-sqlalchemy-alembic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why SQLAlchemy &amp; Alembic?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-schema-per-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Schema-per-Tenant?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-httponly-cookies-over-localstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why HTTPOnly Cookies (Over localStorage)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-uv-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why uv (Package Manager)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-schema-per-tenant-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The Schema-per-Tenant Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. The Schema-per-Tenant Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advantages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-request-lifecycle-tenant-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Request Lifecycle &amp; Tenant Resolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Request Lifecycle &amp; Tenant Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-dive-tenantmiddleware-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Dive: TenantMiddleware Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-database-migrations-alembic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Database Migrations (Alembic)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-authentication-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Authentication Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Authentication Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-problem-with-localstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem with localStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-workpilot-solution-httponly-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The WorkPilot Solution: HTTPOnly Cookies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-multi-factor-authentication-totp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Multi-Factor Authentication (TOTP)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-authorization-rbac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Authorization &amp; RBAC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-security-defenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Security Defenses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this structure?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-dependency-injection-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The Dependency Injection Graph
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-microservices-domain-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Microservices &amp; Domain Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-performance-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Performance &amp; Caching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory Organization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-api-integration-layer-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. API Integration Layer (use-cases)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. API Integration Layer (use-cases)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axios-interceptors-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Axios Interceptors &amp; Credentials
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-state-management-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. State Management &amp; Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-ui-ux-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. The UI / UX Layer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-local-infrastructure-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Local Infrastructure (Docker Compose)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Local Infrastructure (Docker Compose)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hot-reloading-in-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hot-Reloading in Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-ideal-developer-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The Ideal Developer Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-engineering-journal-problems-encountered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Engineering Journal: Problems Encountered
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Engineering Journal: Problems Encountered">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-multi-tenant-middleware-connection-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Multi-Tenant Middleware Connection Leaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-safari-itp-cross-origin-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Safari ITP &amp; Cross-Origin Cookies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contribution-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contribution Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adr/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture Decisions (ADR)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="multi-tenant/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Multi-Tenancy & Database
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="authentication/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Authentication & Security
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="backend/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Backend Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="frontend/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Frontend Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="workflow/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Developer Workflow
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1857,6 +2076,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#important-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Important Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1-executive-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1945,6 +2175,444 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#why-microservices-or-service-oriented-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Microservices (or Service-Oriented Architecture)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why FastAPI?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-nextjs-app-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Next.js (App Router)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-sqlalchemy-alembic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why SQLAlchemy &amp; Alembic?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-schema-per-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Schema-per-Tenant?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-httponly-cookies-over-localstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why HTTPOnly Cookies (Over localStorage)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-uv-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why uv (Package Manager)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-the-schema-per-tenant-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. The Schema-per-Tenant Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. The Schema-per-Tenant Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advantages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-request-lifecycle-tenant-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Request Lifecycle &amp; Tenant Resolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Request Lifecycle &amp; Tenant Resolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-dive-tenantmiddleware-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deep Dive: TenantMiddleware Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-database-migrations-alembic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Database Migrations (Alembic)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-authentication-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Authentication Lifecycle
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Authentication Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-problem-with-localstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem with localStorage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-workpilot-solution-httponly-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The WorkPilot Solution: HTTPOnly Cookies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-multi-factor-authentication-totp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Multi-Factor Authentication (TOTP)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-authorization-rbac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Authorization &amp; RBAC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-security-defenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Security Defenses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why this structure?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-dependency-injection-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The Dependency Injection Graph
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-microservices-domain-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Microservices &amp; Domain Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-performance-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Performance &amp; Caching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-directory-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Directory Organization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-api-integration-layer-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. API Integration Layer (use-cases)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. API Integration Layer (use-cases)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#axios-interceptors-credentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Axios Interceptors &amp; Credentials
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-state-management-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. State Management &amp; Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-ui-ux-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. The UI / UX Layer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-local-infrastructure-docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Local Infrastructure (Docker Compose)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Local Infrastructure (Docker Compose)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hot-reloading-in-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hot-Reloading in Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-the-ideal-developer-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The Ideal Developer Workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-engineering-journal-problems-encountered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Engineering Journal: Problems Encountered
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Engineering Journal: Problems Encountered">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-multi-tenant-middleware-connection-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Multi-Tenant Middleware Connection Leaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-safari-itp-cross-origin-cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue: Safari ITP &amp; Cross-Origin Cookies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contribution-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contribution Guidelines
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1964,6 +2632,14 @@
 
 <h1 id="workpilot-engineering-handbook">WorkPilot Engineering Handbook</h1>
 <p>Welcome to the WorkPilot Engineering Handbook. This section provides an in-depth look at the architecture, design decisions, and internal mechanics of WorkPilot—a modern, multi-tenant SaaS application built for scale, security, and exceptional developer experience.</p>
+<h2 id="important-links">🔗 Important Links</h2>
+<ul>
+<li><strong>Repository:</strong> <a href="https://github.com/work-pilot-org/work-pilot">GitHub Repository</a></li>
+<li><strong>Wiki:</strong> <a href="https://github.com/work-pilot-org/work-pilot/wiki">Project Wiki</a></li>
+<li><strong>Web Prototype:</strong> <a href="https://stitch.withgoogle.com/preview/9691881107217269128?node-id=6d9461fa3a3346eeb70917ddc22b1ac7">Stitch Web UI</a></li>
+<li><strong>Mobile Prototype:</strong> <a href="https://stitch.withgoogle.com/preview/1567494700365064952?node-id=133a2c697bd249c2900c174f5ec62418">Stitch Mobile UI</a></li>
+</ul>
+<hr />
 <hr />
 <h2 id="1-executive-overview">1. Executive Overview</h2>
 <h3 id="project-vision">Project Vision</h3>
@@ -2009,6 +2685,316 @@
 <li><strong>Microservice Extraction:</strong> Extracting the Notification and Billing domains into independent services.</li>
 <li><strong>GraphQL / gRPC:</strong> Exploring alternative communication protocols for inter-service communication.</li>
 </ul>
+<hr />
+<p>This section documents the engineering rationale behind the core technologies and architectural patterns chosen for WorkPilot. Understanding these decisions is crucial for onboarding and future technical discussions.</p>
+<hr />
+<h2 id="why-microservices-or-service-oriented-architecture">Why Microservices (or Service-Oriented Architecture)?</h2>
+<p><strong>Context:</strong> The application needs to scale horizontally. Different domains (Auth, Billing, Core App) have different scaling profiles and security requirements.
+<strong>Decision:</strong> We adopted a modular, service-oriented architecture (starting with a monolithic repository structured as logical microservices, e.g., <code>auth-service</code>).
+<strong>Trade-offs:</strong> Increases deployment complexity but provides clean domain boundaries and allows teams to deploy independently in the future.</p>
+<h2 id="why-fastapi">Why FastAPI?</h2>
+<p><strong>Context:</strong> We needed a high-performance backend framework capable of handling asynchronous I/O (essential for multi-tenant database routing).
+<strong>Decision:</strong> Selected FastAPI (Python).
+<strong>Alternatives:</strong> Django, Express (Node.js), Go.
+<strong>Trade-offs:</strong> 
+- <em>Pros:</em> Exceptional performance (ASGI), native Pydantic validation, automatic OpenAPI generation, type-hinting support.
+- <em>Cons:</em> Smaller ecosystem compared to Django; requires strict architectural discipline to prevent code turning into a "big ball of mud."</p>
+<h2 id="why-nextjs-app-router">Why Next.js (App Router)?</h2>
+<p><strong>Context:</strong> The frontend requires robust SEO for marketing pages, but a highly interactive, SPA-like feel for the dashboard.
+<strong>Decision:</strong> Next.js 14+ utilizing the App Router.
+<strong>Alternatives:</strong> React (Vite/CRA), Vue/Nuxt, SvelteKit.
+<strong>Trade-offs:</strong>
+- <em>Pros:</em> Server Components (RSC) reduce client bundle size; fantastic routing; strong ecosystem.
+- <em>Cons:</em> Steeper learning curve for RSC vs. traditional React; complex caching mechanisms.</p>
+<h2 id="why-sqlalchemy-alembic">Why SQLAlchemy &amp; Alembic?</h2>
+<p><strong>Context:</strong> We need a reliable ORM that supports advanced PostgreSQL features, specifically dynamic schema switching for multi-tenancy.
+<strong>Decision:</strong> SQLAlchemy 2.0 with Alembic for migrations.
+<strong>Trade-offs:</strong> SQLAlchemy is heavy and has a steep learning curve, but it provides unparalleled control over transactions and schema execution contexts.</p>
+<h2 id="why-schema-per-tenant">Why Schema-per-Tenant?</h2>
+<p><strong>Context:</strong> B2B SaaS customers demand absolute data isolation.
+<strong>Decision:</strong> PostgreSQL Schema-per-Tenant.
+<strong>Alternatives:</strong> 
+- <em>Database-per-tenant:</em> Too expensive and complex to orchestrate.
+- <em>Shared-table (tenant_id column):</em> Too risky; one missing <code>WHERE</code> clause causes data leaks.
+<strong>Consequences:</strong> Migrations (Alembic) must be run iteratively across all schemas. Connection pooling needs careful management to prevent cross-schema contamination on reused connections.</p>
+<h2 id="why-httponly-cookies-over-localstorage">Why HTTPOnly Cookies (Over localStorage)?</h2>
+<p><strong>Context:</strong> Storing JWT access/refresh tokens in <code>localStorage</code> exposes them to Cross-Site Scripting (XSS) attacks. If an attacker injects a malicious script, they can steal tokens and hijack accounts.
+<strong>Decision:</strong> Refresh tokens are stored in <code>HttpOnly</code>, <code>Secure</code>, <code>SameSite=None</code> cookies.
+<strong>Trade-offs:</strong> Requires strict CORS configuration and makes cross-domain API calls slightly more complex, but drastically improves security posture.</p>
+<h2 id="why-uv-package-manager">Why uv (Package Manager)?</h2>
+<p><strong>Context:</strong> Python's standard <code>pip</code> or <code>poetry</code> can be slow, especially in Docker build steps.
+<strong>Decision:</strong> Adopted <code>uv</code> by Astral.
+<strong>Trade-offs:</strong> It's an incredibly fast, Rust-based package installer. The only downside is it's relatively new, but it significantly accelerates CI/CD and local build times.</p>
+<hr />
+<p>Multi-tenancy is the architectural core of WorkPilot. To guarantee data privacy, WorkPilot uses a <strong>Schema-per-Tenant</strong> approach in PostgreSQL.</p>
+<hr />
+<h2 id="1-the-schema-per-tenant-model">1. The Schema-per-Tenant Model</h2>
+<p>Instead of relying on a fragile <code>tenant_id</code> column in every table, WorkPilot creates a distinct PostgreSQL schema for every registered organization.</p>
+<pre class="mermaid"><code>erDiagram
+    PUBLIC_SCHEMA ||--o{ TENANT_SCHEMA : "creates"
+
+    PUBLIC_SCHEMA {
+        int id
+        string domain "e.g., apple.localhost"
+        string tenant_id "e.g., tenant_apple"
+        string schema_name "e.g., tenant_schema_apple"
+    }
+
+    TENANT_SCHEMA {
+        uuid id
+        string email
+        string hashed_password
+        string role
+    }</code></pre>
+<h3 id="advantages">Advantages</h3>
+<ul>
+<li><strong>Cryptographic-level Isolation:</strong> A query executed in <code>tenant_schema_apple</code> physically cannot read data from <code>tenant_schema_google</code>.</li>
+<li><strong>Backup &amp; Restore:</strong> We can easily backup or wipe a single tenant's data without affecting the rest of the database.</li>
+<li><strong>Scalability:</strong> It strikes the perfect balance between the high cost of database-per-tenant and the high risk of shared-table models.</li>
+</ul>
+<hr />
+<h2 id="2-request-lifecycle-tenant-resolution">2. Request Lifecycle &amp; Tenant Resolution</h2>
+<p>How does the backend know which database schema to query? This is handled dynamically via <code>TenantMiddleware</code>.</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Client
+    participant TenantMiddleware
+    participant DB(Public Schema)
+    participant Endpoint
+    participant DB(Tenant Schema)
+
+    Client-&gt;&gt;TenantMiddleware: GET /api/users (Host: apple.localhost:3000)
+    TenantMiddleware-&gt;&gt;DB(Public Schema): Lookup Domain "apple"
+    DB(Public Schema)--&gt;&gt;TenantMiddleware: Returns "tenant_schema_apple"
+
+    TenantMiddleware-&gt;&gt;DB(Tenant Schema): SET search_path TO "tenant_schema_apple"
+    TenantMiddleware-&gt;&gt;Endpoint: Pass request &amp; DB session to Router
+
+    Endpoint-&gt;&gt;DB(Tenant Schema): SELECT * FROM users (Queries Apple's isolated table)
+    DB(Tenant Schema)--&gt;&gt;Endpoint: Returns Data
+
+    Endpoint--&gt;&gt;TenantMiddleware: Returns Response
+    TenantMiddleware-&gt;&gt;DB(Public Schema): SET search_path TO "public" (CRITICAL RESET)
+    TenantMiddleware--&gt;&gt;Client: Returns 200 OK</code></pre>
+<h3 id="deep-dive-tenantmiddleware-implementation">Deep Dive: <code>TenantMiddleware</code> Implementation</h3>
+<p>The <code>TenantMiddleware</code> intercepts every request and performs the following:</p>
+<ol>
+<li><strong>Session Creation:</strong> Creates a single SQLAlchemy <code>SessionLocal</code> for the lifetime of the request.</li>
+<li><strong>Resolution:</strong> Extracts the subdomain from the <code>Host</code> header (e.g., <code>apple</code>).</li>
+<li><strong>Lookup:</strong> Queries the <code>public</code> schema's <code>Tenant</code> repository to find the associated <code>schema_name</code>.</li>
+<li><strong>Schema Switch:</strong> Executes <code>set_tenant_schema(db, schema_name)</code> which runs the PostgreSQL command: <code>SET search_path TO {schema_name}</code>.</li>
+<li><strong>Execution:</strong> Yields control to the FastAPI router.</li>
+<li><strong>Cleanup:</strong> In the <code>finally</code> block, it <strong>MUST</strong> reset the schema back to <code>public</code> before returning the connection to the SQLAlchemy connection pool.</li>
+</ol>
+<blockquote>
+<p>[!CAUTION]
+<strong>Connection Pool Contamination</strong>
+If the <code>TenantMiddleware</code> fails to reset the <code>search_path</code> back to <code>public</code> before the connection is returned to the pool, the next request that borrows that connection might accidentally query the wrong tenant's data. This is why the <code>finally</code> block in <code>tenant_middleware.py</code> containing <code>set_public_schema(db)</code> is absolutely critical.</p>
+</blockquote>
+<hr />
+<h2 id="3-database-migrations-alembic">3. Database Migrations (Alembic)</h2>
+<p>Because there are multiple schemas, running migrations is not a simple <code>alembic upgrade head</code>.</p>
+<p><em>(Future Design / Implementation Note)</em>: The Alembic migration scripts must be designed to loop over all tenant schemas dynamically. When a new migration is generated, it applies to the <code>public</code> schema first, and then iterates through every tenant schema executing the DDL commands.</p>
+<hr />
+<p>Security is a primary concern in a multi-tenant SaaS. WorkPilot implements a secure authentication flow utilizing JSON Web Tokens (JWT) combined with strict Cookie policies, mitigating common XSS and CSRF vulnerabilities.</p>
+<hr />
+<h2 id="1-authentication-lifecycle">1. Authentication Lifecycle</h2>
+<h3 id="the-problem-with-localstorage">The Problem with <code>localStorage</code></h3>
+<p>Many SPA (Single Page Applications) store JWTs in <code>localStorage</code>. This is highly vulnerable to Cross-Site Scripting (XSS). If a malicious script runs on the page, it can read <code>localStorage</code> and exfiltrate the tokens.</p>
+<h3 id="the-workpilot-solution-httponly-cookies">The WorkPilot Solution: HTTPOnly Cookies</h3>
+<p>WorkPilot stores the long-lived <code>refresh_token</code> in an <code>HttpOnly</code>, <code>Secure</code>, <code>SameSite=None</code> cookie. The frontend cannot access this cookie via JavaScript. The short-lived <code>access_token</code> is kept entirely in memory (React state) and is never persisted to disk.</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant User
+    participant NextJS (Frontend)
+    participant FastAPI (Backend)
+    participant PostgreSQL
+
+    User-&gt;&gt;NextJS (Frontend): Enters Email &amp; Password
+    NextJS (Frontend)-&gt;&gt;FastAPI (Backend): POST /auth/login (email, password)
+    FastAPI (Backend)-&gt;&gt;PostgreSQL: Verify Credentials
+    PostgreSQL--&gt;&gt;FastAPI (Backend): Valid
+
+    Note over FastAPI (Backend),NextJS (Frontend): FastAPI generates JWT Access Token &amp; Refresh Token
+
+    FastAPI (Backend)--&gt;&gt;NextJS (Frontend): Returns Access Token (JSON) + Set-Cookie: refresh_token (HttpOnly)
+
+    Note over NextJS (Frontend): NextJS stores Access Token in memory variable.
+    Note over NextJS (Frontend): Browser securely stores the HttpOnly refresh_token cookie.
+
+    User-&gt;&gt;NextJS (Frontend): Navigates to Dashboard
+    NextJS (Frontend)-&gt;&gt;FastAPI (Backend): GET /api/data (Bearer: Access Token)
+
+    alt Access Token Expired?
+        NextJS (Frontend)-&gt;&gt;FastAPI (Backend): POST /auth/refresh (Browser automatically attaches HttpOnly Cookie)
+        FastAPI (Backend)--&gt;&gt;NextJS (Frontend): Returns New Access Token
+        NextJS (Frontend)-&gt;&gt;FastAPI (Backend): Retry GET /api/data
+    end
+
+    FastAPI (Backend)--&gt;&gt;NextJS (Frontend): Returns Data</code></pre>
+<hr />
+<h2 id="2-multi-factor-authentication-totp">2. Multi-Factor Authentication (TOTP)</h2>
+<p>WorkPilot supports Time-Based One-Time Passwords (TOTP) (e.g., Google Authenticator, Authy).</p>
+<p><strong>MFA Lifecycle:</strong>
+1. <strong>Setup (<code>/auth/mfa/setup</code>):</strong> Backend generates a TOTP secret, stores it temporarily, and returns a QR code (Provisioning URI).
+2. <strong>Enable (<code>/auth/mfa/enable</code>):</strong> User submits a 6-digit code to verify they scanned the QR code successfully.
+3. <strong>Login (<code>/auth/login</code>):</strong> If MFA is enabled, the backend returns a <code>PreAuthResponse</code> instead of tokens.
+4. <strong>MFA Login (<code>/auth/login/mfa</code>):</strong> The frontend submits the pre-auth token and the 6-digit code to finally receive the real JWTs.</p>
+<hr />
+<h2 id="3-authorization-rbac">3. Authorization &amp; RBAC</h2>
+<p><em>(Future Design / Implementation Note)</em>
+Role-Based Access Control (RBAC) is enforced at the database and middleware levels. </p>
+<ul>
+<li>Users belong to specific Roles (e.g., <code>Admin</code>, <code>Editor</code>, <code>Viewer</code>).</li>
+<li>Roles map to specific Permissions (e.g., <code>projects:write</code>, <code>billing:read</code>).</li>
+<li>A FastAPI dependency <code>require_permissions("projects:write")</code> checks the JWT payload before executing the endpoint.</li>
+</ul>
+<hr />
+<h2 id="4-security-defenses">4. Security Defenses</h2>
+<ul>
+<li><strong>Rate Limiting:</strong> A custom <code>RateLimitMiddleware</code> limits requests (e.g., 60 per minute per IP) to prevent brute-force attacks on the <code>/auth/login</code> endpoints.</li>
+<li><strong>CORS:</strong> Cross-Origin Resource Sharing is strictly bound to verified tenant subdomains (<code>allow_origin_regex=r"http://.*\.localhost:3000"</code>).</li>
+<li><strong>Password Hashing:</strong> <code>bcrypt</code> or <code>argon2</code> is used for securely hashing passwords before they touch the database.</li>
+<li><strong>Token Rotation:</strong> Refresh tokens can be rotated or blacklisted upon logout to immediately revoke access.</li>
+</ul>
+<hr />
+<p>The backend of WorkPilot is engineered using <strong>FastAPI</strong> (Python). It is structured using a Domain-Driven Design (DDD) approach, ensuring business logic is decoupled from HTTP transport layers.</p>
+<hr />
+<h2 id="1-directory-structure">1. Directory Structure</h2>
+<p>The <code>auth-service</code> (the core backend service) is organized as follows:</p>
+<div class="highlight"><pre><span></span><code>auth-service/
+├── src/
+│   ├── core/              # Global configurations, environment variables, base exceptions
+│   ├── infrastructure/    # DB connection pools, Middlewares (Tenant, RateLimit)
+│   ├── modules/           # Domain logic (Auth, Users, Tenant, Employee)
+│   │   ├── auth/
+│   │   │   ├── router.py  # HTTP Endpoints (FastAPI)
+│   │   │   ├── service.py # Business Logic
+│   │   │   ├── schemas.py # Pydantic Validation Models
+│   │   │   └── repository.py # Database Operations (SQLAlchemy)
+│   └── main.py            # FastAPI Application Entrypoint
+</code></pre></div>
+<h3 id="why-this-structure">Why this structure?</h3>
+<p>By separating <code>router.py</code> (Transport) from <code>service.py</code> (Business Logic) and <code>repository.py</code> (Data Access), the application becomes highly testable. You can unit test the <code>AuthService</code> without needing to spin up a FastAPI test client or an actual HTTP server.</p>
+<hr />
+<h2 id="2-the-dependency-injection-graph">2. The Dependency Injection Graph</h2>
+<p>FastAPI relies heavily on Dependency Injection (<code>Depends()</code>). This is used extensively to manage database sessions and authenticate users.</p>
+<div class="highlight"><pre><span></span><code><span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/me&quot;</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_current_user_info</span><span class="p">(</span>
+    <span class="n">current_user</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_current_user_and_set_schema</span><span class="p">),</span>
+    <span class="n">db</span><span class="p">:</span> <span class="n">Session</span> <span class="o">=</span> <span class="n">Depends</span><span class="p">(</span><span class="n">get_db</span><span class="p">)</span>
+<span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">current_user</span><span class="p">}</span>
+</code></pre></div>
+<p><strong><code>get_db</code></strong>: Yields a database session from the <code>request.state.db</code> (created by the <code>TenantMiddleware</code>), ensuring the endpoint uses the exact same transaction context.
+<strong><code>get_current_user_and_set_schema</code></strong>: Extracts the Bearer token, validates the JWT signature, checks expiration, and returns the user payload.</p>
+<hr />
+<h2 id="3-microservices-domain-boundaries">3. Microservices &amp; Domain Boundaries</h2>
+<p>Currently, WorkPilot operates as a "Modular Monolith". All domains (Auth, Users, Tenants) live within the <code>auth-service</code> codebase, but are strictly separated by folder (<code>src/modules/*</code>).</p>
+<p><em>(Future Design)</em>
+As the engineering team grows, the codebase is designed so that <code>src/modules/billing</code> could be easily extracted into a completely separate <code>billing-service</code> running in a different Docker container, communicating via gRPC or message queues (RabbitMQ/Kafka).</p>
+<hr />
+<h2 id="4-performance-caching">4. Performance &amp; Caching</h2>
+<ul>
+<li><strong>Database Connection Pooling:</strong> SQLAlchemy's <code>QueuePool</code> is used to manage connections efficiently across the uvicorn workers.</li>
+<li><strong>Async Processing:</strong> While SQLAlchemy 2.0 supports async, the core logic currently utilizes thread-pools for blocking operations, handled seamlessly by FastAPI's <code>def</code> vs <code>async def</code> routing.</li>
+<li><strong>Future Caching:</strong> Redis is planned for caching frequent read-heavy operations, such as Tenant resolution in the middleware.</li>
+</ul>
+<hr />
+<p>The WorkPilot client is a modern web application built with <strong>Next.js (App Router)</strong> and <strong>TypeScript</strong>. It is designed to be highly responsive, typesafe, and easy to maintain.</p>
+<hr />
+<h2 id="1-directory-organization">1. Directory Organization</h2>
+<p>The Next.js frontend utilizes the App Router paradigm, strictly separating UI components from API integration logic.</p>
+<div class="highlight"><pre><span></span><code>frontend/
+├── app/                  # Next.js App Router (Pages, Layouts, Routing)
+│   ├── (auth)/           # Route group for Login/Register (No Dashboard Layout)
+│   ├── tenant/           # Tenant Dashboard Routes
+│   ├── layout.tsx        # Global Layout
+│   └── page.tsx          # Landing Page
+├── components/           # Reusable React UI Components
+│   ├── ui/               # Base design system components (Buttons, Inputs)
+│   └── auth/             # Domain-specific components (LoginForm)
+├── lib/                  # Utilities, Axios instances, Types
+└── use-cases/            # API Integration Layer (React Query / Axios calls)
+</code></pre></div>
+<hr />
+<h2 id="2-api-integration-layer-use-cases">2. API Integration Layer (<code>use-cases</code>)</h2>
+<p>Instead of making <code>axios.get()</code> calls directly inside React components, all API calls are abstracted into the <code>use-cases</code> directory.</p>
+<h3 id="why">Why?</h3>
+<ol>
+<li><strong>Reusability:</strong> The <code>loginUser</code> function can be used in the LoginForm component, or in an end-to-end testing script.</li>
+<li><strong>Separation of Concerns:</strong> Components shouldn't care <em>how</em> data is fetched, only how to render it.</li>
+</ol>
+<h3 id="axios-interceptors-credentials">Axios Interceptors &amp; Credentials</h3>
+<p>The core Axios instance is configured with <code>withCredentials: true</code>. This is vital. It tells the browser to automatically attach the <code>HttpOnly</code> refresh token cookie to outgoing requests made to the FastAPI backend.</p>
+<p>Furthermore, an Axios Interceptor is configured to intercept <code>401 Unauthorized</code> responses. If a request fails due to an expired access token, the interceptor automatically calls the <code>/auth/refresh</code> endpoint (which uses the HttpOnly cookie), gets a new access token, and transparently retries the original failed request.</p>
+<hr />
+<h2 id="3-state-management-validation">3. State Management &amp; Validation</h2>
+<ul>
+<li><strong>Form Validation:</strong> WorkPilot uses <strong>Zod</strong> paired with <strong>React Hook Form</strong>. This provides robust, end-to-end type safety. The Zod schemas on the frontend often mirror the Pydantic schemas on the backend, ensuring data integrity before the request even leaves the browser.</li>
+<li><strong>Global State:</strong> (Future Design) For complex state sharing across distant components (like user profile data or theme preferences), lightweight state managers like Zustand or React Context are utilized over heavier solutions like Redux.</li>
+</ul>
+<hr />
+<h2 id="4-the-ui-ux-layer">4. The UI / UX Layer</h2>
+<ul>
+<li><strong>TailwindCSS:</strong> Utility-first styling is used exclusively. It prevents CSS bundle bloat and keeps styling collocated with the component logic.</li>
+<li><strong>Shadcn UI (or similar):</strong> Base components are built to be accessible (ARIA compliant) and highly customizable.</li>
+</ul>
+<hr />
+<p>WorkPilot is designed to provide a frictionless local development experience. A new engineer should be able to clone the repository and have the entire stack running locally in under 3 minutes, entirely via Docker.</p>
+<hr />
+<h2 id="1-local-infrastructure-docker-compose">1. Local Infrastructure (Docker Compose)</h2>
+<p>The entire local development environment is orchestrated via a single <code>docker-compose.yml</code> file.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">postgres</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres:16</span>
+<span class="w">    </span><span class="c1"># ...</span>
+<span class="w">  </span><span class="nt">auth-service</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./auth-service</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sh -c &quot;uv run alembic upgrade head &amp;&amp; uv run uvicorn src.main:app --reload&quot;</span>
+<span class="w">  </span><span class="nt">frontend</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./frontend</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm run dev</span>
+</code></pre></div>
+<h3 id="hot-reloading-in-docker">Hot-Reloading in Docker</h3>
+<p>Hot-reloading is notoriously difficult to configure correctly inside Docker, especially on Windows/Mac hosts due to filesystem events not propagating properly to the Linux containers.</p>
+<p><strong>The Solution:</strong>
+- For <strong>Next.js</strong>, we use CHOKIDAR polling via environment variables:
+  <div class="highlight"><pre><span></span><code>WATCHPACK_POLLING=true
+CHOKIDAR_USEPOLLING=true
+</code></pre></div>
+- For <strong>FastAPI</strong>, we mount the host's <code>./auth-service</code> directory directly into the container using Volumes. Uvicorn's <code>--reload</code> flag monitors this mounted volume and restarts the ASGI server upon any code change.</p>
+<hr />
+<h2 id="2-the-ideal-developer-workflow">2. The Ideal Developer Workflow</h2>
+<p>WorkPilot engineers follow a standardized lifecycle from ticket creation to deployment.</p>
+<pre class="mermaid"><code>graph TD
+    A["Product Manager creates Linear Ticket"] --&gt; B["Engineer picks up ticket"]
+    B --&gt; C["Create Branch: feat/WP-123-add-billing"]
+    C --&gt; D["Develop Locally via Docker"]
+    D --&gt; E["Commit changes &amp; Push"]
+    E --&gt; F["Open Pull Request"]
+    F --&gt; G["CI/CD Runs (Linting, Tests)"]
+    G --&gt; H["CodeRabbit AI Initial Review"]
+    H --&gt; I["Peer Review by Senior Engineer"]
+    I --&gt; J["Merge to Main"]
+    J --&gt; K["Automatic Deployment to Staging"]</code></pre>
+<hr />
+<h2 id="3-engineering-journal-problems-encountered">3. Engineering Journal: Problems Encountered</h2>
+<p>Documenting our failures is just as important as documenting our successes. Here are major engineering hurdles we faced and how we solved them.</p>
+<h3 id="issue-multi-tenant-middleware-connection-leaks">Issue: Multi-Tenant Middleware Connection Leaks</h3>
+<p><strong>Problem:</strong> Initially, if a request threw an exception inside a specific tenant's schema, the subsequent request from a completely different user might accidentally read from the previous tenant's schema.
+<strong>Root Cause:</strong> The <code>TenantMiddleware</code> was not properly resetting the PostgreSQL <code>search_path</code> back to <code>public</code> in the event of an unhandled exception before the SQLAlchemy connection was returned to the connection pool.
+<strong>Solution:</strong> Wrapped the schema reset logic in a strict <code>finally</code> block with a <code>db.rollback()</code> safety net before <code>set_public_schema(db)</code>.</p>
+<h3 id="issue-safari-itp-cross-origin-cookies">Issue: Safari ITP &amp; Cross-Origin Cookies</h3>
+<p><strong>Problem:</strong> The <code>HttpOnly</code> refresh token cookies were not being attached to backend requests when testing on Safari browsers.
+<strong>Root Cause:</strong> Apple's Intelligent Tracking Prevention (ITP) aggressively blocks third-party cookies. Because the local frontend was running on <code>localhost:3000</code> and the backend on <code>localhost:8000</code>, Safari considered them third-party despite the same domain name.
+<strong>Solution:</strong> We enforced strict subdomain routing during development (e.g., <code>tenant.localhost:3000</code>) and properly set <code>samesite="none"</code> and <code>secure=True</code> (even locally, necessitating local HTTPS certificates or accepting HTTP exceptions for localhost).</p>
+<hr />
+<h2 id="4-contribution-guidelines">4. Contribution Guidelines</h2>
+<ul>
+<li><strong>Branch Naming:</strong> <code>feat/&lt;ticket-id&gt;-&lt;short-desc&gt;</code>, <code>bug/&lt;ticket-id&gt;-&lt;short-desc&gt;</code>, <code>chore/&lt;short-desc&gt;</code></li>
+<li><strong>Commit Messages:</strong> Follow Conventional Commits format (e.g., <code>feat(auth): implement TOTP validation</code>).</li>
+<li><strong>Code Reviews:</strong> All PRs require at least one approval from a peer. Do not merge your own PRs. Ensure all CI checks (type checking, linting, tests) pass before requesting review.</li>
+</ul>
+<hr />
 
 
 
@@ -2061,13 +3047,13 @@
         
         
           
-          <a href="adr/" class="md-footer__link md-footer__link--next" aria-label="Next: Architecture Decisions (ADR)">
+          <a href="../../../reference/cli/" class="md-footer__link md-footer__link--next" aria-label="Next: CLI">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Architecture Decisions (ADR)
+                CLI
               </div>
             </div>
             <div class="md-footer__button md-icon">
