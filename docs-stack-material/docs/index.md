@@ -35,3 +35,4 @@ Dive into the comprehensive technical specifications for the flagship projects h
 - **[Django Student Information System](projects/github_repos/student-management-django-task.md)**: A comprehensive, architecturally sound MVT (Model-View-Template) data management system for educational institutions.
 - **[Cipher Analytics (Applied HE)](projects/github_repos/cipher-analytics.md)**: A privacy-preserving computation platform utilizing Homomorphic Encryption (CKKS) to perform secure analytics on encrypted numeric datasets.
 - **[WorkPilot SaaS (Next.js/FastAPI)](projects/github_repos/workpilot.md)**: A modern, multi-tenant SaaS application offering isolated workspaces with a unified codebase, built with Next.js, FastAPI, and PostgreSQL.
+- **[SkillStack (React/Django)](projects/github_repos/skill-stack.md)**: A personal learning tracker for managing learning goals and viewing useful learning insights, built with React, Django REST Framework, and PostgreSQL.
