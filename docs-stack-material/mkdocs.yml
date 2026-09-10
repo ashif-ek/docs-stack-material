@@ -49,6 +49,7 @@ nav:
           - Time Lens: projects/github_repos/time-lens-python.md
           - Cipher Analytics: projects/github_repos/cipher-analytics.md
           - WorkPilot: projects/github_repos/workpilot.md
+          - SkillStack: projects/github_repos/skill-stack.md
   - Reference:
       - CLI: reference/cli.md
       - Configuration Options: reference/configuration-options.md
