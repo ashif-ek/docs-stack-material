@@ -5,7 +5,7 @@ SkillStack is a personal learning tracker for managing learning goals, tracking 
 ## Live Application
 
 - **Frontend**: [https://ashif-skill-stack.vercel.app/](https://ashif-skill-stack.vercel.app/)
-- **Backend API**: [https://skill-stack-production-6c9b.up.railway.app/api](https://skill-stack-production-6c9b.up.railway.app/api)
+- **Backend API**: [https://skill-stack-production-6c9b.up.railway.app/api/docs](https://skill-stack-production-6c9b.up.railway.app/api/docs)
 
 ## Architecture & Visual Flow
 
