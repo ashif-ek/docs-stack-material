@@ -41,6 +41,8 @@ graph TD
 - **Dashboard Statistics**: View aggregated data including total skills, completed skills, skills in progress, and total learning hours.
 - **Category-wise Learning Hours**: See a breakdown of time spent across different learning categories.
 - **Learning Pulse**: Get an overview of your momentum based on learning activity over the last 7 days.
+- **AI-Powered Learning Insights**: Integration with Google Gemini (`gemini-3.6-flash`) to generate concise, personalized learning assessments, recommended next steps, and practical resource recommendations based on progress and recent activities.
+- **Robust Error Handling**: Implementation of a React `ErrorBoundary` with a fallback UI to gracefully catch and handle unexpected frontend errors without crashing the application.
 
 ## Tech Stack
 
