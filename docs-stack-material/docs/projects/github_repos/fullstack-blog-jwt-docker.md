@@ -1,4 +1,4 @@
-# Fullstack Blog — System Design Sandbox
+# Full Stack Blog — System Design Sandbox
 
 ## 1. Project Philosophy
 

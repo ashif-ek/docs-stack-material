@@ -21,7 +21,7 @@ Explore the exhaustive technical documentation for each ecosystem project via th
 
 ### Advanced Architectural Implementations
 *   **[Todo Advanced (Redux)](github_repos/todo-redux-adv.md)**: A showcase of handling highly complex, asynchronous state management leveraging the Redux Toolkit.
-*   **[Fullstack Docker Blog (JWT)](github_repos/fullstack-blog-jwt-docker.md)**: A secure, containerized publication platform demonstrating rigorous architectural boundaries and stateless authentication.
+*   **[Full Stack Blog](github_repos/fullstack-blog-jwt-docker.md)**: A secure, containerized publication platform demonstrating rigorous architectural boundaries and stateless authentication.
 
 ### Data Science & Psychological Utilities
 *   **[Salary Reality Engine](github_repos/salary-checker.md)**: An AI-infused analytics dashboard running dynamic machine learning inferences against compensation data arrays.

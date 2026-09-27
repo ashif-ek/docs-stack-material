@@ -6,7 +6,7 @@ Securing endpoints and managing identity is paramount. Across this portfolio, au
 
 ## 🔑 JSON Web Token (JWT) Implementation
 
-For heavily decoupled applications like the **Fullstack Blog** and the **Student Management System**, we uniformly implement the **JWT (JSON Web Token)** standard. This ensures scalable, stateless authentication across diverse frontends.
+For heavily decoupled applications like the **Full Stack Blog** and the **Student Management System**, we uniformly implement the **JWT (JSON Web Token)** standard. This ensures scalable, stateless authentication across diverse frontends.
 
 ### The Token Lifecycle Flow
 

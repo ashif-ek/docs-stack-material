@@ -30,7 +30,7 @@ Before attempting to execute any of the repositories within this portfolio local
 *   **pip / venv**: Standard Python library management and virtual environment creation tools.
 
 ### Infrastructure & Operations
-*   **Docker & Docker Compose**: Strictly required for containerized applications (like the Fullstack Blog) to guarantee environment parity and streamline multi-service orchestration.
+*   **Docker & Docker Compose**: Strictly required for containerized applications (like the Full Stack Blog) to guarantee environment parity and streamline multi-service orchestration.
 *   **Git**: The universal standard for version control. Required to clone the repositories and manage branches effectively.
 
 ## 🚀 Next Steps
