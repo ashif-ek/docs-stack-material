@@ -5,6 +5,20 @@ site_author: Ashif EK
 repo_name: ashif-ek/docs-stack-material
 repo_url: https://github.com/ashif-ek/docs-stack-material
 
+copyright: 'Copyright &copy; 2026 <a href="https://ashif-ek.vercel.app" target="_blank" rel="noopener">Ashif EK</a> &bull; <a href="https://ashif-ek.vercel.app" target="_blank" rel="noopener">Portfolio</a>'
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://ashif-ek.vercel.app
+      name: Ashif's Portfolio
+    - icon: fontawesome/brands/github
+      link: https://github.com/ashif-ek
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ashifek
+      name: LinkedIn
+
 theme:
   name: material
   language: en

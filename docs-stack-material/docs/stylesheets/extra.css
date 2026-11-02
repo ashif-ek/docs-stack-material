@@ -1,7 +1,7 @@
 /* ==========================================================================
    Custom UI/UX Theme Enhancements for Docs Stack – Material
    Optimized for readability, accessible focus rings, tables, code blocks,
-   admonitions, and responsive mobile navigation.
+   admonitions, compact bottom footer, and responsive mobile navigation.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -45,7 +45,9 @@
 .md-nav__link:focus-visible,
 .md-tabs__link:focus-visible,
 .md-header__button:focus-visible,
-.md-search__input:focus-visible {
+.md-search__input:focus-visible,
+.md-footer__link:focus-visible,
+.md-social__link:focus-visible {
   outline: 2.5px solid var(--md-accent-fg-color) !important;
   outline-offset: 2px !important;
 }
@@ -173,3 +175,65 @@
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* --------------------------------------------------------------------------
+   10. Compact Footer Layout & Spacing Reduction
+   -------------------------------------------------------------------------- */
+.md-footer {
+  margin-top: 2rem;
+}
+
+.md-footer__inner {
+  padding: 0.25rem 0.5rem;
+}
+
+.md-footer__link {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  min-height: auto;
+}
+
+.md-footer__title {
+  line-height: 1.3;
+}
+
+.md-footer__direction {
+  font-size: 0.65rem;
+  margin-bottom: 0.1rem;
+}
+
+.md-footer-meta {
+  padding: 0.35rem 0;
+}
+
+.md-footer-meta__inner {
+  padding: 0.25rem 0.5rem !important;
+  align-items: center;
+}
+
+.md-copyright {
+  padding: 0.2rem 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.md-copyright a {
+  color: var(--md-footer-fg-color);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.md-social {
+  padding: 0.2rem 0;
+  gap: 0.35rem;
+}
+
+.md-social__link {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.md-social__link svg {
+  max-height: 0.85rem;
+}
