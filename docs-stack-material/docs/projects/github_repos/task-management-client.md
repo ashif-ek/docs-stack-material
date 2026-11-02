@@ -280,10 +280,9 @@ Tailwind v4 introduces a new engine that drastically reduces build times and rem
 
 ## 16. Advanced Engineering Insights
 
-> [!WARNING]
-> **Production Bottleneck Detected**
-> The current architecture handles image uploads by encoding them as Base64 strings and passing them through the Redux store into the JSON database. 
-> 
-> **Impact**: As the database grows, the `fetchTodos` payload will become massive, leading to high TTFB (Time to First Byte) and potential browser memory exhaustion when RTK attempts to serialize thousands of Base64 strings.
-> 
-> **Resolution**: Implement signed URLs. The client should request an S3 pre-signed URL, upload the binary directly, and only store the S3 URL in the Redux state and Database.
+!!! warning "Production Bottleneck Detected"
+    The current architecture handles image uploads by encoding them as Base64 strings and passing them through the Redux store into the JSON database. 
+    
+    **Impact**: As the database grows, the `fetchTodos` payload will become massive, leading to high TTFB (Time to First Byte) and potential browser memory exhaustion when RTK attempts to serialize thousands of Base64 strings.
+    
+    **Resolution**: Implement signed URLs. The client should request an S3 pre-signed URL, upload the binary directly, and only store the S3 URL in the Redux state and Database.

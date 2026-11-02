@@ -1,25 +1,49 @@
 site_name: Docs Stack – Material
+site_url: https://ashif-ek.github.io/docs-stack-material/
+site_description: Centralized engineering knowledge base and technical specifications for production-grade web applications and open-source platforms.
+site_author: Ashif EK
+repo_name: ashif-ek/docs-stack-material
+repo_url: https://github.com/ashif-ek/docs-stack-material
 
 theme:
   name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - navigation.footer
     - search.highlight
     - search.suggest
+    - search.share
     - content.code.copy
     - content.code.annotate
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
@@ -50,12 +74,16 @@ nav:
           - Cipher Analytics: projects/github_repos/cipher-analytics.md
           - WorkPilot: projects/github_repos/workpilot.md
           - SkillStack: projects/github_repos/skill-stack.md
+      - Architecture Lab:
+          - Full Stack Blog: projects/github_repos/fullstack-blog-jwt-docker.md
+          - Portfolio React (PWA): projects/github_repos/portfolio-react.md
+          - Salary Checker: projects/github_repos/salary-checker.md
+          - Student Management: projects/github_repos/student-management-django-task.md
+          - Todo Redux Advanced: projects/github_repos/todo-redux-adv.md
   - Reference:
       - CLI: reference/cli.md
       - Configuration Options: reference/configuration-options.md
       - Glossary: reference/glossary.md
-
-site_url: https://ashif-ek.github.io/docs-stack-material/
 
 markdown_extensions:
   - admonition
@@ -65,5 +93,19 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.arithmatex:
       generic: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true

@@ -37,6 +37,5 @@ To securely bootstrap an application locally, follow this standardized workflow:
    ```
 3. **Populate**: Open the newly created `.env` file and replace the placeholder values with your explicit local development credentials.
 
-> [!CAUTION]
-> **VCS Exclusion Policies**
-> Never, under any circumstance, commit a populated `.env` file to version control (Git). Our standardized `.gitignore` files automatically exclude `.env`, `.env.local`, and `.env.*.local`. Leaking secrets like `STRIPE_SECRET_KEY` or database credentials poses a critical security liability.
+!!! danger "VCS Exclusion Policies"
+    Never, under any circumstance, commit a populated `.env` file to version control (Git). Our standardized `.gitignore` files automatically exclude `.env`, `.env.local`, and `.env.*.local`. Leaking secrets like `STRIPE_SECRET_KEY` or database credentials poses a critical security liability.

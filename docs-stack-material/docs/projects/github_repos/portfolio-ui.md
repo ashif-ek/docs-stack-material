@@ -174,8 +174,7 @@ The administrative dashboard integrates `Recharts` for parsing and visualizing v
 
 ## 10. Advanced Engineering Insights
 
-> [!CAUTION]
-> **Ephemeral File Systems**
-> If the backend is deployed to a PaaS without persistent disk volumes (like Heroku's ephemeral filesystem), any images uploaded via the Admin Dashboard or changes made to `db.json` will be wiped during the next container cycle or sleep state.
-> 
-> **Resolution**: You must either attach a persistent volume block to your Render instance, or refactor the backend to push Multer uploads directly to AWS S3 and synchronize data to a hosted database provider (e.g., MongoDB Atlas).
+!!! danger "Ephemeral File Systems"
+    If the backend is deployed to a PaaS without persistent disk volumes (like Heroku's ephemeral filesystem), any images uploaded via the Admin Dashboard or changes made to `db.json` will be wiped during the next container cycle or sleep state.
+    
+    **Resolution**: You must either attach a persistent volume block to your Render instance, or refactor the backend to push Multer uploads directly to AWS S3 and synchronize data to a hosted database provider (e.g., MongoDB Atlas).

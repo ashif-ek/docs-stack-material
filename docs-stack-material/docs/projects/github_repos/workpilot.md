@@ -196,9 +196,8 @@ The `TenantMiddleware` intercepts every request and performs the following:
 5. **Execution:** Yields control to the FastAPI router.
 6. **Cleanup:** In the `finally` block, it **MUST** reset the schema back to `public` before returning the connection to the SQLAlchemy connection pool.
 
-> [!CAUTION]
-> **Connection Pool Contamination**
-> If the `TenantMiddleware` fails to reset the `search_path` back to `public` before the connection is returned to the pool, the next request that borrows that connection might accidentally query the wrong tenant's data. This is why the `finally` block in `tenant_middleware.py` containing `set_public_schema(db)` is absolutely critical.
+!!! danger "Connection Pool Contamination"
+    If the `TenantMiddleware` fails to reset the `search_path` back to `public` before the connection is returned to the pool, the next request that borrows that connection might accidentally query the wrong tenant's data. This is why the `finally` block in `tenant_middleware.py` containing `set_public_schema(db)` is absolutely critical.
 
 ---
 

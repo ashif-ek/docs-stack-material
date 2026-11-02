@@ -70,7 +70,7 @@ Launch the local development server tailored to the specific framework in testin
 
 For deeply complex setups involving database migrations, custom scripts, or Docker orchestration, always refer strictly to the exact project's dedicated protocol page:
 
-*   **[Portfolio React Setup Protocol](projects/github_repos/portfolio-react.md#installation)**
-*   **[Noirel Enterprise Installation](projects/github_repos/noirel-ecommerce.md#installation-setup)**
-*   **[Salary Analytics Configuration](projects/github_repos/salary-checker.md#setup-instructions)**
-*   **[Time Lens Deployment Steps](projects/github_repos/time-lens-python.md#run-locally)**
+*   **[Portfolio React Setup Protocol](projects/github_repos/portfolio-react.md#7-installation)**
+*   **[Noirel Enterprise Installation](projects/github_repos/noirel-ecommerce.md#7-devops-deployment)**
+*   **[Salary Analytics Configuration](projects/github_repos/salary-checker.md#getting-started)**
+*   **[Time Lens Deployment Steps](projects/github_repos/time-lens-python.md#local-development-environment)**

@@ -193,8 +193,7 @@ In production (`docker-compose.prod.yml`), the Django development server is repl
 
 ## 10. Advanced Engineering Insights
 
-> [!WARNING]
-> **Celery Result Backend Memory Leak**
-> By default, if a Celery result backend is configured, task results are stored indefinitely in Redis unless explicitly ignored or expired.
-> 
-> **Resolution**: Ensure `@shared_task(ignore_result=True)` is used for tasks where the return value is not needed, or configure `CELERY_RESULT_EXPIRES` in `settings.py` to prevent Redis memory eviction issues in production.
+!!! warning "Celery Result Backend Memory Leak"
+    By default, if a Celery result backend is configured, task results are stored indefinitely in Redis unless explicitly ignored or expired.
+    
+    **Resolution**: Ensure `@shared_task(ignore_result=True)` is used for tasks where the return value is not needed, or configure `CELERY_RESULT_EXPIRES` in `settings.py` to prevent Redis memory eviction issues in production.

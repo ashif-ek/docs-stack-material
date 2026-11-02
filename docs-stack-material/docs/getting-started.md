@@ -6,12 +6,13 @@ Welcome to the comprehensive technical documentation for Ashif's Developer Portf
 
 ## 🎯 Portfolio Highlights & Navigation
 
-This documentation extensively covers the following flagship projects. Select a project below to delve into its specific features, tech stack, and API documentation:
+This documentation extensively covers both production-grade applications and architectural prototypes. Select a project below to delve into its specific features, tech stack, and API documentation:
 
-*   **[Portfolio Strategy (React & Vite)](projects/github_repos/portfolio-react.md)**: A modern, performant personal developer portfolio complete with a secure administrative dashboard for dynamic content management.
-*   **[Noirel Enterprise E-commerce](projects/github_repos/noirel-ecommerce.md)**: A high-end, full-stack e-commerce experience implementing secure cart logic, payment gateway integration, and a premium UI.
-*   **[Salary Reality Engine](projects/github_repos/salary-checker.md)**: An AI-driven analytics platform providing market intelligence, percentile calculations, and machine-learning powered salary forecasts.
+*   **[Portfolio UI Platform](projects/github_repos/portfolio-ui.md)**: A modern, performant personal developer portfolio complete with a secure administrative dashboard for dynamic content management.
+*   **[Noirel Enterprise E-Commerce](projects/github_repos/noirel-ecommerce.md)**: A high-end, full-stack e-commerce experience implementing secure cart logic, payment gateway integration, and a premium UI.
+*   **[Salary Analytics Engine](projects/github_repos/salary-analytics-engine.md)**: An AI-driven analytics platform providing market intelligence, percentile calculations, and machine-learning powered salary forecasts.
 *   **[Time Lens Psychological Tool](projects/github_repos/time-lens-python.md)**: A mathematically rigorous mindset application designed to reframe time perception and drive intentional user behavior.
+*   **[WorkPilot SaaS Platform](projects/github_repos/workpilot.md)**: A multi-tenant workspace platform engineered for scale with schema-level tenant isolation.
 
 Every project page is structured to provide an immediate high-level functional overview, followed by deep dives into the underlying technologies and specialized installation procedures.
 

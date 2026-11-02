@@ -187,8 +187,7 @@ This multi-worker setup ensures that synchronous CPU-bound tasks (like loading t
 
 ## 10. Advanced Engineering Insights
 
-> [!TIP]
-> **Database-level vs. Python-level Percentiles**
-> When computing percentiles, pulling all rows into Python memory and utilizing `numpy.percentile()` will lead to catastrophic memory exhaustion.
-> 
-> **Resolution**: This platform correctly utilizes PostgreSQL's native window functions (`percentile_cont(0.5) WITHIN GROUP (ORDER BY annual_salary)`) to offload the heavy lifting to the database layer, ensuring the Python worker remains memory-efficient.
+!!! tip "Database-level vs. Python-level Percentiles"
+    When computing percentiles, pulling all rows into Python memory and utilizing `numpy.percentile()` will lead to catastrophic memory exhaustion.
+    
+    **Resolution**: This platform correctly utilizes PostgreSQL's native window functions (`percentile_cont(0.5) WITHIN GROUP (ORDER BY annual_salary)`) to offload the heavy lifting to the database layer, ensuring the Python worker remains memory-efficient.

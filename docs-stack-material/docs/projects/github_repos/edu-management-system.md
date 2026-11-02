@@ -185,6 +185,5 @@ python manage.py migrate
 
 ## 10. Advanced Engineering Insights
 
-> [!TIP]
-> **Fat Models vs Thin Views**
-> By pushing business logic into the Models (e.g., calculating GPAs directly via model properties), the views remain extremely clean and easily testable. This architectural pattern prevents logic duplication across different views and REST endpoints.
+!!! tip "Fat Models vs Thin Views"
+    By pushing business logic into the Models (e.g., calculating GPAs directly via model properties), the views remain extremely clean and easily testable. This architectural pattern prevents logic duplication across different views and REST endpoints.
