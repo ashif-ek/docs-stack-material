@@ -4,7 +4,7 @@ This document serves as a comprehensive reference for the essential command-line
 
 ---
 
-## 🟢 Node.js & npm Ecosystem
+## Node.js & npm Ecosystem
 
 These commands are foundational for frontend projects utilizing React, Vite, and related Javascript tooling.
 
@@ -18,7 +18,7 @@ These commands are foundational for frontend projects utilizing React, Vite, and
 
 ---
 
-## 🐍 Python & Django Environment
+## Python & Django Environment
 
 The following commands are specific to the Django framework, managing everything from the local server to database schema migrations.
 
@@ -32,7 +32,7 @@ The following commands are specific to the Django framework, managing everything
 
 ---
 
-## ⚡ Python & FastAPI Ecosystem
+## Python & FastAPI Ecosystem
 
 For high-performance API development leveraging FastAPI and Uvicorn.
 
@@ -43,7 +43,7 @@ For high-performance API development leveraging FastAPI and Uvicorn.
 
 ---
 
-## 🐳 Docker Operations (Containerization)
+## Docker Operations (Containerization)
 
 For projects leveraging Docker for isolated development and deployment phases.
 

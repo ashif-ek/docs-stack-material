@@ -4,14 +4,14 @@ This section categorizes and summarizes the primary open-source projects documen
 
 ---
 
-## 🌟 Featured Highlight: The Modern Portfolio Engine
+## Featured Highlight: The Modern Portfolio Engine
 
 The flagship frontend system is the **[Portfolio UI Platform](github_repos/portfolio-ui.md)** (with earlier architectural foundations detailed in **[Portfolio React](github_repos/portfolio-react.md)**). 
 It functions as both an interactive resume and an administrative Content Management System (CMS), allowing seamless, database-driven updates to projects, skills, and contact messages without altering the frontend codebase.
 
 ---
 
-## 📁 Repository Directory
+## Repository Directory
 
 Explore the exhaustive technical documentation for each ecosystem project via the specific indices below:
 

@@ -4,7 +4,7 @@ This section outlines the design philosophies and technical specifications of th
 
 ---
 
-## 📖 Automated Documentation Strategies
+## Automated Documentation Strategies
 
 To minimize integration friction and maintain a single source of truth, most backend services within this ecosystem are entirely **self-documenting**:
 
@@ -13,21 +13,21 @@ To minimize integration friction and maintain a single source of truth, most bac
 
 ---
 
-## 🌐 Core Service Endpoints Reference
+## Core Service Endpoints Reference
 
 Below is a high-level topographical map of critical endpoints across the flagship projects. *Note: Always refer to a project's live `/docs` route for the exact payload schemas and parameter requirements.*
 
-### 🤖 Salary Reality Engine (FastAPI)
+### Salary Reality Engine (FastAPI)
 Focused on data analysis and ML inference.
 *   `GET /salary/insights`: Retrieves comprehensive statistical percentile distributions given a role and location.
 *   `POST /salary/predict`: Dispatches payload to the scikit-learn pipeline for ML-based salary forecasting.
 
-### 💼 Portfolio Management Backend (Node/React CMS)
+### Portfolio Management Backend (Node/React CMS)
 Handles dynamic content delivery for the developer portfolio.
 *   `GET /api/projects`: Fetches the active catalog of portfolio projects.
 *   `POST /api/messages`: Securely handles and persists incoming contact form submissions.
 
-### 🛒 Noirel E-commerce API
+### Noirel E-commerce API
 A complex REST implementation handling critical transaction states.
 *   `GET /api/products`: Retrieves the paginated, filter-ready product catalog.
 *   `POST /api/cart`: Initializes or modifies the user's active shopping cart session.

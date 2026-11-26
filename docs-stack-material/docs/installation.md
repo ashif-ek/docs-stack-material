@@ -4,7 +4,7 @@ This document outlines the standardized operational procedures for cloning, boot
 
 ---
 
-## 🔄 The Universal Bootstrap Sequence
+## The Universal Bootstrap Sequence
 
 Adhere to these foundational steps when initializing any project locally.
 
@@ -66,7 +66,7 @@ Launch the local development server tailored to the specific framework in testin
 
 ---
 
-## 📘 Project-Specific Documentation Paths
+## Project-Specific Documentation Paths
 
 For deeply complex setups involving database migrations, custom scripts, or Docker orchestration, always refer strictly to the exact project's dedicated protocol page:
 

@@ -4,7 +4,7 @@ description: Comprehensive Systems Architecture and Cryptographic Infrastructure
 icon: material/shield-lock
 ---
 
-# 🛡️ Cipher Analytics: Systems Architecture & Cryptographic Specification
+# Cipher Analytics: Systems Architecture & Cryptographic Specification
 
 !!! abstract "Executive Summary"
     **Cipher Analytics** engineers a paradigm shift from "Trust-but-Verify" to strict mathematical **Zero-Trust Computation**. 
@@ -13,7 +13,7 @@ icon: material/shield-lock
 
 ---
 
-## 🏗️ 1. Distributed System Topology
+## 1. Distributed System Topology
 
 Cipher Analytics is architected as an asynchronously decoupled, horizontally scalable microservices mesh, designed to absorb and distribute the massive computational latency inherent to FHE operations.
 
@@ -55,7 +55,7 @@ graph TD
 
 ---
 
-## 🔐 2. Cryptographic Layer Deep Dive (CKKS Scheme)
+## 2. Cryptographic Layer Deep Dive (CKKS Scheme)
 
 The selection of the **CKKS (Cheon-Kim-Kim-Song)** scheme over BFV or BGV is non-negotiable due to the fundamental requirement for approximate floating-point arithmetic inherent in statistical scaling and ML transformations.
 
@@ -78,7 +78,7 @@ Every homomorphic evaluation injects cryptographic noise into the ciphertext pol
 
 ---
 
-## 🧠 3. Machine Learning & Data Transformation Pipeline
+## 3. Machine Learning & Data Transformation Pipeline
 
 The ML pipeline is heavily engineered to extract actionable topologies from high-dimensional datasets while respecting the computational boundaries of FHE.
 
@@ -110,7 +110,7 @@ sequenceDiagram
 
 ---
 
-## ⚙️ 4. Backend Services & Event Orchestration
+## 4. Backend Services & Event Orchestration
 
 The backend is built on **Django 5**, operating as an API gateway and orchestration engine.
 
@@ -122,7 +122,7 @@ The backend is built on **Django 5**, operating as an API gateway and orchestrat
 
 ---
 
-## 🖥️ 5. Frontend Architecture & WebGL Pipeline
+## 5. Frontend Architecture & WebGL Pipeline
 
 The client-side architecture is a **React 18** Single Page Application (SPA) compiled via **Vite**, functioning as a thick client that holds the zero-trust decryption keys.
 
@@ -135,7 +135,7 @@ Standard DOM manipulation is incapable of rendering hundreds of thousands of mul
 
 ---
 
-## 🚀 6. DevOps, Infrastructure & Security
+## 6. DevOps, Infrastructure & Security
 
 ### Container Topologies and Elastic Scaling
 
@@ -151,7 +151,7 @@ The entire stack is containerized using Docker. Auto Scaling Groups (ASGs) dynam
 
 ---
 
-## 🔮 7. Future Research Directions
+## 7. Future Research Directions
 
 The platform architecture is built to accommodate the next generation of cryptographic engineering:
 

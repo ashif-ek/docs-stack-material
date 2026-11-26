@@ -4,7 +4,7 @@ Establishing a reliable and standardized local development environment is critic
 
 ---
 
-## 🛠️ Mandatory Prerequisites
+## Mandatory Prerequisites
 
 Before cloning any project, ensure your host machine is equipped with the following underlying technologies:
 
@@ -16,7 +16,7 @@ Before cloning any project, ensure your host machine is equipped with the follow
 
 ---
 
-## 🔄 Standard Initialization Protocol
+## Standard Initialization Protocol
 
 Regardless of the project's underlying language, the bootstrapping process conceptually follows these three phases:
 
@@ -33,7 +33,7 @@ Regardless of the project's underlying language, the bootstrapping process conce
 
 ---
 
-## 🚀 Execution & Port Conventions
+## Execution & Port Conventions
 
 To prevent port conflicts when running multiple services simultaneously (e.g., a React frontend and a Django backend), projects default to the following port allocations:
 
@@ -47,7 +47,7 @@ To prevent port conflicts when running multiple services simultaneously (e.g., a
 
 ---
 
-## 🐞 Debugging Strategies
+## Debugging Strategies
 
 *   **Frontend**: Heavily leverage the *React Developer Tools* browser extension to inspect component hierarchies and verify Redux/Zustand state mutations in real-time.
 *   **Backend (Python)**: Utilize standard system-out logs for immediate stack traces. For complex logical deadlocks, inject `import pdb; pdb.set_trace()` (or the built-in `breakpoint()` function in Python 3.7+) to halt execution and inspect local memory states.

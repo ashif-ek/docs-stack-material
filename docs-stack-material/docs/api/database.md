@@ -4,7 +4,7 @@ This section outlines the architectural approach to data structure, storage mech
 
 ---
 
-## 🗃️ Core Domain Models
+## Core Domain Models
 
 While schemas vary drastically depending on business requirements, we adhere to strict normalization standards and utilize universally identifiable base models across all RDBMS applications.
 
@@ -22,7 +22,7 @@ Almost all applications extend a foundational `User` abstraction incorporating s
 
 ---
 
-## 🔌 ORM Integration Paradigms
+## ORM Integration Paradigms
 
 Direct SQL string manipulation is strictly forbidden to prevent SQL Injection vulnerabilities. We interact with the persistence layer exclusively through robust Object-Relational Mappers (ORMs).
 

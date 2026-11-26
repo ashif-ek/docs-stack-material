@@ -8,7 +8,7 @@ This project demonstrates advanced state management architectural patterns, inte
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 ### Advanced Redux Implementations
 - **Async Thunks**: Manages complex asynchronous data flow and handles loading/error states seamlessly.
@@ -23,7 +23,7 @@ This project demonstrates advanced state management architectural patterns, inte
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -34,7 +34,7 @@ This project demonstrates advanced state management architectural patterns, inte
 
 ---
 
-## 🏗️ Architecture & Patterns
+## Architecture & Patterns
 
 ### State Slice Organization
 The application divides the Redux store into feature-centric slices, encapsulating reducers, actions, and selectors within specialized modules. This pattern promotes:
@@ -47,7 +47,7 @@ By utilizing specific middleware and utility hooks (like `useDebounce` and `useT
 
 ---
 
-## 🏁 Getting Started
+## Getting Started
 
 To run this project locally:
 

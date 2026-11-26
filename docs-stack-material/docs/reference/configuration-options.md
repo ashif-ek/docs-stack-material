@@ -4,7 +4,7 @@ Proper configuration management is critical for operational security and applica
 
 ---
 
-## 🔐 Core System Variables
+## Core System Variables
 
 These variables dictate fundamental application behaviors and security postures.
 
@@ -16,7 +16,7 @@ These variables dictate fundamental application behaviors and security postures.
 
 ---
 
-## 🗄️ Database & Infrastructure
+## Database & Infrastructure
 
 Determines how the application connects to stateful persistence layers.
 
@@ -28,7 +28,7 @@ Determines how the application connects to stateful persistence layers.
 
 ---
 
-## 🌐 Network & Access Control
+## Network & Access Control
 
 These variables govern cross-origin resource sharing and external service communication.
 
@@ -39,7 +39,7 @@ These variables govern cross-origin resource sharing and external service commun
 
 ---
 
-## 🔒 Security Best Practices
+## Security Best Practices
 
 1. **Environment Separation**: Always maintain strictly segregated `.env` files for distinct environments (`.env.development`, `.env.production`).
 2. **Never Commit Secrets**: Ensure `.env` is comprehensively included in your global `.gitignore`. Use `.env.example` to document required variables safely via template.

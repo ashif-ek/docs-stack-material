@@ -4,7 +4,7 @@ To ensure long-term maintainability, seamless developer onboarding, and a cohesi
 
 ---
 
-## 🎨 Code Style & Quality Assurance
+## Code Style & Quality Assurance
 
 Automated tooling is leveraged to eliminate subjective style debates and mathematically ensure code quality.
 
@@ -17,7 +17,7 @@ Automated tooling is leveraged to eliminate subjective style debates and mathema
 
 ---
 
-## 📝 Version Control & Commit Protocol
+## Version Control & Commit Protocol
 
 We mandate the **Conventional Commits** specification (v1.0.0) to maintain a readable, automatically parseable project history. This allows for automated semantic versioning and changelog generation.
 
@@ -32,7 +32,7 @@ We mandate the **Conventional Commits** specification (v1.0.0) to maintain a rea
 
 ---
 
-## 🌿 Branching Strategy
+## Branching Strategy
 
 The repository structure follows a simplified Git Flow model tailored for continuous delivery.
 
@@ -43,7 +43,7 @@ The repository structure follows a simplified Git Flow model tailored for contin
 
 ---
 
-## 🗂️ File Naming Nomenclature
+## File Naming Nomenclature
 
 Uniform file naming ensures predictable navigation across massive project structures.
 

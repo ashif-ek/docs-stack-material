@@ -4,7 +4,7 @@ Welcome to the comprehensive technical documentation for Ashif's Developer Portf
 
 ---
 
-## 🎯 Portfolio Highlights & Navigation
+## Portfolio Highlights & Navigation
 
 This documentation extensively covers both production-grade applications and architectural prototypes. Select a project below to delve into its specific features, tech stack, and API documentation:
 
@@ -18,7 +18,7 @@ Every project page is structured to provide an immediate high-level functional o
 
 ---
 
-## 🛠️ Global Prerequisites 
+## Global Prerequisites
 
 Before attempting to execute any of the repositories within this portfolio locally, you must ensure your development environment is primed with the following foundational technologies:
 
@@ -34,7 +34,7 @@ Before attempting to execute any of the repositories within this portfolio local
 *   **Docker & Docker Compose**: Strictly required for containerized applications (like the Full Stack Blog) to guarantee environment parity and streamline multi-service orchestration.
 *   **Git**: The universal standard for version control. Required to clone the repositories and manage branches effectively.
 
-## 🚀 Next Steps
+## Next Steps
 
 1. Review the [Foundational Architecture](architecture.md) principles governing these builds.
 2. Read through our strictly enforced [Development Conventions](conventions.md).

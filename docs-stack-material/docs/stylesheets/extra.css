@@ -1,11 +1,10 @@
 /* ==========================================================================
-   Custom UI/UX Theme Enhancements for Docs Stack – Material
-   Optimized for readability, accessible focus rings, tables, code blocks,
-   admonitions, compact bottom footer, and responsive mobile navigation.
+   Engineering Design System – Docs Stack Material
+   Clean, modern, high-contrast, distraction-free technical documentation.
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. Typography & Hierarchy Spacing
+   1. Typography & Hierarchy
    -------------------------------------------------------------------------- */
 .md-typeset h1 {
   font-weight: 700;
@@ -17,7 +16,7 @@
 .md-typeset h2 {
   font-weight: 600;
   letter-spacing: -0.015em;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
@@ -35,11 +34,11 @@
 }
 
 /* --------------------------------------------------------------------------
-   2. Keyboard Accessibility & Visible Focus States
+   2. Keyboard Accessibility & Visible Focus Rings
    -------------------------------------------------------------------------- */
 :focus-visible {
-  outline: 2.5px solid var(--md-accent-fg-color) !important;
-  outline-offset: 3px !important;
+  outline: 2px solid var(--md-accent-fg-color) !important;
+  outline-offset: 2px !important;
 }
 
 .md-nav__link:focus-visible,
@@ -48,26 +47,27 @@
 .md-search__input:focus-visible,
 .md-footer__link:focus-visible,
 .md-social__link:focus-visible {
-  outline: 2.5px solid var(--md-accent-fg-color) !important;
+  outline: 2px solid var(--md-accent-fg-color) !important;
   outline-offset: 2px !important;
 }
 
 /* --------------------------------------------------------------------------
-   3. Polish Links & Meaningful Affordance
+   3. Refined Links
    -------------------------------------------------------------------------- */
 .md-typeset a {
+  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  transition: color 150ms ease, text-decoration-color 150ms ease;
+  text-decoration-color: var(--md-default-fg-color--lighter);
+  transition: text-decoration-color 150ms ease, color 150ms ease;
 }
 
 .md-typeset a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-color: currentColor;
 }
 
 /* --------------------------------------------------------------------------
-   4. Tables Polish & Mobile Responsiveness
+   4. Tables: Crisp borders, subtle headers
    -------------------------------------------------------------------------- */
 .md-typeset table:not([class]) {
   width: 100%;
@@ -76,39 +76,38 @@
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 6px;
   overflow: hidden;
-  margin: 1.5rem 0;
-  display: table;
+  margin: 1.25rem 0;
+  font-size: 0.85rem;
 }
 
 .md-typeset__scrollwrap {
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--md-default-fg-color--lightest);
 }
 
 .md-typeset table:not([class]) th {
   background-color: var(--md-default-fg-color--lightest);
   font-weight: 600;
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 0.9rem;
   border-bottom: 1px solid var(--md-default-fg-color--lighter);
 }
 
 .md-typeset table:not([class]) td {
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 0.9rem;
   border-top: 1px solid var(--md-default-fg-color--lightest);
 }
 
-/* Subtle row hover for enhanced readability */
 .md-typeset table:not([class]) tr:hover td {
   background-color: var(--md-default-fg-color--lightest);
 }
 
 /* --------------------------------------------------------------------------
-   5. Code Blocks Polish
+   5. Code Blocks & Highlighting
    -------------------------------------------------------------------------- */
 .md-typeset pre > code {
   border-radius: 6px;
-  font-size: 0.85em;
+  font-size: 0.825rem;
   line-height: 1.6;
 }
 
@@ -118,19 +117,21 @@
   border: 1px solid var(--md-default-fg-color--lightest);
 }
 
-/* Copy button subtle hover */
 .md-clipboard {
-  transition: color 150ms ease, opacity 150ms ease;
+  transition: opacity 150ms ease, color 150ms ease;
 }
 
 /* --------------------------------------------------------------------------
-   6. Admonition Enhancements
+   6. Admonitions: Flat, restrained design
    -------------------------------------------------------------------------- */
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 6px;
   border-left-width: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: none;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-right: 1px solid var(--md-default-fg-color--lightest);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
   margin: 1.25rem 0;
 }
 
@@ -140,7 +141,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   7. Mobile Navigation & Touch Target Polish
+   7. Mobile Navigation & Clean Drawer Targets
    -------------------------------------------------------------------------- */
 @media screen and (max-width: 76.1875em) {
   .md-nav__link {
@@ -153,10 +154,10 @@
 }
 
 /* --------------------------------------------------------------------------
-   8. Search Bar Polish
+   8. Search Bar: Clean rounded styling
    -------------------------------------------------------------------------- */
 .md-search__inner {
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .md-search__input {
@@ -164,19 +165,19 @@
 }
 
 /* --------------------------------------------------------------------------
-   9. Dark Mode Contrast Fine-Tuning
+   9. Dark Mode Refinements
    -------------------------------------------------------------------------- */
 [data-md-color-scheme="slate"] {
-  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.08);
-  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.16);
+  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.07);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.14);
 }
 
 [data-md-color-scheme="slate"] .highlight {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 /* --------------------------------------------------------------------------
-   10. Compact Footer Layout & Spacing Reduction
+   10. Compact Footer Layout
    -------------------------------------------------------------------------- */
 .md-footer {
   margin-top: 2rem;

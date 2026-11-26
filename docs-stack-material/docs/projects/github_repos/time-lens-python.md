@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 The Core Philosophy
+## The Core Philosophy
 
 Conventional advice frequently suggests we "value our time," yet fails to provide a visceral mechanism to do so. Time Lens bridges this gap by converting real-time micro-durations into universally understood macro life-spans:
 
@@ -20,7 +20,7 @@ This mathematical reframing ensures that wasting a single minute suddenly feels 
 
 ---
 
-## ✨ Features & Insights Engine
+## Features & Insights Engine
 
 Time Lens doesn't just calculate; it acts as a philosophical guide. For any inputted duration, the advanced suggestion engine returns:
 - **Macroscopic Conversions**: Exact translations into Life-Days, Months, and Years.
@@ -31,7 +31,7 @@ Time Lens doesn't just calculate; it acts as a philosophical guide. For any inpu
 
 ---
 
-## 🛠️ Technological Foundation
+## Technological Foundation
 
 Constructed utilizing a highly efficient Python web stack, optimized for instantaneous processing:
 - **FastAPI Framework**: For high-performance, asynchronous routing.
@@ -53,7 +53,7 @@ time-lens/
 
 ---
 
-## 📦 Local Development Environment
+## Local Development Environment
 
 To deploy this psychological framework locally:
 

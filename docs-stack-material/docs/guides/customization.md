@@ -4,7 +4,7 @@ All projects within this repository network are architected with modularity and 
 
 ---
 
-## 🎨 Global UI Theming (Tailwind CSS)
+## Global UI Theming (Tailwind CSS)
 
 The visual identity of frontend applications is strictly governed by Tailwind CSS configuration files, ensuring a centralized, easily mutable design system.
 
@@ -16,7 +16,7 @@ To enact sweeping visual changes across an entire application:
 
 ---
 
-## 🧩 Modifying React Components
+## Modifying React Components
 
 Component architecture is strictly isolated within the `src/components/` directory (or specific domain folders for feature-sliced designs).
 
@@ -25,7 +25,7 @@ Component architecture is strictly isolated within the `src/components/` directo
 
 ---
 
-## ⚙️ Backend Logic Extension
+## Backend Logic Extension
 
 Backend scalability relies entirely on respecting the inherent framework architectures.
 

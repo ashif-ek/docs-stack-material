@@ -2,7 +2,7 @@
 
 Welcome to the WorkPilot Engineering Handbook. This section provides an in-depth look at the architecture, design decisions, and internal mechanics of WorkPilot—a modern, multi-tenant SaaS application built for scale, security, and exceptional developer experience.
 
-## 🔗 Important Links
+## Important Links
 * **Repository:** [GitHub Repository](https://github.com/work-pilot-org/work-pilot)
 * **Wiki:** [Project Wiki](https://github.com/work-pilot-org/work-pilot/wiki)
 * **Web Prototype:** [Stitch Web UI](https://stitch.withgoogle.com/preview/9691881107217269128?node-id=6d9461fa3a3346eeb70917ddc22b1ac7)

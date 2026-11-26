@@ -8,36 +8,36 @@ Built with state-of-the-art technologies including **FastAPI**, **PostgreSQL**, 
 
 ---
 
-## 🚀 Outstanding Features
+## Outstanding Features
 
-### 🔹 Intelligent Percentile Engine
+### Intelligent Percentile Engine
 Dynamically calculates real-time market percentiles to provide a clear distribution overview:
 - **P10 & P25**: Lower-bound market rates.
 - **P50 (Median)**: Standard baseline compensation.
 - **P75 & P90**: Top-tier and elite market ranges.
 
-### 🔹 AI-Driven Fuzzy Matching
+### AI-Driven Fuzzy Matching
 Implements advanced string-matching heuristics to auto-correct imperfect user input.
 - Example: Transforms `py devloper` or `sofware eng` into perfectly matched professional titles, ensuring database integrity and accurate querying.
 
-### 🔹 Machine Learning Salary Prediction
+### Machine Learning Salary Prediction
 Utilizes robust ML models when exact database entries are absent.
 - Automatically trains **Linear Regression models** on the fly.
 - Forecasts salaries based on multi-variable experience trends.
 
-### 🔹 Comprehensive Admin Tools
+### Comprehensive Admin Tools
 Enables seamless dataset operations:
 - Direct CSV upload capabilities for thousands of records.
 - Optimized bulk insertion routines straight into the PostgreSQL data warehouse.
 
-### 🔹 Premium Modern UI
+### Premium Modern UI
 A responsive, high-performance interface built with React:
 - **Interactive Visualizations**: Powered by Recharts for animated, dynamic data sets.
 - **Polished Experience**: Features shimmer loading states, auto-suggest dropdowns, Framer Motion transitions, and native Dark/Light mode support.
 
 ---
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Backend Infrastructure
 - **FastAPI**: Blazing-fast routing and API endpoints.
@@ -51,7 +51,7 @@ A responsive, high-performance interface built with React:
 
 ---
 
-## 📡 Core API Integration
+## Core API Integration
 
 Exposes comprehensive RESTful endpoints for seamless integration:
 
@@ -64,7 +64,7 @@ Exposes comprehensive RESTful endpoints for seamless integration:
 
 ---
 
-## 🔧 Getting Started
+## Getting Started
 
 ### 1. Backend Setup
 ```bash

@@ -4,7 +4,7 @@ To guarantee a predictable developer experience for frontend clients and seamles
 
 ---
 
-## 🚦 HTTP Status Code Semantics
+## HTTP Status Code Semantics
 
 The APIs exclusively utilize standard HTTP status codes to instantly communicate the overarching result of a client request.
 
@@ -18,7 +18,7 @@ The APIs exclusively utilize standard HTTP status codes to instantly communicate
 
 ---
 
-## 📦 Unified Error Response Payload
+## Unified Error Response Payload
 
 When an API encounters any error (Status `4xx` or `5xx`), it abandons standard payload delivery and instead returns a strictly typed JSON error construct. This guarantees the frontend can programmatically parse and display the exact failure reason without guessing.
 

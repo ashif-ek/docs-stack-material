@@ -4,7 +4,7 @@ Secure and scalable configuration management is a cornerstone of this project ec
 
 ---
 
-## 🔐 Foundational Environment Variables
+## Foundational Environment Variables
 
 While independent applications within the suite have specific prerequisites, the following categories represent universally applicable configuration patterns.
 
@@ -26,7 +26,7 @@ API keys and secrets for third-party SaaS vendors.
 
 ---
 
-## 🛠️ Setup & Implementation Protocol
+## Setup & Implementation Protocol
 
 To securely bootstrap an application locally, follow this standardized workflow:
 

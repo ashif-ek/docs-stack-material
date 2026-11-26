@@ -4,7 +4,7 @@ This technical guide defines the deployment architecture and continuous delivery
 
 ---
 
-## ⚡ Global Edge Deployment (Frontend)
+## Global Edge Deployment (Frontend)
 
 For JavaScript-heavy architectures, specifically Single Page Applications (SPAs) built with React and Vite, Edge deployment networks like **Vercel** or **Netlify** are strictly utilized.
 
@@ -18,7 +18,7 @@ For JavaScript-heavy architectures, specifically Single Page Applications (SPAs)
 
 ---
 
-## ☁️ Platform-as-a-Service (Backend)
+## Platform-as-a-Service (Backend)
 
 For stateful API servers constructed in Python (Django, FastAPI) or Node.js, managed container environments like **Render** or **Railway** ensure high uptime without the operational overhead of managing bare-metal servers.
 
@@ -34,7 +34,7 @@ For stateful API servers constructed in Python (Django, FastAPI) or Node.js, man
 
 ---
 
-## 🐳 Docker Orchestration
+## Docker Orchestration
 
 For environments demanding absolute parity, or applications involving complex microservice interactions (e.g., the `fullstack-blog-jwt-docker`), we deploy using Docker Native tooling.
 

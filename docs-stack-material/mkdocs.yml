@@ -25,14 +25,14 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: slate
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: slate
       accent: indigo
       toggle:
         icon: material/weather-sunny
@@ -76,17 +76,17 @@ nav:
       - Database: api/database.md
       - Error Handling: api/error-handling.md
   - Projects:
-      - Portfolio: projects/portfolio.md
-      - Open Source:
-          - Task Management Client: projects/github_repos/task-management-client.md
+      - Overview: projects/portfolio.md
+      - Production:
+          - Portfolio UI Platform: projects/github_repos/portfolio-ui.md
+          - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
+          - WorkPilot: projects/github_repos/workpilot.md
           - Content Publishing Engine: projects/github_repos/content-publishing-engine.md
           - Edu-Management System: projects/github_repos/edu-management-system.md
-          - Portfolio UI Platform: projects/github_repos/portfolio-ui.md
+          - Task Management Client: projects/github_repos/task-management-client.md
           - Salary Analytics Engine: projects/github_repos/salary-analytics-engine.md
-          - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
-          - Time Lens: projects/github_repos/time-lens-python.md
           - Cipher Analytics: projects/github_repos/cipher-analytics.md
-          - WorkPilot: projects/github_repos/workpilot.md
+          - Time Lens: projects/github_repos/time-lens-python.md
           - SkillStack: projects/github_repos/skill-stack.md
       - Architecture Lab:
           - Full Stack Blog: projects/github_repos/fullstack-blog-jwt-docker.md

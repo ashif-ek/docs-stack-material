@@ -8,7 +8,7 @@ This system delivers robust role-based functionality, featuring secure authentic
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 ### Role-Based Architecture
 - **Custom User Models**: Implements an extended Django AbstractUser to cleanly separate `Admin` and `Student` entities, paving the way for differentiated access and profiling.
@@ -21,7 +21,7 @@ This system delivers robust role-based functionality, featuring secure authentic
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Backend Framework**: Django (Python)
 - **Database**: SQLite (Development) / PostgreSQL (Production ready)
@@ -31,7 +31,7 @@ This system delivers robust role-based functionality, featuring secure authentic
 
 ---
 
-## 🏗️ Architectural Highlights
+## Architectural Highlights
 
 ### Clean MVT Pattern
 The application strictly follows Django's **Model-View-Template (MVT)** architecture:
@@ -46,7 +46,7 @@ The application strictly follows Django's **Model-View-Template (MVT)** architec
 
 ---
 
-## 🏁 Installation & Setup
+## Installation & Setup
 
 To deploy the platform in a local development environment:
 
