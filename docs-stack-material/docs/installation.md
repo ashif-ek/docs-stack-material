@@ -29,6 +29,16 @@ yarn install
 
 **B. Python Ecosystem (Django/FastAPI)**
 It is **mandatory** to establish an isolated virtual environment before modifying any system-level Python packages.
+
+Using **uv** (recommended for ultra-fast resolution):
+```bash
+# Create virtual environment and install dependencies in one step
+uv venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
+```
+
+Alternatively, using standard **venv** and **pip**:
 ```bash
 # Generate the virtual environment named 'venv'
 python -m venv venv

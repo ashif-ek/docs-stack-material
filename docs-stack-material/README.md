@@ -11,6 +11,12 @@ Documentation configuration and content root for the **Docs Stack – Material**
 
 ### 1. Install Dependencies
 
+Using `uv` (recommended):
+```bash
+uv pip install -r requirements.txt
+```
+
+Or using standard `pip`:
 ```bash
 pip install -r requirements.txt
 ```

@@ -29,7 +29,7 @@ Before attempting to execute any of the repositories within this portfolio local
 
 ### Package & Environment Management
 *   **npm / yarn / pnpm**: The Javascript ecosystem requires one of these standard package managers.
-*   **pip / venv**: Standard Python library management and virtual environment creation tools.
+*   **uv / pip / venv**: Fast, modern package and virtual environment management via `uv` (recommended) or traditional `pip` and `venv`.
 
 ### Infrastructure & Operations
 *   **Docker & Docker Compose**: Strictly required for containerized applications (like the Full Stack Blog) to guarantee environment parity and streamline multi-service orchestration.

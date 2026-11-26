@@ -79,19 +79,30 @@ cd docs-stack-material
 
 ### 3. Create & Activate Virtual Environment
 
+**Using uv (Recommended - ultra-fast):**
+```bash
+uv venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
+```
+
+**Using standard venv & pip:**
+
 **macOS / Linux:**
 ```bash
 python3 -m venv env
 source env/bin/activate
+pip install -r requirements.txt
 ```
 
 **Windows (PowerShell):**
 ```powershell
 python -m venv env
 .\env\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
 
-### 4. Install Dependencies
+### 4. Install Dependencies (if not using uv above)
 
 ```bash
 pip install --upgrade pip

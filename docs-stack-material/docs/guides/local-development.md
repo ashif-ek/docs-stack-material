@@ -10,7 +10,7 @@ Before cloning any project, ensure your host machine is equipped with the follow
 
 *   **Version Control**: Git (Latest stable release)
 *   **Javascript Ecosystem**: Node.js (v18+ Active LTS recommended) & npm/yarn
-*   **Python Ecosystem**: Python (v3.10+) & pip
+*   **Python Ecosystem**: Python (v3.10+) & uv / pip
 *   **Virtualization** *(Optional but recommended)*: Docker & Docker Compose for complex, multi-service architectures like the Full Stack Blog.
 *   **IDE**: Visual Studio Code (VS Code) is highly recommended due to its extensive extension ecosystem (Prettier, ESLint, Python, Docker).
 
@@ -29,7 +29,8 @@ Regardless of the project's underlying language, the bootstrapping process conce
     Every isolated project contains an `.env.example` baseline. Duplicate this file, rename it to `.env`, and populate the explicit values required for your local setup (e.g., local database URIs).
 3.  **Dependency Instantiation**:
     *   *Node.js*: Run `npm install`
-    *   *Python*: Run `python -m venv venv` followed by activating the environment and `pip install -r requirements.txt`.
+    *   *Python (with uv - fast)*: Run `uv venv && uv pip install -r requirements.txt`
+    *   *Python (standard)*: Run `python -m venv venv` followed by activating the environment and `pip install -r requirements.txt`.
 
 ---
 

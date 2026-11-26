@@ -39,6 +39,7 @@ For high-performance API development leveraging FastAPI and Uvicorn.
 | Command | Description | Use Case |
 | :--- | :--- | :--- |
 | `uvicorn main:app --reload` | Launches the ASGI server utilizing the `main.py` entry point (`app` instance) with auto-reloading enabled. | The primary command for active local development. |
+| `uv pip install -r requirements.txt` | Ultra-fast dependency resolution and installation using Astral uv. | Preferred package installer for fast CI/CD and local development. |
 | `pip install -r requirements.txt` | Installs Python packages specified in the requirements file. | Run when setting up the environment or when dependencies are updated. |
 
 ---
@@ -52,4 +53,4 @@ For projects leveraging Docker for isolated development and deployment phases.
 | `docker-compose up --build` | Builds container images and starts the entire multi-container application. | Use to spin up complex environments (e.g., App + DB + Redis) simultaneously. |
 | `docker-compose down` | Stops and safely removes containers, networks, and optionally volumes. | Run to cleanly shut down the local containerized environment. |
 
-> **Pro Tip:** Always utilize a virtual environment (`venv` or `conda`) when working with Python projects, and ensure you run `npm install` before attempting to start any JavaScript development server.
+> **Pro Tip:** Always utilize a virtual environment (`uv venv`, `venv`, or `conda`) when working with Python projects, and ensure you run `npm install` before attempting to start any JavaScript development server.
