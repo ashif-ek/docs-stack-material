@@ -1960,7 +1960,7 @@
 <ul>
 <li><strong>Version Control</strong>: Git (Latest stable release)</li>
 <li><strong>Javascript Ecosystem</strong>: Node.js (v18+ Active LTS recommended) &amp; npm/yarn</li>
-<li><strong>Python Ecosystem</strong>: Python (v3.10+) &amp; pip</li>
+<li><strong>Python Ecosystem</strong>: Python (v3.10+) &amp; uv / pip</li>
 <li><strong>Virtualization</strong> <em>(Optional but recommended)</em>: Docker &amp; Docker Compose for complex, multi-service architectures like the Full Stack Blog.</li>
 <li><strong>IDE</strong>: Visual Studio Code (VS Code) is highly recommended due to its extensive extension ecosystem (Prettier, ESLint, Python, Docker).</li>
 </ul>
@@ -1976,7 +1976,8 @@
     Every isolated project contains an <code>.env.example</code> baseline. Duplicate this file, rename it to <code>.env</code>, and populate the explicit values required for your local setup (e.g., local database URIs).</li>
 <li><strong>Dependency Instantiation</strong>:<ul>
 <li><em>Node.js</em>: Run <code>npm install</code></li>
-<li><em>Python</em>: Run <code>python -m venv venv</code> followed by activating the environment and <code>pip install -r requirements.txt</code>.</li>
+<li><em>Python (with uv - fast)</em>: Run <code>uv venv &amp;&amp; uv pip install -r requirements.txt</code></li>
+<li><em>Python (standard)</em>: Run <code>python -m venv venv</code> followed by activating the environment and <code>pip install -r requirements.txt</code>.</li>
 </ul>
 </li>
 </ol>
