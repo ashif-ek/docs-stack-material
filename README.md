@@ -10,6 +10,21 @@ Built with **MkDocs** and **Material for MkDocs**.
 
 ---
 
+## Featured Systems & Projects
+
+- **[Cipher Analytics](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/cipher-analytics/)** – Systems architecture and cryptographic specification for privacy-preserving zero-trust computation using CKKS Homomorphic Encryption.
+- **[Portfolio UI Platform](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/portfolio-ui/)** – High-performance portfolio engine featuring Framer Motion micro-interactions and a lightweight administrative CMS.
+- **[Noirel E-Commerce Engine](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/noirel-ecommerce/)** – Headless luxury online retail platform with Django REST Framework, React, and secure checkout workflows.
+- **[WorkPilot SaaS Platform](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/workpilot/)** – Multi-tenant workspace architecture with schema-isolated PostgreSQL storage, Next.js 14, and FastAPI.
+- **[Content Publishing Engine](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/content-publishing-engine/)** – Asynchronous task orchestration platform powered by Django REST Framework, Celery, and Redis.
+- **[Edu-Management System](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/edu-management-system/)** – Educational institution data management platform with role-based access control.
+- **[Task Management Client](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/task-management-client/)** – State-synchronized client built with React 19, Redux Toolkit, and Tailwind CSS v4.
+- **[Salary Analytics Engine](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/salary-analytics-engine/)** – Machine learning compensation forecasting and real-time market percentiles built with FastAPI and scikit-learn.
+- **[Time Lens](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/time-lens-python/)** – Temporal perception psychological utility and FastAPI calculation engine.
+- **[SkillStack](https://ashif-ek.github.io/docs-stack-material/projects/github_repos/skill-stack/)** – Learning goals tracking application built with React and Django REST Framework.
+
+---
+
 ## Features
 
 - **Standard Material Theme**: Clean, responsive layout with tab navigation and instant client-side search.

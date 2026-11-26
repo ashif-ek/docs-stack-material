@@ -8,6 +8,7 @@ Welcome to the comprehensive technical documentation for Ashif E.K's Developer P
 
 This documentation extensively covers both production-grade applications and architectural prototypes. Select a project below to delve into its specific features, tech stack, and API documentation:
 
+*   **[Cipher Analytics (Applied HE)](projects/github_repos/cipher-analytics.md)**: A zero-trust privacy-preserving computation platform utilizing Homomorphic Encryption (CKKS) over encrypted datasets.
 *   **[Portfolio UI Platform](projects/github_repos/portfolio-ui.md)**: A modern, performant personal developer portfolio complete with a secure administrative dashboard for dynamic content management.
 *   **[Noirel Enterprise E-Commerce](projects/github_repos/noirel-ecommerce.md)**: A high-end, full-stack e-commerce experience implementing secure cart logic, payment gateway integration, and a premium UI.
 *   **[Salary Analytics Engine](projects/github_repos/salary-analytics-engine.md)**: An AI-driven analytics platform providing market intelligence, percentile calculations, and machine-learning powered salary forecasts.
