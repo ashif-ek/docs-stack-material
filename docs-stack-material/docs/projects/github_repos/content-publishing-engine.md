@@ -3,7 +3,7 @@
 **An enterprise-grade, microservice-ready content management platform built on Django, Celery, and React.**
 
 - **Version**: 2.0.0
-- **Author**: Ashif EK
+- **Author**: Ashif E.K
 - **Tech Stack**: Django REST Framework, Celery, Redis, React, Vite, Nginx, Docker
 - **Status**: Production-Ready
 - **Last Updated**: 2026-05-25

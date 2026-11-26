@@ -3,7 +3,7 @@
 **A highly interactive, performance-optimized digital portfolio engine featuring a secure CMS and dynamic rendering.**
 
 - **Version**: 2.1.0
-- **Author**: Ashif EK
+- **Author**: Ashif E.K
 - **Tech Stack**: React 18, Vite, Framer Motion, Node.js (Custom JSON Server), Multer
 - **Status**: Production-Ready
 - **Last Updated**: 2026-05-25

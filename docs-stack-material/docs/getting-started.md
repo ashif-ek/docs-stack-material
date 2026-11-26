@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to the comprehensive technical documentation for Ashif's Developer Portfolio. This repository serves as the central hub detailing the architecture, implementation protocols, and operational guidelines for a diverse suite of production-grade open-source projects, spanning from highly interactive front-end applications to robust data-driven backends.
+Welcome to the comprehensive technical documentation for Ashif E.K's Developer Portfolio. This repository serves as the central hub detailing the architecture, implementation protocols, and operational guidelines for a diverse suite of production-grade open-source projects, spanning from highly interactive front-end applications to robust data-driven backends.
 
 ---
 

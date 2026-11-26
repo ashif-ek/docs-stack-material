@@ -1,63 +1,36 @@
 site_name: Docs Stack – Material
 site_url: https://ashif-ek.github.io/docs-stack-material/
 site_description: Centralized engineering knowledge base and technical specifications for production-grade web applications and open-source platforms.
-site_author: Ashif EK
+site_author: Ashif E.K
 repo_name: ashif-ek/docs-stack-material
 repo_url: https://github.com/ashif-ek/docs-stack-material
 
-copyright: 'Copyright &copy; 2026 <a href="https://ashif-ek.vercel.app" target="_blank" rel="noopener">Ashif EK</a> &bull; <a href="https://ashif-ek.vercel.app" target="_blank" rel="noopener">Portfolio</a>'
-
-extra:
-  social:
-    - icon: fontawesome/solid/globe
-      link: https://ashif-ek.vercel.app
-      name: Ashif's Portfolio
-    - icon: fontawesome/brands/github
-      link: https://github.com/ashif-ek
-      name: GitHub
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/ashifek
-      name: LinkedIn
+copyright: 'Copyright &copy; 2026 <a href="https://ashifek.in" target="_blank" rel="noopener">Ashif E.K</a>'
 
 theme:
   name: material
-  language: en
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: slate
+    - scheme: default
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: slate
+    - scheme: slate
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  font:
-    text: Inter
-    code: JetBrains Mono
   features:
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - navigation.footer
     - search.highlight
     - search.suggest
-    - search.share
     - content.code.copy
     - content.code.annotate
-
-extra_css:
-  - stylesheets/extra.css
 
 nav:
   - Home: index.md
@@ -76,17 +49,17 @@ nav:
       - Database: api/database.md
       - Error Handling: api/error-handling.md
   - Projects:
-      - Overview: projects/portfolio.md
-      - Production:
-          - Portfolio UI Platform: projects/github_repos/portfolio-ui.md
-          - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
-          - WorkPilot: projects/github_repos/workpilot.md
+      - Portfolio: projects/portfolio.md
+      - Open Source:
+          - Task Management Client: projects/github_repos/task-management-client.md
           - Content Publishing Engine: projects/github_repos/content-publishing-engine.md
           - Edu-Management System: projects/github_repos/edu-management-system.md
-          - Task Management Client: projects/github_repos/task-management-client.md
+          - Portfolio UI Platform: projects/github_repos/portfolio-ui.md
           - Salary Analytics Engine: projects/github_repos/salary-analytics-engine.md
-          - Cipher Analytics: projects/github_repos/cipher-analytics.md
+          - Noirel Ecommerce: projects/github_repos/noirel-ecommerce.md
           - Time Lens: projects/github_repos/time-lens-python.md
+          - Cipher Analytics: projects/github_repos/cipher-analytics.md
+          - WorkPilot: projects/github_repos/workpilot.md
           - SkillStack: projects/github_repos/skill-stack.md
       - Architecture Lab:
           - Full Stack Blog: projects/github_repos/fullstack-blog-jwt-docker.md
@@ -107,19 +80,5 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.keys
-  - pymdownx.tabbed:
-      alternate_style: true
   - pymdownx.arithmatex:
       generic: true
-  - tables
-  - attr_list
-  - md_in_html
-  - toc:
-      permalink: true

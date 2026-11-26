@@ -3,7 +3,7 @@
 **An AI-powered data platform providing real-time market percentiles, predictive salary modeling, and fuzzy-matched data ingestion.**
 
 - **Version**: 3.0.0
-- **Author**: Ashif EK
+- **Author**: Ashif E.K
 - **Tech Stack**: FastAPI, PostgreSQL, SQLAlchemy, scikit-learn, React, Recharts
 - **Status**: Production-Ready
 - **Last Updated**: 2026-05-25

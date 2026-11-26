@@ -3,7 +3,7 @@
 **A production-ready, minimalist task management UI built for high-performance state synchronization.**
 
 - **Version**: 1.0.0
-- **Author**: Ashif EK
+- **Author**: Ashif E.K
 - **Tech Stack**: React 19, Vite, Redux Toolkit, Tailwind CSS v4, JSON Server
 - **Status**: Production-Ready
 - **Last Updated**: 2026-05-25

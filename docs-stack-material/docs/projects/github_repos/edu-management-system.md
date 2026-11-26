@@ -3,7 +3,7 @@
 **A monolithic, multi-tenant educational platform built on Django, featuring role-based dashboards and course orchestration.**
 
 - **Version**: 1.5.0
-- **Author**: Ashif EK
+- **Author**: Ashif E.K
 - **Tech Stack**: Django (MVT), PostgreSQL, HTML5/CSS3, JavaScript
 - **Status**: Production-Ready
 - **Last Updated**: 2026-05-25
